@@ -1,0 +1,68 @@
+.reviews__display {
+  // background-color: #f8faf9;
+  height: 340px;
+  margin-top: 22px;
+  overflow: hidden;
+  position: relative;
+  background: url("/chocco/img/decor/Слой_2.png") right top no-repeat #f8faf9;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -65px;
+  
+  }
+}
+.reviews__display-inner {
+  display: flex;
+}
+.reviews__avatar {
+  width: 254px;
+  height: 260px;
+}
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-top: 53px;
+  margin-left: 47px;
+}
+.reviews__content {
+  flex: 1;
+  margin-left: 67px;
+}
+.reviews__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 17px;
+  color: black;
+  margin-top: 62px;
+}
+.reviews__text {
+  margin-bottom: 27px;
+  width: 435px;
+  line-height: 1.2;
+}
+.reviews__author {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+.reviews__switcher {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.reviews__container {
+  height: 482px;
+  display: flex;
+  flex-direction: column;
+}

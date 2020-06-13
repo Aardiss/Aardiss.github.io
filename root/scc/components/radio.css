@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 16px; }
+  .radio--checkbox .radio__visible {
+    border-radius: 0; }
+    .radio--checkbox .radio__visible:before {
+      background: url("/chocco/img/decor/Галочка.png") no-repeat;
+      top: 5%;
+      left: 55%; }
+
+.radio__elem {
+  display: none; }
+  .radio__elem:checked ~ .radio__visible::before {
+    display: block; }
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+  .radio__visible::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: #365a49;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%); }
