@@ -12,7 +12,7 @@
   .radio--checkbox .radio__visible {
     border-radius: 0; }
     .radio--checkbox .radio__visible:before {
-      background: url("/chocco/img/decor/Галочка.png") no-repeat;
+      background: url("img/decor/Галочка.png") no-repeat;
       top: 5%;
       left: 55%; }
 

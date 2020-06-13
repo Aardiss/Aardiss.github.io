@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .hero {
-  background: url("/chocco/img/decor/узорs.png") 79% no-repeat;
+  background: url("img/decor/узорs.png") 79% no-repeat;
   background-color: #61c4d9;
   height: 657px;
   min-width: 650px;
@@ -10,7 +10,7 @@
     position: absolute;
     bottom: -56px;
     left: 16%;
-    content: url("/chocco/img/decor/Картинки.png"); }
+    content: url("img/decor/Картинки.png"); }
 
 .hero__title-section {
   width: 46%; }

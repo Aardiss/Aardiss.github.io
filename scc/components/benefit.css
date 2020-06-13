@@ -1,11 +1,9 @@
 .benefit {
-  text-align: center;
-}
+  text-align: center; }
 
 .benefit__title {
-  font-size: 24px;
-  font-weight: bold;
-}
+  font-size: 26px;
+  font-weight: bold; }
 
 .benefit__image-wrapper {
   display: inline-block;
@@ -14,8 +12,7 @@
   position: relative;
   background: #f2f5f4;
   border-radius: 50%;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .benefit__icon {
   width: 125px;
@@ -23,9 +20,10 @@
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
 
 .benefit__text {
-  margin: 0 15%;
-}
+  margin-top: 20px;
+  margin-left: 15px; }

@@ -1,11 +1,10 @@
 @charset "UTF-8";
 .reviews__display {
-  background-color: #f8faf9;
   height: 340px;
   margin-top: 22px;
   overflow: hidden;
   position: relative;
-  background: url("/chocco/img/decor/Слой_2.png") right top no-repeat; }
+  background: url("img/decor/Слой_2.png") right top no-repeat #f8faf9; }
   .reviews__display::before {
     content: "";
     display: block;
@@ -64,22 +63,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: auto; }
+  align-items: center; }
 
 .reviews__container {
-  height: 388px;
+  height: 482px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;

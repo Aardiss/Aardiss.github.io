@@ -7,7 +7,7 @@
   line-height: 1;
   text-decoration: none;
   position: relative;
-  margin-right: 10px; }
+  margin-right: -10px; }
   .btn--theme--white {
     background: #fff;
     color: #0b4d3c; }
@@ -16,13 +16,15 @@
       background: #0b4d3c; }
   .btn--theme--green {
     background: #0b4d3c;
-    color: #fff; }
+    color: #fff;
+    border: none; }
     .btn--theme--green:hover {
       color: #0b4d3c;
       background: #fff; }
   .btn--theme--transparent {
     background: transparent;
     color: #000000;
-    text-transform: none; }
+    text-transform: none;
+    border: none; }
     .btn--theme--transparent:hover {
       color: #0b4d3c; }

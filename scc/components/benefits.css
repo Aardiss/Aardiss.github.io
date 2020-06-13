@@ -1,0 +1,25 @@
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.benefits__item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0;
+  position: relative; }
+  .benefits__item::before {
+    content: url("img/decor/2.png");
+    position: absolute;
+    top: 50px;
+    right: 0;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%); }
+  .benefits__item:first-child {
+    margin-left: 0; }
+  .benefits__item:last-child {
+    margin-right: 0; }
+    .benefits__item:last-child::before {
+      display: none; }

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.benefits-section {
+  position: relative;
+  background: url("/img/decor/узор_лист.png") left 207px top 55% no-repeat; }
+  .benefits-section::before {
+    content: url("/img/decor/малина.png");
+    position: absolute;
+    bottom: -113px;
+    left: 207px; }

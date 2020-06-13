@@ -1,3 +1,5 @@
+@import "../layout/colors.scss";
+
 .section {
     height: 100vp;
     min-height: 650px;
@@ -23,33 +25,33 @@
     
 }
 .section__reviews {
-    background: url("/chocco/img/decor/Ягода.png") top 32px right 225px  no-repeat;
+    background: url("/img/decor/Ягода.png") top 32px right 225px  no-repeat;
     margin-bottom: 37px;
 
     &::before {
         position: absolute;
-        content: url("/chocco/img/decor/Узор.png");
+        content: url("/img/decor/Узор.png");
         left: 210px;
        top: 68%;
     } 
     &::after {
         position: absolute;
-        content: url("/chocco/img/decor/Ягоды.png");
+        content: url("/img/decor/Ягоды.png");
         left: 210px;
         top: 70%;
     }
 }
 .order-section {
-    background: url("/chocco/img/decor/паттерн.png") center no-repeat;
+    background: url("/img/decor/паттерн.png") center no-repeat;
     &::before {
         position: absolute;
-        content: url("/chocco/img/decor/Ежевика_фото.png");
+        content: url("/img/decor/Ежевика_фото.png");
         left: 1105px;
        top: 70%;
     } 
     &::after {
         position: absolute;
-        content: url("/chocco/img/decor/лист90.png");
+        content: url("/img/decor/лист90.png");
         left: 1167px;
         top: 90%;
     }

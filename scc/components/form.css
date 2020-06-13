@@ -6,9 +6,9 @@
   padding-bottom: 64px; }
   .form::after {
     position: absolute;
-    content: url("/chocco/img/decor/ягода90.png");
+    content: url("img/decor/ягода90.png");
     left: 227px;
-    top: 98%; }
+    top: 95%; }
 
 .form__col {
   /* display: flex; */
@@ -43,7 +43,7 @@
   display: flex;
   margin-bottom: 10px; }
   .form__line:last-child {
-    margin-top: 5px;
+    margin-top: 19px;
     margin-bottom: 0px; }
 
 .form__input {
@@ -65,6 +65,10 @@
   border: solid 3px transparent; }
 
 .form__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 0; }
-  .form__controls:last-child {
-    margin-bottom: 50px; }
+
+.form__btns {
+  margin-top: 28px; }
