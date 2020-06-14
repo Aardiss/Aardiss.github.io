@@ -25,19 +25,17 @@
     
 }
 .section__reviews {
-    background: url("/img/decor/Ягода.png") top 32px right 225px  no-repeat;
+    background: url("/img/decor/Ягода.png") top 32px right 219px  no-repeat;
     margin-bottom: 37px;
 
     &::before {
         position: absolute;
         content: url("/img/decor/Узор.png");
-        left: 210px;
        top: 68%;
     } 
     &::after {
         position: absolute;
         content: url("/img/decor/Ягоды.png");
-        left: 210px;
         top: 70%;
     }
 }
@@ -46,13 +44,13 @@
     &::before {
         position: absolute;
         content: url("/img/decor/Ежевика_фото.png");
-        left: 1105px;
+        right: 0;
        top: 70%;
     } 
     &::after {
         position: absolute;
         content: url("/img/decor/лист90.png");
-        left: 1167px;
+        right: 0;
         top: 90%;
     }
     min-height: 630px;

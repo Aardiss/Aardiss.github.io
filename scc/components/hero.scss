@@ -1,19 +1,12 @@
 @import "../layout/colors.scss";
 
 .hero {
-  background: url("img/decor/узорs.png") 79% no-repeat;
+  background: url("/img/decor/узорs.png") right 0 no-repeat;
   background-color: $blue;
   height: 657px;
   min-width: 650px;
   color: #ffffff;
   position: relative;
-
-  &::before {
-  position: absolute;
-    bottom: -56px;
-    left: 16%;
-    content: url("/img/decor/Картинки.png");
-  }
 }
 .hero__title-section {
   width: 46%;
@@ -24,6 +17,21 @@
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 45px;
+  position: relative;
+  
+  &::before {
+    position: absolute;
+      bottom: 71px;
+      left: 489px;;
+      content: url("/img/decor/Батончики.png");
+    }
+  &::after {
+    position: absolute;
+    bottom: -49px;
+    left: -50px;
+    content: url("/img/decor/Ягоды_и_листья.png");
+    width: 100%;
+  }
 }
 .hero__main-title {
   font-size: 48px;

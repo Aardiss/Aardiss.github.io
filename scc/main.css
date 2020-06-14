@@ -377,17 +377,12 @@ template {
   display: none; }
 
 .hero {
-  background: url("img/decor/узорs.png") 79% no-repeat;
+  background: url("/img/decor/узорs.png") right 0 no-repeat;
   background-color: #61c4d9;
   height: 657px;
   min-width: 650px;
   color: #ffffff;
   position: relative; }
-  .hero::before {
-    position: absolute;
-    bottom: -56px;
-    left: 16%;
-    content: url("/img/decor/Картинки.png"); }
 
 .hero__title-section {
   width: 46%; }
@@ -404,7 +399,19 @@ template {
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px; }
+  padding: 24px 0 45px;
+  position: relative; }
+  .hero__container::before {
+    position: absolute;
+    bottom: 71px;
+    left: 489px;
+    content: url("/img/decor/Батончики.png"); }
+  .hero__container::after {
+    position: absolute;
+    bottom: -49px;
+    left: -50px;
+    content: url("/img/decor/Ягоды_и_листья.png");
+    width: 100%; }
 
 .hero__main-title {
   font-size: 48px;
@@ -501,8 +508,9 @@ template {
   border-radius: 100px;
   line-height: 1;
   text-decoration: none;
-  position: relative;
-  margin-right: -10px; }
+  display: inline-block;
+  margin-right: -10px;
+  z-index: 100; }
   .btn--theme--white {
     background: #fff;
     color: #0b4d3c; }
@@ -616,17 +624,15 @@ template {
   color: #000000; }
 
 .section__reviews {
-  background: url("/img/decor/Ягода.png") top 32px right 225px no-repeat;
+  background: url("/img/decor/Ягода.png") top 32px right 219px no-repeat;
   margin-bottom: 37px; }
   .section__reviews::before {
     position: absolute;
     content: url("/img/decor/Узор.png");
-    left: 210px;
     top: 68%; }
   .section__reviews::after {
     position: absolute;
     content: url("/img/decor/Ягоды.png");
-    left: 210px;
     top: 70%; }
 
 .order-section {
@@ -635,12 +641,12 @@ template {
   .order-section::before {
     position: absolute;
     content: url("/img/decor/Ежевика_фото.png");
-    left: 1105px;
+    right: 0;
     top: 70%; }
   .order-section::after {
     position: absolute;
     content: url("/img/decor/лист90.png");
-    left: 1167px;
+    right: 0;
     top: 90%; }
 
 .section__title-form {
@@ -653,18 +659,20 @@ template {
 
 .benefits-section {
   position: relative;
-  background: url("/img/decor/узор_лист.png") left 207px top 55% no-repeat; }
+  background: url("/img/decor/узор_лист.png") left 0 top 55% no-repeat; }
   .benefits-section::before {
     content: url("/img/decor/малина.png");
     position: absolute;
-    bottom: -113px;
-    left: 207px; }
+    bottom: -113px; }
 
 .reviews__display {
   height: 340px;
-  margin-top: 22px;
+  padding-top: 62px;
   overflow: hidden;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: url("/img/decor/Слой_2.png") right top no-repeat #f8faf9; }
   .reviews__display::before {
     content: "";
@@ -680,11 +688,6 @@ template {
     transform: translateX(-50%);
     top: -65px; }
 
-.reviews__display-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .reviews__avatar {
   width: 254px;
   height: 260px; }
@@ -694,8 +697,8 @@ template {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  margin-top: 53px;
-  margin-left: 47px; }
+  margin-top: -10px;
+  margin-left: 56px; }
 
 .reviews__content {
   -webkit-box-flex: 1;
@@ -707,8 +710,7 @@ template {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 17px;
-  color: black;
-  margin-top: 62px; }
+  color: black; }
 
 .reviews__text {
   margin-bottom: 27px;
@@ -732,10 +734,13 @@ template {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 14px;
+  padding-left: 27px; }
 
 .reviews__container {
   height: 482px;
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -776,7 +781,7 @@ template {
   .form::after {
     position: absolute;
     content: url("/img/decor/ягода90.png");
-    left: 227px;
+    left: 20px;
     top: 95%; }
 
 .form__col {
