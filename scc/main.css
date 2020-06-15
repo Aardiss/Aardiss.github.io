@@ -99,8 +99,7 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+  font-size: 2em; }
 
 /* Grouping content
    ========================================================================== */
@@ -385,7 +384,8 @@ template {
   position: relative; }
 
 .hero__title-section {
-  width: 46%; }
+  width: 46%;
+  margin-top: 36px; }
 
 .hero__container {
   display: -webkit-box;
