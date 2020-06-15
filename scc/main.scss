@@ -18,3 +18,13 @@
 @import "components/form.scss";
 @import "components/radio.scss";
 @import "components/fixed-menu.scss";
+
+@media (max-width:992px) {
+  html {font-size: 14px;}
+}
+@media (max-width:768px) {
+  html {font-size: 13px;}
+}
+@media (max-width:480px) {
+  html {font-size: 12px;}
+}

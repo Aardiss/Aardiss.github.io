@@ -34,6 +34,9 @@ h1, h2, h3, h4, h5, h6 {
 body, html {
   height: 100%; }
 
+html {
+  font-size: 16px; }
+
 img {
   display: block;
   max-width: 100%; }
@@ -923,3 +926,15 @@ template {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px; } }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px; } }
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px; } }
