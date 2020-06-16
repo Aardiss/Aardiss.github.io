@@ -58,9 +58,11 @@ body {
     flex-direction: column;
     min-height: 100%;
     overflow: hidden;
-    min-width: $containerWidth + 20px;
+    min-width: 0px;
   }
   .container {
-    width: 950px;
+    width: auto;
+    max-width: 942px;
     margin: 0 auto;
+
   }

@@ -1,15 +1,15 @@
 @import "../layout/colors.scss";
 
 .btn {
-  font-size: 19px;
+  font-size: 1.187rem;
   font-weight: bold;
-  padding: 18px 35px;
+  padding: 1.125rem 2.187rem;
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   line-height: 1;
   text-decoration: none;
   display: inline-block;
-  margin-right: -10px;
+  margin-right: -0.625rem;
   z-index: $z-fixed-menu;
 
   &--theme--white {
