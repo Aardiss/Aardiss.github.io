@@ -3,46 +3,46 @@
 .hero {
   background: url("/img/decor/узорs.png") right 0 no-repeat;
   background-color: $blue;
-  height: 41.062rem;
-  min-width: 40.625rem;
+  height: 36.499rem;
+  min-width: 36.111rem;
   color: #ffffff;
   position: relative;
 }
 .hero__title-section {
   width: 46%;
-  margin-top: 2.25rem;
+  // margin-top: 2.25rem;
 }
 .hero__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 1.5rem 0 2.812rem;
+  padding: 1.333rem 0 2.499rem;
   position: relative;
   
   &::before {
     position: absolute;
-      bottom: 4.437rem;
-      left: 30.562rem;
+      bottom: 3.944rem;
+      left: 27.166rem;
       content: url("/img/decor/Батончики.png");
     }
   &::after {
     position: absolute;
-    bottom: -3.062rem;
-    left: -3.125rem;
+    bottom: -2.721rem;
+    left: -2.777rem;
     content: url("/img/decor/Ягоды_и_листья.png");
     width: 100%;
   }
 }
 .hero__main-title {
-  font-size: 3rem;
+  font-size: 2.666rem;
   line-height: 1.2;
   font-weight: bold;
   margin-bottom: 0rem;
   text-transform: uppercase;
 }
 .hero__title-desc {
-  font-size: 1.312rem;
-  margin-bottom: 3.5rem;
+  font-size: 1.166rem;
+  margin-bottom: 3.111rem;
   padding-right: 21%;
 }

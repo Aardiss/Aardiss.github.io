@@ -1,13 +1,14 @@
 .btn {
-  font-size: 19px;
+  font-size: 1.187rem;
   font-weight: bold;
-  padding: 18px 35px;
+  padding: 1.125rem 2.187rem;
   text-transform: uppercase;
   border-radius: 100px;
   line-height: 1;
   text-decoration: none;
-  position: relative;
-  margin-right: -10px; }
+  display: inline-block;
+  margin-right: -0.625rem;
+  z-index: 100; }
   .btn--theme--white {
     background: #fff;
     color: #0b4d3c; }

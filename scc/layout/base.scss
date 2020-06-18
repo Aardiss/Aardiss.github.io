@@ -1,7 +1,6 @@
 @import "./variables.scss";
 
 body {
-  font-size: $baseFontSize;
   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -34,7 +33,7 @@ body {
     height: 100%;
   }
   html {
-    font-size: 16px;
+    font-size: $baseFontSize;
   }
   img {
     display: block;
@@ -58,11 +57,11 @@ body {
     flex-direction: column;
     min-height: 100%;
     overflow: hidden;
-    min-width: 0px;
+
   }
   .container {
-    width: auto;
-    max-width: 942px;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
 
   }

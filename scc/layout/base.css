@@ -1,5 +1,4 @@
 body {
-  font-size: 18px;
   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -32,6 +31,9 @@ h1, h2, h3, h4, h5, h6 {
 body, html {
   height: 100%; }
 
+html {
+  font-size: 18px; }
+
 img {
   display: block;
   max-width: 100%; }
@@ -58,9 +60,9 @@ footer {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100%;
-  overflow: hidden;
-  min-width: 960px; }
+  overflow: hidden; }
 
 .container {
-  width: 950px;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto; }

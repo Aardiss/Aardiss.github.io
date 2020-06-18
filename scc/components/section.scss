@@ -2,7 +2,7 @@
 
 .section {
     height: 100vp;
-    min-height: 40.625rem;
+    min-height: 36.111rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@
 }
 
 .section__title {
-    font-size: 3rem;
+    font-size: 2.666rem;
     font-weight: bold;
     margin-bottom: 0rem;
     text-align: center;
@@ -25,8 +25,8 @@
     
 }
 .section__reviews {
-    background: url("/img/decor/Ягода.png") top 2rem right 13.6875rem  no-repeat;
-    margin-bottom: 2.3125rem;
+    background: url("/img/decor/Ягода.png") top 1.777rem right 12.166rem  no-repeat;
+    margin-bottom: 2.055rem;
 
     &::before {
         position: absolute;
@@ -53,13 +53,13 @@
         right: 0;
         top: 90%;
     }
-    min-height: 39.375rem;
+    min-height: 35rem;
 }
 .section__title-form {
-    font-size: 3.0625rem;
+    font-size: 2.722rem;
     font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 2.5rem;
+    margin-top: 1.777rem;
+    margin-bottom: 2.222rem;
     text-align: center;
     color: $darkGreen;
 }
