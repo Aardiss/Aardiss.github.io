@@ -7,10 +7,37 @@
   min-width: 36.111rem;
   color: #ffffff;
   position: relative;
+
+  @include tablets {
+    background-position: right bottom 88%;
+  }
+
+  &::before, &::after {
+    @include tablets {
+      display: none;
+    }
+  }
 }
 .hero__title-section {
   width: 46%;
-  // margin-top: 2.25rem;
+
+  @include tablets {
+   width: 100%;
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+   &::before {
+     content: url("/img/decor/Картинки.png");
+   }
+}
+.hero__icons-section {
+ @include tablets {
+   display: none;
+ }
 }
 .hero__container {
   display: flex;
@@ -19,6 +46,11 @@
   height: 100%;
   padding: 1.333rem 0 2.499rem;
   position: relative;
+
+    @include tablets {
+      background: none;
+    }
+  
   
   &::before {
     position: absolute;
@@ -45,4 +77,8 @@
   font-size: 1.166rem;
   margin-bottom: 3.111rem;
   padding-right: 21%;
+
+  @include tablets {
+    padding: 0 25%;
+  }
 }

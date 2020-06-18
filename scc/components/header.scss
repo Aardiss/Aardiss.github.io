@@ -3,6 +3,14 @@
   align-items: center;
   justify-content: space-between;
 }
+@include tablets {
+  display: none;
+}
+ .phone-number.header__phone-number {
+  @include tablets {
+    display: none;
+  }
+}
 .menu__list {
   display: flex;
   align-items: center;
