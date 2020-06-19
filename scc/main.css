@@ -35,6 +35,12 @@ body, html {
 
 html {
   font-size: 18px; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 17px; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 16px; } }
 
 img {
   display: block;
@@ -384,9 +390,70 @@ template {
   min-width: 36.111rem;
   color: #ffffff;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .hero {
+      background-position: right bottom 88%;
+      height: 1000px; } }
+  @media screen and (max-width: 768px) {
+    .hero::before, .hero::after {
+      display: none; } }
 
 .hero__title-section {
   width: 46%; }
+  @media screen and (max-width: 480px) {
+    .hero__title-section {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      text-align: center;
+      width: 465px; } }
+  .hero__title-section::before {
+    content: "";
+    width: 516px;
+    height: 330px;
+    position: absolute;
+    right: 30%;
+    top: 8%; }
+  @media screen and (max-width: 768px) {
+    .hero__title-section {
+      width: 100%;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center; }
+      .hero__title-section::before {
+        content: "";
+        width: 633px;
+        height: 408px;
+        position: absolute;
+        right: 27%;
+        background: url("/img/decor/Картинки.png") center center/contain no-repeat;
+        top: 16%; } }
+
+@media screen and (max-width: 768px) {
+  .hero__icons-section {
+    display: none; } }
 
 .hero__container {
   display: -webkit-box;
@@ -402,6 +469,12 @@ template {
   height: 100%;
   padding: 1.333rem 0 2.499rem;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .hero__container {
+      background: none; } }
+  @media screen and (max-width: 768px) {
+    .hero__container::before, .hero__container::after {
+      display: none; } }
   .hero__container::before {
     position: absolute;
     bottom: 3.944rem;
@@ -413,6 +486,9 @@ template {
     left: -2.777rem;
     content: url("/img/decor/Ягоды_и_листья.png");
     width: 100%; }
+  @media screen and (max-width: 480px) {
+    .hero__container {
+      margin: 5px 5px; } }
 
 .hero__main-title {
   font-size: 2.666rem;
@@ -420,22 +496,52 @@ template {
   font-weight: bold;
   margin-bottom: 0rem;
   text-transform: uppercase; }
+  @media screen and (max-width: 480px) {
+    .hero__main-title {
+      margin-top: 165px;
+      letter-spacing: -1.9px; } }
+  @media screen and (max-width: 768px) {
+    .hero__main-title {
+      margin-top: 348px;
+      letter-spacing: 0.001em; } }
 
 .hero__title-desc {
   font-size: 1.166rem;
   margin-bottom: 3.111rem;
   padding-right: 21%; }
+  @media screen and (max-width: 768px) {
+    .hero__title-desc {
+      margin-top: 23px;
+      padding: 0 25%;
+      letter-spacing: 0.001em; } }
+  @media screen and (max-width: 480px) {
+    .hero__title-desc {
+      padding: 0 17%; } }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  @media screen and (max-width: 480px) {
+    .header {
+      position: relative; } }
+
+@media screen and (max-width: 768px) {
+  .phone-number.header__phone-number {
+    display: none; } }
+
+.menu {
+  margin: 0 30px;
+  padding-top: 5px; }
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none; } }
 
 .menu__list {
   display: -webkit-box;
@@ -443,15 +549,22 @@ template {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .menu__item {
-  margin-right: 1.687rem; }
+  margin-right: 1.687rem;
+  margin-bottom: 10px; }
   .menu__item:last-child {
     margin-right: 0; }
 
 .menu__link {
-  text-decoration: none; }
+  text-decoration: none;
+  white-space: nowrap; }
 
 .phone-number {
   font-size: 1.333rem;
@@ -467,6 +580,13 @@ template {
   width: 0.666rem;
   height: 0.666rem;
   margin-right: 0.333rem; }
+
+.phone-number__text {
+  white-space: nowrap; }
+
+.phone-number__icon {
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
 
 .features {
   width: 25.944rem;
@@ -516,6 +636,12 @@ template {
     background: #fff;
     color: #0b4d3c;
     position: absolute; }
+    @media screen and (max-width: 768px) {
+      .btn--theme--white {
+        margin-top: 562px; } }
+    @media screen and (max-width: 480px) {
+      .btn--theme--white {
+        margin-top: 575px; } }
     .btn--theme--white:hover {
       color: #fff;
       background: #0b4d3c; }
@@ -536,6 +662,12 @@ template {
 
 .benefit {
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    .benefit {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-align: left; } }
 
 .benefit__title {
   font-size: 1.444rem;
@@ -549,6 +681,10 @@ template {
   background: #f2f5f4;
   border-radius: 50%;
   overflow: hidden; }
+  @media screen and (max-width: 480px) {
+    .benefit__image-wrapper {
+      margin-bottom: 0;
+      margin-right: 20px; } }
 
 .benefit__icon {
   width: 6.944rem;
@@ -568,6 +704,12 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .benefits {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .benefits__item {
   -webkit-box-flex: 1;
@@ -575,6 +717,13 @@ template {
   flex: 1;
   margin: 0;
   position: relative; }
+  @media screen and (max-width: 480px) {
+    .benefits__item {
+      padding: 0;
+      margin-bottom: 19px; } }
+  @media screen and (max-width: 768px) {
+    .benefits__item::before {
+      display: none; } }
   .benefits__item::before {
     content: url("/img/decor/2.png");
     position: absolute;
@@ -599,6 +748,9 @@ template {
 
 .headline__subtitle {
   padding: 0 26%; }
+  @media screen and (max-width: 480px) {
+    .headline__subtitle {
+      padding: 0 5%; } }
 
 .section {
   height: 100vp;
@@ -628,28 +780,60 @@ template {
 .section__reviews {
   background: url("/img/decor/Ягода.png") top 1.777rem right 12.166rem no-repeat;
   margin-bottom: 2.055rem; }
+  @media screen and (max-width: 768px) {
+    .section__reviews {
+      background: none;
+      background: url("/img/decor/Ягода.png") top 0px right -32px no-repeat;
+      margin-bottom: 65px; } }
   .section__reviews::before {
     position: absolute;
     content: url("/img/decor/Узор.png");
     top: 68%; }
+    @media screen and (max-width: 768px) {
+      .section__reviews::before {
+        top: 70%; } }
+    @media screen and (max-width: 480px) {
+      .section__reviews::before {
+        top: 63%; } }
   .section__reviews::after {
     position: absolute;
     content: url("/img/decor/Ягоды.png");
     top: 70%; }
+    @media screen and (max-width: 768px) {
+      .section__reviews::after {
+        top: 74%; } }
+    @media screen and (max-width: 480px) {
+      .section__reviews::after {
+        top: 68%; } }
 
 .order-section {
   background: url("/img/decor/паттерн.png") center no-repeat;
   min-height: 35rem; }
+  @media screen and (max-width: 768px) {
+    .order-section {
+      height: 1000px;
+      background: url("/img/decor/паттерн.png") center navajowhite; } }
   .order-section::before {
     position: absolute;
     content: url("/img/decor/Ежевика_фото.png");
     right: 0;
     top: 70%; }
+    @media screen and (max-width: 768px) {
+      .order-section::before {
+        content: none;
+        content: url("/img/decor/Ежевика_фото2.png");
+        top: 73%; } }
+    @media screen and (max-width: 480px) {
+      .order-section::before {
+        display: none; } }
   .order-section::after {
     position: absolute;
     content: url("/img/decor/лист90.png");
     right: 0;
     top: 90%; }
+    @media screen and (max-width: 480px) {
+      .order-section::after {
+        display: none; } }
 
 .section__title-form {
   font-size: 2.722rem;
@@ -658,14 +842,31 @@ template {
   margin-bottom: 2.222rem;
   text-align: center;
   color: #0b4d3c; }
+  @media screen and (max-width: 768px) {
+    .section__title-form {
+      margin-top: 0.777rem;
+      margin-bottom: 1.222rem; } }
 
 .benefits-section {
   position: relative;
   background: url("/img/decor/узор_лист.png") left 0 top 55% no-repeat; }
+  @media screen and (max-width: 480px) {
+    .benefits-section {
+      background: none; } }
+  @media screen and (max-width: 768px) {
+    .benefits-section {
+      padding-top: 277px;
+      background: url("/img/decor/узор_лист.png") left 0 top 17% no-repeat; } }
   .benefits-section::before {
     content: url("/img/decor/малина.png");
     position: absolute;
     bottom: -6.277rem; }
+    @media screen and (max-width: 768px) {
+      .benefits-section::before {
+        bottom: -141px; } }
+    @media screen and (max-width: 480px) {
+      .benefits-section::before {
+        display: none; } }
 
 .reviews__display {
   height: 18.888rem;
@@ -677,6 +878,18 @@ template {
   display: flex;
   background: url("/img/decor/Слой_2.png") right top no-repeat #f8faf9;
   width: 53rem; }
+  @media screen and (max-width: 768px) {
+    .reviews__display {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: auto;
+      width: auto; } }
   .reviews__display::before {
     content: "";
     display: block;
@@ -694,6 +907,10 @@ template {
 .reviews__avatar {
   width: 14.111rem;
   height: 14.444rem; }
+  @media screen and (max-width: 768px) {
+    .reviews__avatar {
+      width: 130px;
+      height: 132px; } }
 
 .reviews__avatar-img {
   -o-object-fit: cover;
@@ -702,28 +919,50 @@ template {
   height: 100%;
   margin-top: -0.555rem;
   margin-left: 3.111rem; }
+  @media screen and (max-width: 768px) {
+    .reviews__avatar-img {
+      margin-top: 9px;
+      margin-left: 4px; } }
 
 .reviews__content {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
   margin-left: 3.721rem; }
+  @media screen and (max-width: 768px) {
+    .reviews__content {
+      padding-top: 28px;
+      margin-left: 0px; } }
 
 .reviews__title {
   font-size: 1.666rem;
   font-weight: bold;
   margin-bottom: 0.944rem;
   color: black; }
+  @media screen and (max-width: 768px) {
+    .reviews__title {
+      font-size: 30px; } }
 
 .reviews__text {
   margin-bottom: 1.499rem;
   width: 24.166rem;
   line-height: 1.2; }
+  @media screen and (max-width: 768px) {
+    .reviews__text {
+      margin-bottom: 0px;
+      width: 37.166rem; } }
+  @media screen and (max-width: 480px) {
+    .reviews__text {
+      padding: 0 144px; } }
 
 .reviews__author {
   font-size: 1rem;
   font-weight: bold;
   color: black; }
+  @media screen and (max-width: 768px) {
+    .reviews__author {
+      margin-bottom: 20px;
+      font-size: 19px; } }
 
 .reviews__switcher {
   display: -webkit-box;
@@ -740,6 +979,9 @@ template {
   align-items: center;
   padding-top: 0.777rem;
   padding-left: 1.499rem; }
+  @media screen and (max-width: 768px) {
+    .reviews__switcher {
+      padding-top: 17px; } }
 
 .reviews__container {
   height: 26.777rem;
@@ -781,11 +1023,28 @@ template {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 3.555rem; }
+  @media screen and (max-width: 768px) {
+    .form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 0 17%; } }
+  @media screen and (max-width: 480px) {
+    .form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 0; } }
   .form::after {
     position: absolute;
     content: url("/img/decor/ягода90.png");
     left: 1.111rem;
     top: 95%; }
+    @media screen and (max-width: 480px) {
+      .form::after {
+        display: none; } }
 
 .form__col {
   /* display: flex; */
@@ -793,6 +1052,9 @@ template {
   -ms-flex: 1;
   flex: 1;
   margin-right: 1.111rem; }
+  @media screen and (max-width: 768px) {
+    .form__col {
+      margin-right: 0; } }
   .form__col:last-child {
     margin-right: 0; }
 
@@ -828,27 +1090,41 @@ template {
   border: none;
   padding: 1rem 0.610rem;
   border: solid 0.166rem transparent; }
+  @media screen and (max-width: 768px) {
+    .form__input {
+      padding: 0.4rem 0.610rem;
+      border: solid 3px transparent; } }
   .form__input--textarea {
     height: 10rem;
     resize: none; }
+  @media screen and (max-width: 768px) {
+    .form__input--textarea {
+      height: 5rem; } }
   .form__input:focus {
     border-color: #dee2bd;
     outline: none; }
-
-.form__input {
-  width: 100%;
-  border: none;
-  padding: 1rem 0.610rem;
-  border: solid 0.166rem transparent; }
 
 .form__controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0; }
+  @media screen and (max-width: 480px) {
+    .form__controls {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .form__btns {
   margin-top: 1.55rem; }
+  @media screen and (max-width: 768px) {
+    .form__btns {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .radio {
   display: -webkit-box;
@@ -860,6 +1136,9 @@ template {
   -ms-user-select: none;
   user-select: none;
   margin-right: 0.888rem; }
+  @media screen and (max-width: 480px) {
+    .radio {
+      margin-bottom: rem(10px); } }
   .radio--checkbox .radio__visible {
     border-radius: 0; }
     .radio--checkbox .radio__visible:before {
@@ -926,3 +1205,82 @@ template {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+
+.hamburger {
+  width: 25px;
+  height: 21px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; } }
+
+.hamburger__plank {
+  display: block;
+  background: #ffffff;
+  height: 4px;
+  border-radius: 7px; }
+
+.contacts {
+  font-style: normal;
+  font-size: rem(20px);
+  color: #010101; }
+  @media screen and (max-width: 480px) {
+    .contacts {
+      margin-bottom: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+
+.contacts__phone {
+  color: #0b4d3c; }
+
+.map {
+  width: 100%;
+  margin-left: 209px; }
+  @media screen and (max-width: 480px) {
+    .map {
+      margin-left: 0; } }
+  @media screen and (max-width: 768px) {
+    .map {
+      margin-left: 5px; } }
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+  height: 62px;
+  width: 36px;
+  background: center center no-repeat; }
+
+.socials__item {
+  margin-right: 6px; }
+
+.socials__item:last-child {
+  margin-right: 0px; }
+
+.footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }

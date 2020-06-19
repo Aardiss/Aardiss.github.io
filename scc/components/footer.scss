@@ -1,0 +1,19 @@
+.socials__link {
+  display: block;
+  text-decoration: none;
+  height: 62px;
+  width: 36px;
+  background: center center no-repeat;
+}
+.socials__item {
+  margin-right: 6px;
+}
+.socials__item:last-child {
+  margin-right: 0px;
+}
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

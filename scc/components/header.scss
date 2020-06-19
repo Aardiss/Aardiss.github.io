@@ -1,12 +1,24 @@
+@import "./media.scss";
+
 .header {
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
-}
-@include tablets {
-  display: none;
+  align-items: flex-start;
+
+  @include phones {
+    position: relative;
+  }
 }
  .phone-number.header__phone-number {
+  @include tablets {
+    display: none;
+  }
+}
+.menu {
+  margin: 0 30px;
+  padding-top: 5px;
+  
   @include tablets {
     display: none;
   }
@@ -14,15 +26,19 @@
 .menu__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .menu__item {
   margin-right: 1.687rem;
+  margin-bottom: 10px;
   &:last-child {
     margin-right: 0;
   }
 }
 .menu__link {
   text-decoration: none;
+  white-space: nowrap;
 }
 .phone-number {
   font-size: 1.333rem;
@@ -34,4 +50,10 @@
   width: 0.666rem;
   height: 0.666rem;
   margin-right: 0.333rem;
+}
+.phone-number__text {
+  white-space: nowrap;
+}
+.phone-number__icon {
+  flex-shrink: 0;
 }

@@ -1,0 +1,6 @@
+.map {
+  width: 100%;
+  margin-left: 209px; }
+  @media screen and (max-width: 480px) {
+    .map {
+      margin-left: 0; } }

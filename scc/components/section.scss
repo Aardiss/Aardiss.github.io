@@ -28,30 +28,72 @@
     background: url("/img/decor/Ягода.png") top 1.777rem right 12.166rem  no-repeat;
     margin-bottom: 2.055rem;
 
+    @include tablets {
+        background: none;
+        background: url("/img/decor/Ягода.png") top 0px right -32px no-repeat;
+        margin-bottom: 65px;
+    }
     &::before {
         position: absolute;
         content: url("/img/decor/Узор.png");
        top: 68%;
+
+       @include tablets {
+        top:70%;
+      }
+
+      @include phones {
+        top:63%;
+      }
     } 
     &::after {
         position: absolute;
         content: url("/img/decor/Ягоды.png");
         top: 70%;
+
+       @include tablets {
+        top:74%;
+      }
+
+      @include phones {
+        top: 68%;
+      }
     }
 }
 .order-section {
     background: url("/img/decor/паттерн.png") center no-repeat;
+    
+    @include tablets {
+        height: 1000px;
+        background: url("/img/decor/паттерн.png") center navajowhite;
+   }
+
     &::before {
         position: absolute;
         content: url("/img/decor/Ежевика_фото.png");
         right: 0;
        top: 70%;
+       
+       @include tablets {
+           content: none;
+           content: url("/img/decor/Ежевика_фото2.png");
+           top: 73%;
+      }
+
+      @include phones {
+        display: none;
+      }
     } 
     &::after {
         position: absolute;
         content: url("/img/decor/лист90.png");
         right: 0;
         top: 90%;
+    
+        @include phones {
+            display: none;
+        }
+    
     }
     min-height: 35rem;
 }
@@ -62,4 +104,9 @@
     margin-bottom: 2.222rem;
     text-align: center;
     color: $darkGreen;
+
+    @include tablets {
+        margin-top: 0.777rem;
+        margin-bottom: 1.222rem;
+   }
 }

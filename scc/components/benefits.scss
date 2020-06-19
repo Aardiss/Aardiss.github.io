@@ -1,11 +1,28 @@
+@import "media.scss";
+
 .benefits {
     display: flex;
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .benefits__item {
     flex: 1;
     margin: 0;
     position: relative;
+
+        @include phones {
+            padding: 0;
+            margin-bottom: 19px;
+                    
+        }
+
+    @include tablets {
+        &::before {
+            display: none;
+        }
+    }
 
     &::before {
         content: url("/img/decor/2.png");

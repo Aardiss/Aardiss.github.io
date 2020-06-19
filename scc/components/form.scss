@@ -1,18 +1,36 @@
+@import "./media.scss";
+
 .form {
   display: flex;
   padding-bottom: 3.555rem;
 
+  @include tablets {
+  flex-direction: column;
+  padding: 0 17%;
+  }
+  @include phones {
+  flex-direction: column;
+  padding: 0;
+  }
   &::after {
     position: absolute;
     content: url("/img/decor/ягода90.png");
     left: 1.111rem;
    top: 95%;
+
+   @include phones {
+     display: none;
+   }
 } 
 }
 .form__col {
   /* display: flex; */
   flex: 1;
   margin-right: 1.111rem;
+
+  @include tablets {
+    margin-right: 0;
+    }
 
   &:last-child {
     margin-right: 0;
@@ -47,28 +65,40 @@
   // border: solid #dee2bd;
   border: solid 0.166rem transparent;
 
+  @include tablets {
+    padding: 0.4rem 0.610rem;
+    border: solid 3px transparent;
+ }
+
   &--textarea {
     height: 10rem;
     resize: none;
   }
- 
+    @include tablets {
+      &--textarea {
+      height: 5rem;
+      }
+    }
+  
   &:focus {
     border-color: #dee2bd;
     outline: none;
   }
 }
-.form__input {
-  width: 100%;
-  border: none;
-  padding: 1rem 0.610rem;
-  // border: solid #dee2bd;
-  border: solid 0.166rem transparent;
-}
 .form__controls {
   display: flex;
   // flex-wrap: wrap;
   margin-bottom: 0;
+
+  @include phones {
+    justify-content: center;
+  }
 }
 .form__btns {
   margin-top: 1.55rem;
+
+  @include tablets {
+  display: flex;
+  justify-content: center;
+  }
 }

@@ -1,0 +1,13 @@
+@import "media.scss";
+
+.map {
+  width: 100%;
+  margin-left: 209px;
+
+  @include phones {
+    margin-left: 0;
+  }
+  @include tablets {
+    margin-left: 5px;
+  }
+}

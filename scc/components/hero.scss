@@ -1,4 +1,5 @@
 @import "../layout/colors.scss";
+@import "./media.scss";
 
 .hero {
   background: url("/img/decor/узорs.png") right 0 no-repeat;
@@ -10,6 +11,7 @@
 
   @include tablets {
     background-position: right bottom 88%;
+    height: 1000px;
   }
 
   &::before, &::after {
@@ -21,6 +23,25 @@
 .hero__title-section {
   width: 46%;
 
+  @include phones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    text-align: center;
+    width: 465px;
+  }
+    &::before {
+    content: "";
+    width: 516px;
+    height: 330px;
+    position: absolute;
+    right: 30%;
+    // background: url("/img/decor/Картинки.png") center center/contain no-repeat;
+    top: 8%;
+    }
+  
+
   @include tablets {
    width: 100%;
    flex: 1;
@@ -29,11 +50,19 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-
+   
    &::before {
-     content: url("/img/decor/Картинки.png");
+     content: "";
+     width: 633px;
+     height: 408px;
+     position: absolute;
+     right: 27%;
+     background: url("/img/decor/Картинки.png") center center /contain no-repeat;
+     top: 16%;
    }
 }
+}
+
 .hero__icons-section {
  @include tablets {
    display: none;
@@ -51,7 +80,11 @@
       background: none;
     }
   
-  
+    &::before, &::after {
+      @include tablets {
+        display: none;
+      }
+    }
   &::before {
     position: absolute;
       bottom: 3.944rem;
@@ -65,6 +98,10 @@
     content: url("/img/decor/Ягоды_и_листья.png");
     width: 100%;
   }
+
+  @include phones {
+    margin: 5px 5px;
+  }
 }
 .hero__main-title {
   font-size: 2.666rem;
@@ -72,6 +109,17 @@
   font-weight: bold;
   margin-bottom: 0rem;
   text-transform: uppercase;
+
+   @include phones {
+     margin-top: 165px;
+     letter-spacing: -1.9px;
+
+   }
+
+  @include tablets {
+    margin-top: 348px;
+    letter-spacing: 0.001em;
+  }
 }
 .hero__title-desc {
   font-size: 1.166rem;
@@ -79,6 +127,12 @@
   padding-right: 21%;
 
   @include tablets {
+    margin-top: 23px;
     padding: 0 25%;
+    letter-spacing: 0.001em;
+  }
+
+  @include phones {
+  padding: 0 17%;
   }
 }

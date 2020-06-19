@@ -1,0 +1,20 @@
+.contacts {
+  font-style: normal;
+  font-size: rem(20px);
+  color: #010101; }
+  @media screen and (max-width: 480px) {
+    .contacts {
+      margin-bottom: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+
+.contacts__phone {
+  color: #0b4d3c; }

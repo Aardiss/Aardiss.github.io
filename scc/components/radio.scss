@@ -1,8 +1,14 @@
+@import "media.scss";
+
 .radio {
   display: flex;
   cursor: pointer;
   user-select: none;
   margin-right: 0.888rem;
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 
   &--checkbox {
     .radio__visible {

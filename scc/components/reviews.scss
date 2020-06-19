@@ -8,6 +8,14 @@
   background: url("/img/decor/Слой_2.png") right top no-repeat #f8faf9;
   width: 53rem;
 
+ @include tablets {
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   height: auto;
+   width: auto;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -24,6 +32,11 @@
 .reviews__avatar {
   width: 14.111rem;
   height: 14.444rem;
+
+  @include tablets {
+    width: 130px;
+    height: 132px;
+  }
 }
 .reviews__avatar-img {
   object-fit: cover;
@@ -31,26 +44,54 @@
   height: 100%;
   margin-top: -0.555rem;
   margin-left: 3.111rem;
+
+  @include tablets {
+    margin-top: 9px;
+    margin-left: 4px;
+  }
 }
 .reviews__content {
   flex: 1;
   margin-left: 3.721rem;
+
+  @include tablets {
+    padding-top: 28px;
+    margin-left: 0px;
+  }
 }
 .reviews__title {
   font-size: 1.666rem;
   font-weight: bold;
   margin-bottom: 0.944rem;
   color: black;
+
+  @include tablets {
+    font-size: 30px;
+  }
 }
 .reviews__text {
   margin-bottom: 1.499rem;
   width: 24.166rem;
   line-height: 1.2;
+
+  @include tablets {
+  margin-bottom: 0px;
+  width: 37.166rem;
+  }
+
+  @include phones {
+    padding: 0 144px;
+   }
 }
 .reviews__author {
   font-size: 1rem;
   font-weight: bold;
   color: black;
+
+  @include tablets {
+    margin-bottom: 20px;
+    font-size: 19px;
+  }
 }
 .reviews__switcher {
   display: flex;
@@ -59,6 +100,10 @@
   align-items: center;
   padding-top: 0.777rem;
   padding-left: 1.499rem;
+
+  @include tablets {
+    padding-top: 17px;
+  }
 }
 .reviews__container {
   height: 26.777rem;
