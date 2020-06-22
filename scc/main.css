@@ -837,7 +837,7 @@ template {
       background: url("/img/decor/паттерн.png") center navajowhite; } }
   @media screen and (max-width: 480px) {
     .order-section {
-      height: 39.888rem; } }
+      height: 41.888rem; } }
   .order-section::before {
     position: absolute;
     content: url("/img/decor/Ежевика_фото.png");
