@@ -13,12 +13,16 @@
   padding: 0;
   }
   &::after {
+    @media screen and (min-width: 768px) {
     position: absolute;
     content: url("/img/decor/ягода90.png");
     left: 1.111rem;
-   top: 95%;
-
+   top: 70%;
+    }
    @include phones {
+     display: none;
+   }
+   @include tablets{
      display: none;
    }
 } 
@@ -100,5 +104,8 @@
   @include tablets {
   display: flex;
   justify-content: center;
+  }
+  @include phones {
+ 
   }
 }

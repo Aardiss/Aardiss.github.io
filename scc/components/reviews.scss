@@ -1,12 +1,15 @@
+@import "./media.scss";
+
 .reviews__display {
   // background-color: #f8faf9;
-  height: 18.888rem;
-  padding-top: 3.444rem;
+  // height: 18.888rem;
+  // padding-top: 3.444rem;
+    // width: 53rem;
   overflow: hidden;
   position: relative;
   display: flex;
   background: url("/img/decor/Слой_2.png") right top no-repeat #f8faf9;
-  width: 53rem;
+  padding: 50px 180px 34px 45px;
 
  @include tablets {
    flex-direction: column;
@@ -14,6 +17,7 @@
    align-items: center;
    height: auto;
    width: auto;
+   padding-left: 160px;
   }
 
   &::before {
@@ -32,6 +36,7 @@
 .reviews__avatar {
   width: 14.111rem;
   height: 14.444rem;
+  flex-shrink: 0;
 
   @include tablets {
     width: 130px;
@@ -46,8 +51,7 @@
   margin-left: 3.111rem;
 
   @include tablets {
-    margin-top: 9px;
-    margin-left: 4px;
+    margin-left: 0;
   }
 }
 .reviews__content {
@@ -55,7 +59,7 @@
   margin-left: 3.721rem;
 
   @include tablets {
-    padding-top: 28px;
+    margin-top: 28px;
     margin-left: 0px;
   }
 }
@@ -76,11 +80,10 @@
 
   @include tablets {
   margin-bottom: 0px;
-  width: 37.166rem;
   }
 
   @include phones {
-    padding: 0 144px;
+    padding: 0 40px;
    }
 }
 .reviews__author {
@@ -98,8 +101,6 @@
   flex: 1;
   justify-content: center;
   align-items: center;
-  padding-top: 0.777rem;
-  padding-left: 1.499rem;
 
   @include tablets {
     padding-top: 17px;

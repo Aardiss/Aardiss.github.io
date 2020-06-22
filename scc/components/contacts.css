@@ -1,7 +1,10 @@
 .contacts {
   font-style: normal;
-  font-size: rem(20px);
-  color: #010101; }
+  font-weight: 400;
+  font-size: rem(21px);
+  color: #010101;
+  margin-left: 50px;
+  margin-top: 20px; }
   @media screen and (max-width: 480px) {
     .contacts {
       margin-bottom: 10px;
@@ -15,6 +18,3 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; } }
-
-.contacts__phone {
-  color: #0b4d3c; }

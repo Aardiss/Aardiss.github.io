@@ -25,11 +25,13 @@
     }
 
     &::before {
-        content: url("/img/decor/2.png");
-    position: absolute;
-    top: 2.777rem;
-    right: 0;
-    transform: translateX(50%);
+        @media screen and (min-width: 768px) {
+            content: url("/img/decor/2.png");
+            position: absolute;
+            top: 2.777rem;
+            right: 0;
+            transform: translateX(50%);
+            }
     }
 
     &:first-child {

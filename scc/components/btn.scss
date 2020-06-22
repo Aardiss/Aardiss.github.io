@@ -16,13 +16,12 @@
   &--theme--white {
     background: #fff;
     color: $darkGreen;
-    position: absolute;
 
     @include tablets {
-      margin-top: 562px;
+      
     }
     @include phones {
-      margin-top: 575px;
+      
       
     }
 

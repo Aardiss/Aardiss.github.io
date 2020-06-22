@@ -1,0 +1,158 @@
+.socials {
+  margin-left: 105px;
+  width: 187px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+  height: 62px;
+  width: 36px;
+  background: center center no-repeat; }
+
+.socials__item {
+  margin-right: 6px; }
+
+.socials__item:last-child {
+  margin-right: 0px; }
+
+.footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.footer__container {
+  margin: 0px; }
+
+.socials__item--vk .socials__link::before {
+  content: "";
+  display: block;
+  top: 20%;
+  left: 5%;
+  -webkit-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url("/img/icons/vk.svg");
+  opacity: 0; }
+
+.socials__item--vk .socials__link::after {
+  content: "";
+  display: block;
+  top: 20%;
+  left: 5%;
+  -webkit-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url("/img/icons/vk.svg");
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+
+.socials__item--fb .socials__link::before {
+  content: "";
+  display: block;
+  top: 20%;
+  left: 5%;
+  -webkit-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url("/img/icons/f.svg") -66px -122px;
+  opacity: 0; }
+
+.socials__item--fb .socials__link::after {
+  content: "";
+  display: block;
+  top: 20%;
+  left: 5%;
+  -webkit-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url("/img/icons/fb_hover.svg");
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+
+.socials__item--inst .socials__link::before {
+  content: "";
+  display: block;
+  top: 20%;
+  left: 5%;
+  -webkit-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url("/img/icons/in.svg");
+  opacity: 0; }
+
+.socials__item--inst .socials__link::after {
+  content: "";
+  display: block;
+  top: 20%;
+  left: 5%;
+  -webkit-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url("/img/icons/inst.svg");
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+
+.socials__item--tw .socials__link::before {
+  content: "";
+  display: block;
+  top: 20%;
+  left: 5%;
+  -webkit-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url("/img/icons/tv.svg");
+  opacity: 0; }
+
+.socials__item--tw .socials__link::after {
+  content: "";
+  display: block;
+  top: 20%;
+  left: 5%;
+  -webkit-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url("/img/icons/twitter.svg");
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }

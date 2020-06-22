@@ -1,19 +1,28 @@
-.socials__link {
-  display: block;
-  text-decoration: none;
-  height: 62px;
-  width: 36px;
-  background: center center no-repeat;
-}
-.socials__item {
-  margin-right: 6px;
-}
-.socials__item:last-child {
-  margin-right: 0px;
-}
 .footer {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: end;
+    height: 165px;
+    text-align: center;  
+   }
+}
+.footer__container {
+  margin: 0px;  
+  max-width: none;
+}
+.footer-container__section {
+  min-height: 140px;
+  margin-top: 12px;
+}
+.footer__col {
+  display: flex;
+  align-items: center;
+  // justify-content: flex-end;
 }

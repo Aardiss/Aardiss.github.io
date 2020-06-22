@@ -1,7 +1,8 @@
 @import "../layout/colors.scss";
+@import "media.scss";
 
 .section {
-    height: 100vp;
+    height: 100vh;
     min-height: 36.111rem;
     display: flex;
     flex-direction: column;
@@ -22,7 +23,6 @@
     margin-bottom: 0rem;
     text-align: center;
     color: #000000;
-    
 }
 .section__reviews {
     background: url("/img/decor/Ягода.png") top 1.777rem right 12.166rem  no-repeat;
@@ -31,12 +31,18 @@
     @include tablets {
         background: none;
         background: url("/img/decor/Ягода.png") top 0px right -32px no-repeat;
-        margin-bottom: 65px;
+        margin-bottom: 109px;
+        margin-top: 95px;
+    }
+    @include phones {
+        margin-bottom: 148px;
+        margin-top: 200px;
     }
     &::before {
         position: absolute;
         content: url("/img/decor/Узор.png");
        top: 68%;
+       display: none;
 
        @include tablets {
         top:70%;
@@ -50,6 +56,7 @@
         position: absolute;
         content: url("/img/decor/Ягоды.png");
         top: 70%;
+        display: none;
 
        @include tablets {
         top:74%;
@@ -61,11 +68,14 @@
     }
 }
 .order-section {
-    background: url("/img/decor/паттерн.png") center no-repeat;
+    background: url("/img/decor/паттерн.png") center center;
     
     @include tablets {
         height: 1000px;
         background: url("/img/decor/паттерн.png") center navajowhite;
+   }
+    @include phones {
+        height: 700px;
    }
 
     &::before {
@@ -73,6 +83,7 @@
         content: url("/img/decor/Ежевика_фото.png");
         right: 0;
        top: 70%;
+       display: none;
        
        @include tablets {
            content: none;
@@ -88,9 +99,12 @@
         position: absolute;
         content: url("/img/decor/лист90.png");
         right: 0;
-        top: 90%;
+        top: 67%;
     
         @include phones {
+            display: none;
+        }
+        @include tablets {
             display: none;
         }
     

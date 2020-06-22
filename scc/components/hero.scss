@@ -5,13 +5,14 @@
   background: url("/img/decor/узорs.png") right 0 no-repeat;
   background-color: $blue;
   height: 36.499rem;
-  min-width: 36.111rem;
   color: #ffffff;
   position: relative;
 
-  @include tablets {
+  @include tablets { 
+    @media screen and (min-width: 480px) {
     background-position: right bottom 88%;
     height: 1000px;
+    }
   }
 
   &::before, &::after {
@@ -19,28 +20,14 @@
       display: none;
     }
   }
+  @include phones {
+    height: 794px;
+     background: url("/img//decor/узорs3.png") right 7%  no-repeat;
+     background-color: $blue; 
+  }
 }
 .hero__title-section {
   width: 46%;
-
-  @include phones {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex: 1;
-    text-align: center;
-    width: 465px;
-  }
-    &::before {
-    content: "";
-    width: 516px;
-    height: 330px;
-    position: absolute;
-    right: 30%;
-    // background: url("/img/decor/Картинки.png") center center/contain no-repeat;
-    top: 8%;
-    }
-  
 
   @include tablets {
    width: 100%;
@@ -61,6 +48,23 @@
      top: 16%;
    }
 }
+@include phones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+  text-align: center;
+
+  &::before {
+  content: "";
+  width: 98%;
+  height: 44%;
+  position: absolute;
+  right: 23%;
+  // background: url("/img/decor/Картинки.png") center center/contain no-repeat;
+  top: 8%;
+  }
+}
 }
 
 .hero__icons-section {
@@ -75,6 +79,7 @@
   height: 100%;
   padding: 1.333rem 0 2.499rem;
   position: relative;
+  z-index: 1;
 
     @include tablets {
       background: none;
@@ -86,21 +91,28 @@
       }
     }
   &::before {
+    @media screen and (min-width: 769px) {
     position: absolute;
       bottom: 3.944rem;
       left: 27.166rem;
+      // bottom: 12.944rem;
+      // left: -16px;
       content: url("/img/decor/Батончики.png");
     }
+    }
   &::after {
+    @media screen and (min-width: 769px) {
     position: absolute;
     bottom: -2.721rem;
     left: -2.777rem;
     content: url("/img/decor/Ягоды_и_листья.png");
     width: 100%;
+    z-index: -1;
+    }
   }
 
   @include phones {
-    margin: 5px 5px;
+  
   }
 }
 .hero__main-title {
@@ -110,20 +122,19 @@
   margin-bottom: 0rem;
   text-transform: uppercase;
 
-   @include phones {
-     margin-top: 165px;
-     letter-spacing: -1.9px;
-
-   }
-
   @include tablets {
     margin-top: 348px;
     letter-spacing: 0.001em;
   }
+  @include phones {
+    margin-top: 328px;
+    letter-spacing: -1.9px;
+    line-height: 33px;
+  }
 }
 .hero__title-desc {
   font-size: 1.166rem;
-  margin-bottom: 3.111rem;
+  margin-bottom: 11px;
   padding-right: 21%;
 
   @include tablets {
@@ -133,6 +144,7 @@
   }
 
   @include phones {
-  padding: 0 17%;
+  padding: 0 14%;
+  margin-bottom: 14px;
   }
 }
