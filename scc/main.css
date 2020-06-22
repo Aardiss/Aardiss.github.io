@@ -588,7 +588,7 @@ template {
   .hero__main-title {
     margin-top: 18.222rem;
     letter-spacing: -1.9px;
-    line-height: 1.833rem;
+    line-height: 2.833rem;
   }
 }
 
@@ -1009,7 +1009,7 @@ template {
 }
 @media screen and (max-width: 480px) {
   .order-section {
-    height: 38.888rem;
+    height: 39.888rem;
   }
 }
 .order-section::before {
