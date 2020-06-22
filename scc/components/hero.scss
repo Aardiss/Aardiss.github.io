@@ -40,8 +40,8 @@
    
    &::before {
      content: "";
-     width: 633px;
-     height: 408px;
+     width: 35.166rem;
+     height: 22.666rem;
      position: absolute;
      right: 27%;
      background: url("/img/decor/Картинки.png") center center /contain no-repeat;
@@ -123,28 +123,28 @@
   text-transform: uppercase;
 
   @include tablets {
-    margin-top: 348px;
+    margin-top: 19.333rem;
     letter-spacing: 0.001em;
   }
   @include phones {
-    margin-top: 328px;
+    margin-top: 18.222rem;
     letter-spacing: -1.9px;
-    line-height: 33px;
+    line-height: 1.833rem;
   }
 }
 .hero__title-desc {
   font-size: 1.166rem;
-  margin-bottom: 11px;
+  margin-bottom: 0.611rem;
   padding-right: 21%;
 
   @include tablets {
-    margin-top: 23px;
+    margin-top: 1.277rem;
     padding: 0 25%;
     letter-spacing: 0.001em;
   }
 
   @include phones {
   padding: 0 14%;
-  margin-bottom: 14px;
+  margin-bottom: 0.777rem;
   }
 }

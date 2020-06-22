@@ -3,11 +3,11 @@
     margin-bottom: 2.777rem;
 
     @include tablets {
-        margin-top: 102px;
+        margin-top: 5.666rem;
     }
 
     @include phones {
-        margin-top: 248px;
+        margin-top: 13.777rem;
     }
 }
 
@@ -19,7 +19,7 @@
     padding: 0 26%;
 
     @include tablets {
-        padding: 0 150px;
+        padding: 0 8.333rem;
     }
 
     @include phones {

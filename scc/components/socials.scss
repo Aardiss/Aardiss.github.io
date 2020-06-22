@@ -2,13 +2,13 @@
 
 .socials {
   // margin-left: 105px;
-  width: 140px;
+  width: 7.777rem;
   display: flex;
   align-items: center;
   position: relative;
 
   @include phones {
-    margin-bottom: 50px;
+    margin-bottom: 2.777rem;
   }
 }
 .socials__link {
@@ -19,10 +19,10 @@
   background: center center no-repeat;
 }
 .socials__item {
-  margin-right: 6px;
+  margin-right: 0.333rem;
 }
 .socials__item:last-child {
-  margin-right: 0px;
+  margin-right: 0rem;
 }
 // .socials__item--vk .socials__link::before {
 //   content: "";

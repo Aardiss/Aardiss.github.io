@@ -17,7 +17,7 @@
    align-items: center;
    height: auto;
    width: auto;
-   padding-left: 160px;
+   padding-left: 8.888rem;
   }
 
   &::before {
@@ -39,8 +39,8 @@
   flex-shrink: 0;
 
   @include tablets {
-    width: 130px;
-    height: 132px;
+    width: 7.222rem;
+    height: 7.333rem;
   }
 }
 .reviews__avatar-img {
@@ -59,7 +59,7 @@
   margin-left: 3.721rem;
 
   @include tablets {
-    margin-top: 28px;
+    margin-top: 1.555rem;
     margin-left: 0px;
   }
 }
@@ -79,11 +79,11 @@
   line-height: 1.2;
 
   @include tablets {
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
   }
 
   @include phones {
-    padding: 0 40px;
+    padding: 0 2.222rem;
    }
 }
 .reviews__author {
@@ -92,7 +92,7 @@
   color: black;
 
   @include tablets {
-    margin-bottom: 20px;
+    margin-bottom: 1.111rem;
     font-size: 19px;
   }
 }
@@ -103,7 +103,7 @@
   align-items: center;
 
   @include tablets {
-    padding-top: 17px;
+    padding-top: 0.944rem;
   }
 }
 .reviews__container {

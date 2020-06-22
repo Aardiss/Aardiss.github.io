@@ -4,7 +4,7 @@
 
   @include tablets {
     @media screen and (min-width: 480px) {
-    padding-top: 277px;
+    padding-top: 15.388rem;
     background: url("/img/decor/узор_лист.png") left 0 top 17% no-repeat;
   }
 }
@@ -20,7 +20,7 @@
     bottom: -6.277rem;
 
     @include tablets {
-      bottom: -141px;
+      bottom: -7.833rem;
     }
     @include phones {
       display: none;

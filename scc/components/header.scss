@@ -24,8 +24,8 @@
   // }
 }
 .menu {
-  margin: 0 30px;
-  padding-top: 5px;
+  margin: 0 1.666rem;
+  padding-top: 0.2777rem;
   
   @include tablets {
     display: none;
@@ -39,7 +39,7 @@
 }
 .menu__item {
   margin-right: 1.687rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.555rem;
   &:last-child {
     margin-right: 0;
   }

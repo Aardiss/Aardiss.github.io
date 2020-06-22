@@ -30,13 +30,13 @@
 
     @include tablets {
         background: none;
-        background: url("/img/decor/Ягода.png") top 0px right -32px no-repeat;
-        margin-bottom: 109px;
-        margin-top: 95px;
+        background: url("/img/decor/Ягода.png") top 0rem right -1.777rem no-repeat;
+        margin-bottom: 6.055rem;
+        margin-top: 5.277rem;
     }
     @include phones {
-        margin-bottom: 148px;
-        margin-top: 200px;
+        margin-bottom: 8.222rem;
+        margin-top: 11.111rem;
     }
     &::before {
         position: absolute;
@@ -71,11 +71,11 @@
     background: url("/img/decor/паттерн.png") center center;
     
     @include tablets {
-        height: 1000px;
+        height: 55.555rem;
         background: url("/img/decor/паттерн.png") center navajowhite;
    }
     @include phones {
-        height: 700px;
+        height: 38.888rem;
    }
 
     &::before {
