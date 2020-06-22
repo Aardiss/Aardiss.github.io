@@ -105,6 +105,9 @@
   @include tablets {
     padding-top: 0.944rem;
   }
+  @include phones {
+    padding-top: 1.944rem;
+  }
 }
 .reviews__container {
   height: 26.777rem;

@@ -1010,6 +1010,9 @@ template {
   @media screen and (max-width: 768px) {
     .reviews__switcher {
       padding-top: 0.944rem; } }
+  @media screen and (max-width: 480px) {
+    .reviews__switcher {
+      padding-top: 1.944rem; } }
 
 .reviews__container {
   height: 26.777rem;
