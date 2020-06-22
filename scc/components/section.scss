@@ -8,6 +8,13 @@
     flex-direction: column;
     justify-content: center;
 
+    @include tablets {
+        min-height: 59.111rem;
+    }
+    @include phones {
+        
+    }
+
     &--font-color--green {
         color: $darkGreen;
     
@@ -16,23 +23,24 @@
         }
     }
 }
-
 .section__title {
     font-size: 2.666rem;
     font-weight: bold;
     margin-bottom: 0rem;
     text-align: center;
     color: #000000;
+    margin-bottom: 1.111rem;
+
+    @include phones {
+      font-size: 40px;
+    }
 }
 .section__reviews {
     background: url("/img/decor/Ягода.png") top 1.777rem right 12.166rem  no-repeat;
-    margin-bottom: 2.055rem;
 
     @include tablets {
         background: none;
         background: url("/img/decor/Ягода.png") top 0rem right -1.777rem no-repeat;
-        margin-bottom: 6.055rem;
-        margin-top: 5.277rem;
     }
     @include phones {
         margin-bottom: 8.222rem;
@@ -122,5 +130,8 @@
     @include tablets {
         margin-top: 0.777rem;
         margin-bottom: 1.222rem;
+   }
+    @include phones {
+       font-size: 40px;
    }
 }

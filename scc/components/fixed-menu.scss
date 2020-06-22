@@ -1,5 +1,5 @@
 @import "../layout/variables.scss";
-
+@media screen and (min-width: 768px) {
 .fixed-menu {
   position: fixed;
   top: 20%;
@@ -34,4 +34,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
 }

@@ -1,16 +1,7 @@
 .headline {
     text-align: center;
     margin-bottom: 2.777rem;
-
-    @include tablets {
-        margin-top: 5.666rem;
-    }
-
-    @include phones {
-        margin-top: 13.777rem;
-    }
 }
-
 .headline__title {
     margin-bottom: 1.388rem;
 }

@@ -39,9 +39,9 @@
 }
 
 .benefit__text {
-    margin-top: 1.111rem;
+    padding-top: 1.111rem;
 
     @include phones {
-        padding-left: 0.777rem;
+        margin-left: 0.777rem;
     }
 }

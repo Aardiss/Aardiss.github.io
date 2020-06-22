@@ -1,5 +1,8 @@
 @import "./media.scss";
 
+.reviews {
+  margin-bottom: 26px;
+}
 .reviews__display {
   // background-color: #f8faf9;
   // height: 18.888rem;
@@ -9,7 +12,7 @@
   position: relative;
   display: flex;
   background: url("/img/decor/Слой_2.png") right top no-repeat #f8faf9;
-  padding: 50px 180px 34px 45px;
+  padding: 53px 22px 31px 22px;
 
  @include tablets {
    flex-direction: column;
@@ -17,7 +20,6 @@
    align-items: center;
    height: auto;
    width: auto;
-   padding-left: 8.888rem;
   }
 
   &::before {
@@ -47,16 +49,14 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  margin-top: -0.555rem;
-  margin-left: 3.111rem;
 
   @include tablets {
-    margin-left: 0;
+    
   }
 }
 .reviews__content {
   flex: 1;
-  margin-left: 3.721rem;
+  margin-left: 18px;
 
   @include tablets {
     margin-top: 1.555rem;
@@ -75,7 +75,6 @@
 }
 .reviews__text {
   margin-bottom: 1.499rem;
-  width: 24.166rem;
   line-height: 1.2;
 
   @include tablets {
@@ -110,8 +109,8 @@
   }
 }
 .reviews__container {
-  height: 26.777rem;
-  padding-top: 1.111rem;
+  // height: 26.777rem;
+  // padding-top: 1.111rem;
   display: flex;
   flex-direction: column;
 }
