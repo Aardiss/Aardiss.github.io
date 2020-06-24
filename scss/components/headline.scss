@@ -1,0 +1,21 @@
+@import "media.scss";
+
+.headline {
+    text-align: center;
+    margin-bottom: 2.777rem;
+}
+.headline__title {
+    margin-bottom: 1.388rem;
+}
+
+.headline__subtitle {
+    padding: 0 26%;
+
+    @include tablets {
+        padding: 0 8.333rem;
+    }
+
+    @include phones {
+        padding: 0 5%;
+            }
+}

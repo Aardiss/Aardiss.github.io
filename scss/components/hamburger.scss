@@ -1,0 +1,20 @@
+@import "media.scss";
+
+.hamburger {
+  width: 1.388rem;
+  height: 1.166rem;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+
+  @include tablets {
+    display: inline-flex;
+  }
+
+}
+.hamburger__plank {
+  display: block;
+  background: #ffffff;
+  height: 4px;
+  border-radius: 7px;
+}
