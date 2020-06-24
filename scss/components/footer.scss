@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 0;
 
   @include phones {
     display: flex;
@@ -16,8 +17,8 @@
    }
 }
 .footer__container {
-  margin: 0px;  
-  max-width: none;
+  // margin: 0px;  
+  // max-width: none;
 }
 .footer-container__section {
   min-height: 7.777rem;

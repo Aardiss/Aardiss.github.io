@@ -1,26 +1,21 @@
 .contacts {
   font-style: normal;
-  font-size: rem(20px);
-  color: #010101;
-  margin-left: 2.777rem;
-  margin-top: 1.111rem;
-}
-@media screen and (max-width: 480px) {
-  .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 0;
-    margin-bottom: 0.555rem;
-  }
-}
+  font-size: 1.111rem;
+  color: #010101; }
+  @media screen and (max-width: 480px) {
+    .contacts {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-left: 0;
+      margin-bottom: 0.555rem; } }
 
 .contacts__place {
   width: 15.555rem;
@@ -28,5 +23,4 @@
   font-size: 1.1666rem;
   font-weight: 400;
   line-height: 23.82px;
-  margin-bottom: 0.555rem;
-}
+  margin-bottom: 0.555rem; }

@@ -1,7 +1,7 @@
 @import "media.scss";
 
 .map__section {
-
+ justify-content: flex-end;
   @include tablets {
     min-height: 0;
   }
