@@ -10,7 +10,7 @@
    }
 }
 .bar__image {
-  background: url("/img/decor/Товар.png") left 30% center  no-repeat ;
+  background: url("/img/decor/батон.png") left 30% center  no-repeat ;
   background-size: contain;
 
   @include tablets {
@@ -46,15 +46,14 @@
   }
 }
   width: 50.111rem;
-  height: 22.444rem;
-  margin-left: 4.666rem;
+  height: 24.444rem;
+  margin-left: 1.666rem;
 }
 .bar__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 2.227rem;
-  margin-top: 4.111rem;
 
   @include tablets {
   margin-right: 0;

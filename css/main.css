@@ -1491,11 +1491,11 @@ template {
       width: auto; } }
 
 .bar__image {
-  background: url("/img/decor/Товар.png") left 30% center no-repeat;
+  background: url("/img/decor/батон.png") left 30% center no-repeat;
   background-size: contain;
   width: 50.111rem;
-  height: 22.444rem;
-  margin-left: 4.666rem; }
+  height: 24.444rem;
+  margin-left: 1.666rem; }
   @media screen and (max-width: 768px) {
     .bar__image {
       height: 18rem;
@@ -1538,8 +1538,7 @@ template {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-left: 2.227rem;
-  margin-top: 4.111rem; }
+  padding-left: 2.227rem; }
   @media screen and (max-width: 768px) {
     .bar__wrapper {
       margin-right: 0;
