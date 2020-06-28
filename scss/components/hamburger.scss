@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   display: none;
+  cursor: pointer;
 
   @include tablets {
     display: inline-flex;
@@ -17,4 +18,78 @@
   background: #ffffff;
   height: 4px;
   border-radius: 7px;
+}
+.hamburger__menu {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #4E4E4E;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: .5s;
+}
+.hamburger__item {
+  margin-bottom: 10px;
+}
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: crimson;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.menu_window {
+  z-index: 1000;
+  opacity: 1;
+}  cursor: pointer;
+}
+.hamburger__menu {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #4E4E4E;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: .5s;
+}
+.hamburger__item {
+  margin-bottom: 10px;
+}
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: crimson;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  line-height: 20px;
+}
+.menu_window {
+  z-index: 1000;
+  opacity: 1;
 }
