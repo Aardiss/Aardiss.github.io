@@ -2,9 +2,10 @@
 
 .form {
   display: flex;
-  padding-bottom: 3.555rem;
+  padding-bottom: 10.555rem;
 
   @include tablets {
+    margin-bottom: 184px;
   flex-direction: column;
   padding: 0 17%;
   }

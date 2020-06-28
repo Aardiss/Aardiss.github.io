@@ -14,8 +14,8 @@
   background-size: contain;
 
   @include tablets {
-    height: 18rem;
-    margin-left: 260px;
+    height: 19rem;
+    margin-left: 113px;
   }
 &::before {
   position: absolute;
@@ -45,9 +45,8 @@
     right: -16%;
   }
 }
-  width: 50.111rem;
-  height: 24.444rem;
-  margin-left: 1.666rem;
+  width: 39.111rem;
+  height: 23.444rem;
 }
 .bar__wrapper {
   display: flex;
@@ -57,7 +56,7 @@
 
   @include tablets {
   margin-right: 0;
-  margin-top: 3rem;
+  margin-top: 1rem;
   text-align: center;
   }
   @include phones {
@@ -138,4 +137,9 @@ margin-bottom: 0.277rem;
     width: auto;
     padding: 0 1.7rem;
    }
+}
+.bar__composition {
+  @include tablets {
+    display: none;
+}
 }

@@ -3,17 +3,17 @@
 
 .section {
     height: 100vh;
-    min-height: 43.111rem;
+    min-height: 36.111rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    // @include tablets {
-    //     min-height: 59.111rem;
-    // }
-    // @include phones {
-        
-    // }
+    @include tablets {
+        min-height: 59.111rem;
+    }
+    @include phones {
+        min-height: 49.111rem;
+    }
 
     &--font-color--green {
         color: $darkGreen;
@@ -89,8 +89,7 @@
     background: url("/img/decor/паттерн.png") center center;
     
     @include tablets {
-        // height: 55.555rem;
-        min-height: auto;
+        min-height: 64.55rem;
         background: url("/img/decor/паттерн.png") center navajowhite;
    }
 //     @include phones {
@@ -128,7 +127,7 @@
         }
     
     }
-    min-height: 35rem;
+    min-height: 44rem;
 }
 .section__title-form {
     font-size: 2.722rem;
