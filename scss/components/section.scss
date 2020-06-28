@@ -3,7 +3,7 @@
 
 .section {
     height: 100vh;
-    min-height: 36.111rem;
+    min-height: 43.111rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +75,16 @@
         top: 68%;
       }
     }
+}   .section__bar {
+    min-height:  36.111rem;
+    background-color:#f8faf9;
+
+    @include tablets {
+        min-height:  48.111rem;
+    }
+    
 }
+
 .order-section {
     background: url("/img/decor/паттерн.png") center center;
     

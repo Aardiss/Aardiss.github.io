@@ -770,7 +770,7 @@ template {
 
 .section {
   height: 100vh;
-  min-height: 36.111rem;
+  min-height: 43.111rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -828,6 +828,13 @@ template {
     @media screen and (max-width: 480px) {
       .section__reviews::after {
         top: 68%; } }
+
+.section__bar {
+  min-height: 36.111rem;
+  background-color: #f8faf9; }
+  @media screen and (max-width: 768px) {
+    .section__bar {
+      min-height: 48.111rem; } }
 
 .order-section {
   background: url("/img/decor/паттерн.png") center center;
@@ -894,7 +901,7 @@ template {
     bottom: -6.277rem; }
     @media screen and (max-width: 768px) {
       .benefits-section::before {
-        bottom: -7.833rem; } }
+        bottom: -4.833rem; } }
     @media screen and (max-width: 480px) {
       .benefits-section::before {
         display: none; } }
@@ -1465,5 +1472,159 @@ template {
   -o-transition: 1s;
   transition: 1s;
   opacity: 100%; }
+
+.bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .bar {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: auto;
+      width: auto; } }
+
+.bar__image {
+  background: url("/img/decor/Товар.png") left 30% center no-repeat;
+  background-size: contain;
+  width: 28.111rem;
+  height: 21.444rem;
+  margin-left: 19.666rem;
+  margin-right: 41px; }
+  @media screen and (max-width: 768px) {
+    .bar__image {
+      height: 18rem;
+      margin-right: 195px; } }
+  .bar__image::before {
+    position: absolute;
+    content: url("/img/decor/Узор_на_фоне.png");
+    right: 0;
+    top: 44%; }
+    @media screen and (max-width: 768px) {
+      .bar__image::before {
+        top: 45%;
+        right: -6%; } }
+    @media screen and (max-width: 480px) {
+      .bar__image::before {
+        top: 53%;
+        right: -14%; } }
+  .bar__image::after {
+    position: absolute;
+    content: url("/img/decor/Ягода-черн.png");
+    right: 0;
+    top: 49%; }
+    @media screen and (max-width: 768px) {
+      .bar__image::after {
+        top: 48%;
+        right: -10%; } }
+    @media screen and (max-width: 480px) {
+      .bar__image::after {
+        top: 57%;
+        right: -16%; } }
+
+.bar__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 2.227rem;
+  margin-right: 15.333rem;
+  margin-top: 4.111rem; }
+  @media screen and (max-width: 768px) {
+    .bar__wrapper {
+      margin-right: 0;
+      margin-top: 3rem;
+      text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .bar__wrapper {
+      margin-top: 38px; } }
+
+.bar__title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.944rem;
+  color: black;
+  line-height: 1.1; }
+  @media screen and (max-width: 768px) {
+    .bar__title {
+      font-size: 28px; } }
+
+.bar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .bar__item {
+      margin-left: 24%; } }
+  @media screen and (max-width: 480px) {
+    .bar__item {
+      margin-left: 16%;
+      margin-top: 41px; } }
+
+.bar__item-info {
+  margin-right: 3rem; }
+
+.bar__item-description {
+  font-size: 2.9rem;
+  font-family: inherit;
+  margin-bottom: 0.944rem;
+  color: black; }
+
+.bar__item-subtitle {
+  margin-bottom: 0.277rem; }
+
+.section-bar__arrow-back {
+  left: 7%; }
+  @media screen and (max-width: 768px) {
+    .section-bar__arrow-back {
+      margin-left: 66px; } }
+  @media screen and (max-width: 480px) {
+    .section-bar__arrow-back {
+      margin-left: 35px; } }
+  @media screen and (max-width: 400px) {
+    .section-bar__arrow-back {
+      margin-left: 10px; } }
+
+.section-bar__arrow-forward {
+  right: 7%; }
+
+.section-bar__arrow {
+  position: absolute;
+  text-decoration: none;
+  outline: none; }
+  @media screen and (max-width: 768px) {
+    .section-bar__arrow {
+      margin-bottom: 18rem;
+      padding: 0 3rem; } }
+  @media screen and (max-width: 480px) {
+    .section-bar__arrow {
+      margin-bottom: 18rem;
+      padding: 0; } }
+  @media screen and (max-width: 400px) {
+    .section-bar__arrow {
+      margin-bottom: 20rem; } }
+
+.bar__content {
+  width: 19.666rem; }
+  @media screen and (max-width: 768px) {
+    .bar__content {
+      width: auto;
+      padding: 0 5.333rem; } }
+  @media screen and (max-width: 480px) {
+    .bar__content {
+      width: auto;
+      padding: 0 1.7rem; } }
 
 /*# sourceMappingURL=main.css.map */

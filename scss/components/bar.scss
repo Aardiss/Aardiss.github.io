@@ -1,0 +1,144 @@
+.bar {
+  display: flex;
+ 
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+   }
+}
+.bar__image {
+  background: url("/img/decor/Товар.png") left 30% center  no-repeat ;
+  background-size: contain;
+
+  @include tablets {
+    height: 18rem;
+    margin-right: 195px;
+  }
+&::before {
+  position: absolute;
+  content: url("/img/decor/Узор_на_фоне.png");
+ right: 0;
+ top: 44%;
+ @include tablets {
+  top: 45%;
+  right: -6%;
+}
+ @include phones {
+  top: 53%;
+  right: -14%;
+}
+}
+&::after {
+  position: absolute;
+  content: url("/img/decor/Ягода-черн.png");
+  right: 0;
+  top: 49%;
+  @include tablets {
+    top: 48%;
+    right: -10%;
+  }
+  @include phones {
+    top: 57%;
+    right: -16%;
+  }
+}
+  width: 28.111rem;
+  height: 21.444rem;
+  margin-left: 19.666rem;
+  margin-right: 41px;
+}
+.bar__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2.227rem;
+  margin-right: 15.333rem;
+  margin-top: 4.111rem;
+
+  @include tablets {
+  margin-right: 0;
+  margin-top: 3rem;
+  text-align: center;
+  }
+  @include phones {
+  margin-top: 38px;
+  }
+}
+.bar__title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.944rem;
+  color: black;
+  line-height: 1.1;
+
+  @include tablets {
+    font-size: 28px;
+  }
+}
+.bar__item {
+  display: flex;
+  @include tablets {
+    margin-left: 24%;
+  }
+  @include phones {
+    margin-left: 16%;
+    margin-top: 41px;
+  }
+}
+.bar__item-info {
+  margin-right: 3rem;
+}
+.bar__item-description {
+  font-size: 2.9rem;
+  font-family: inherit;
+  margin-bottom: 0.944rem;
+  color: black;
+}
+.bar__item-subtitle {
+margin-bottom: 0.277rem;
+}
+.section-bar__arrow-back {
+  left: 7%;
+  @include tablets {
+   margin-left: 66px;
+  }
+  @include phones {
+   margin-left: 35px;
+  }
+  @include smallPhones {
+   margin-left: 10px;
+  }
+}
+.section-bar__arrow-forward {
+  right: 7%;
+}
+.section-bar__arrow {
+  position: absolute;
+  text-decoration: none;
+  outline: none;
+  @include tablets {
+    margin-bottom: 18rem;
+    padding: 0 3rem;
+  }
+  @include phones {
+    margin-bottom: 18rem;
+    padding: 0;
+  }
+  @include smallPhones {
+    margin-bottom: 20rem;
+  }
+}
+.bar__content {
+  width: 19.666rem;
+  @include tablets {
+    width: auto;
+    padding: 0 5.333rem;
+   }
+  @include phones {
+    width: auto;
+    padding: 0 1.7rem;
+   }
+}
