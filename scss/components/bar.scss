@@ -10,7 +10,7 @@
    }
 }
 .bar__image {
-  background: url("/img/decor/батон.png") left 30% center  no-repeat ;
+  background: url("/img/decor/батон.png") left 30% center no-repeat ;
   background-size: contain;
 
   @include tablets {
@@ -27,7 +27,7 @@
   right: -6%;
 }
  @include phones {
-  top: 53%;
+  top: 47%;
   right: -14%;
 }
 }
@@ -41,12 +41,12 @@
     right: -10%;
   }
   @include phones {
-    top: 57%;
+    top: 51%;
     right: -16%;
   }
 }
   width: 39.111rem;
-  height: 23.444rem;
+  height: 27.444rem;
 }
 .bar__wrapper {
   display: flex;
@@ -97,12 +97,12 @@
 margin-bottom: 0.277rem;
 }
 .section-bar__arrow-back {
-  margin-top: 210px;
+  margin-top: 215px;
   @include tablets {
-   margin-left: 66px;
+   margin-left: 120px;
   }
   @include phones {
-   margin-left: 35px;
+   margin-left: 50px;
   }
   @include smallPhones {
    margin-left: 10px;
@@ -110,22 +110,25 @@ margin-bottom: 0.277rem;
 }
 .section-bar__arrow-forward {
   right: 13%;
-  margin-top: 210px;
-  margin-right: 205px;
+  margin-top: 215px;
+  margin-right: 65px;
+  @include tablets {
+    margin-right: 19px;
+  }
+  @include phones {
+    margin-right: 0;
+  }
 }
 .section-bar__arrow {
   position: absolute;
   text-decoration: none;
   outline: none;
   @include tablets {
-    padding: 0 5rem;
+    padding: 0rem;
+    margin-top: 150px;
   }
   @include phones {
-    margin-bottom: 18rem;
-    padding: 0;
-  }
-  @include smallPhones {
-    margin-bottom: 20rem;
+    margin-top: 124px;
   }
 }
 .bar__content {
@@ -140,6 +143,7 @@ margin-bottom: 0.277rem;
    }
 }
 .bar__composition {
+  margin-bottom: 40px;
   @include tablets {
     display: none;
 }
