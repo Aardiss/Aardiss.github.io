@@ -15,7 +15,7 @@
 
   @include tablets {
     height: 19rem;
-    margin-left: 113px;
+    margin-left: 6.277rem;
   }
 &::before {
   position: absolute;
@@ -60,7 +60,7 @@
   text-align: center;
   }
   @include phones {
-  margin-top: 38px;
+  margin-top: 2.111rem;
   }
 }
 .bar__title {
@@ -71,7 +71,7 @@
   line-height: 1.1;
 
   @include tablets {
-    font-size: 28px;
+    font-size: 1.555rem;
   }
 }
 .bar__item {
@@ -81,7 +81,7 @@
   }
   @include phones {
     margin-left: 16%;
-    margin-top: 41px;
+    margin-top: 2.277rem;
   }
 }
 .bar__item-info {
@@ -97,23 +97,23 @@
 margin-bottom: 0.277rem;
 }
 .section-bar__arrow-back {
-  margin-top: 215px;
+  margin-top: 11.944rem;
   @include tablets {
-   margin-left: 120px;
+   margin-left: 6.666rem;
   }
   @include phones {
-   margin-left: 50px;
+   margin-left: 2.777rem;
   }
   @include smallPhones {
-   margin-left: 10px;
+   margin-left: 0.555rem;
   }
 }
 .section-bar__arrow-forward {
   right: 13%;
-  margin-top: 215px;
-  margin-right: 65px;
+  margin-top: 11.944rem;
+  margin-right: 3.611rem;
   @include tablets {
-    margin-right: 19px;
+    margin-right: 1.055rem;
   }
   @include phones {
     margin-right: 0;
@@ -125,10 +125,10 @@ margin-bottom: 0.277rem;
   outline: none;
   @include tablets {
     padding: 0rem;
-    margin-top: 150px;
+    margin-top: 8.333rem;
   }
   @include phones {
-    margin-top: 124px;
+    margin-top: 6.888rem;
   }
 }
 .bar__content {
@@ -143,7 +143,7 @@ margin-bottom: 0.277rem;
    }
 }
 .bar__composition {
-  margin-bottom: 40px;
+  margin-bottom: 2.222rem;
   @include tablets {
     display: none;
 }

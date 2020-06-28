@@ -16,7 +16,7 @@
 .hamburger__plank {
   display: block;
   background: #ffffff;
-  height: 4px;
+  height: 0.222rem;
   border-radius: 7px;
 }
 .hamburger__menu {
@@ -39,17 +39,17 @@
 }
 .close {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   cursor: pointer;
-  width: 20px;
-  height: 20px;
+  width: 1.111rem;
+  height: 1.111rem;
   border-radius: 50%;
   background: crimson;
   color: white;
   text-align: center;
   text-decoration: none;
-  line-height: 20px;
+  line-height: 1.111rem;
 }
 
 .menu_window {
@@ -73,15 +73,15 @@
   transition: .5s;
 }
 .hamburger__item {
-  margin-bottom: 10px;
+  margin-bottom: 0.555rem;
 }
 .close {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   cursor: pointer;
-  width: 20px;
-  height: 20px;
+  width: 1.111rem;
+  height: 1.111rem;
   border-radius: 50%;
   background: crimson;
   color: white;
