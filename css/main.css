@@ -1499,7 +1499,7 @@ template {
   @media screen and (max-width: 768px) {
     .bar__image {
       height: 18rem;
-      margin-right: 195px; } }
+      margin-left: 260px; } }
   .bar__image::before {
     position: absolute;
     content: url("/img/decor/Узор_на_фоне.png");
@@ -1605,8 +1605,7 @@ template {
   outline: none; }
   @media screen and (max-width: 768px) {
     .section-bar__arrow {
-      margin-bottom: 18rem;
-      padding: 0 3rem; } }
+      padding: 0 5rem; } }
   @media screen and (max-width: 480px) {
     .section-bar__arrow {
       margin-bottom: 18rem;
