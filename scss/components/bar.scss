@@ -97,7 +97,7 @@
 margin-bottom: 0.277rem;
 }
 .section-bar__arrow-back {
-  margin-top: 198px;
+  margin-top: 210px;
   @include tablets {
    margin-left: 66px;
   }
@@ -110,7 +110,8 @@ margin-bottom: 0.277rem;
 }
 .section-bar__arrow-forward {
   right: 13%;
-  margin-bottom: 100px;
+  margin-top: 210px;
+  margin-right: 205px;
 }
 .section-bar__arrow {
   position: absolute;

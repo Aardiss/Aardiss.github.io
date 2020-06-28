@@ -931,6 +931,16 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .section {
+    min-height: 59.111rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section {
+    min-height: 49.111rem;
+  }
+}
 .section--font-color--green {
   color: #0b4d3c;
 }
@@ -1011,11 +1021,11 @@ template {
 
 .order-section {
   background: url("/img/decor/паттерн.png") center center;
-  min-height: 35rem;
+  min-height: 44rem;
 }
 @media screen and (max-width: 768px) {
   .order-section {
-    min-height: auto;
+    min-height: 64.55rem;
     background: url("/img/decor/паттерн.png") center navajowhite;
   }
 }
@@ -1281,10 +1291,11 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 3.555rem;
+  padding-bottom: 10.555rem;
 }
 @media screen and (max-width: 768px) {
   .form {
+    margin-bottom: 184px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1593,6 +1604,58 @@ template {
 .menu_window {
   z-index: 1000;
   opacity: 1;
+  cursor: pointer;
+}
+
+.hamburger__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #4E4E4E;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hamburger__item {
+  margin-bottom: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: crimson;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.menu_window {
+  z-index: 1000;
+  opacity: 1;
 }
 
 .contacts {
@@ -1662,7 +1725,13 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 0;
+  padding: 11px 0;
+  margin-bottom: 17px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .footer {
@@ -1860,15 +1929,13 @@ template {
 .bar__image {
   background: url("/img/decor/батон.png") left 30% center no-repeat;
   background-size: contain;
-  width: 28.111rem;
-  height: 21.444rem;
-  margin-left: 19.666rem;
-  margin-right: 41px;
+  width: 39.111rem;
+  height: 23.444rem;
 }
 @media screen and (max-width: 768px) {
   .bar__image {
-    height: 18rem;
-    margin-right: 195px;
+    height: 19rem;
+    margin-left: 113px;
   }
 }
 .bar__image::before {
@@ -1920,13 +1987,11 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 2.227rem;
-  margin-right: 15.333rem;
-  margin-top: 4.111rem;
 }
 @media screen and (max-width: 768px) {
   .bar__wrapper {
     margin-right: 0;
-    margin-top: 3rem;
+    margin-top: 1rem;
     text-align: center;
   }
 }
@@ -1982,7 +2047,7 @@ template {
 }
 
 .section-bar__arrow-back {
-  left: 7%;
+  margin-top: 210px;
 }
 @media screen and (max-width: 768px) {
   .section-bar__arrow-back {
@@ -2001,7 +2066,9 @@ template {
 }
 
 .section-bar__arrow-forward {
-  right: 7%;
+  right: 13%;
+  margin-top: 210px;
+  margin-right: 205px;
 }
 
 .section-bar__arrow {
@@ -2011,8 +2078,7 @@ template {
 }
 @media screen and (max-width: 768px) {
   .section-bar__arrow {
-    margin-bottom: 18rem;
-    padding: 0 3rem;
+    padding: 0 5rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2040,6 +2106,12 @@ template {
   .bar__content {
     width: auto;
     padding: 0 1.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bar__composition {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
