@@ -1493,10 +1493,9 @@ template {
 .bar__image {
   background: url("/img/decor/Товар.png") left 30% center no-repeat;
   background-size: contain;
-  width: 28.111rem;
-  height: 21.444rem;
-  margin-left: 19.666rem;
-  margin-right: 41px; }
+  width: 50.111rem;
+  height: 22.444rem;
+  margin-left: 4.666rem; }
   @media screen and (max-width: 768px) {
     .bar__image {
       height: 18rem;
@@ -1540,7 +1539,6 @@ template {
   -ms-flex-pack: center;
   justify-content: center;
   padding-left: 2.227rem;
-  margin-right: 15.333rem;
   margin-top: 4.111rem; }
   @media screen and (max-width: 768px) {
     .bar__wrapper {
@@ -1552,7 +1550,7 @@ template {
       margin-top: 38px; } }
 
 .bar__title {
-  font-size: 2em;
+  font-size: 1.98rem;
   font-weight: bold;
   margin-bottom: 0.944rem;
   color: black;
@@ -1586,7 +1584,7 @@ template {
   margin-bottom: 0.277rem; }
 
 .section-bar__arrow-back {
-  left: 7%; }
+  margin-top: 198px; }
   @media screen and (max-width: 768px) {
     .section-bar__arrow-back {
       margin-left: 66px; } }
@@ -1598,7 +1596,8 @@ template {
       margin-left: 10px; } }
 
 .section-bar__arrow-forward {
-  right: 7%; }
+  right: 13%;
+  margin-bottom: 100px; }
 
 .section-bar__arrow {
   position: absolute;
