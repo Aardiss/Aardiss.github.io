@@ -131,7 +131,7 @@ margin-bottom: 0.277rem;
   // @include phones {
   //   margin-top: 6.888rem;
   // }
-}
+
 .bar__content {
   width: 19.666rem;
   @include tablets {
@@ -146,18 +146,17 @@ margin-bottom: 0.277rem;
 .bar__composition {
   margin-bottom: 2.222rem;
   position: relative;
+  width: 90px;
+ 
+  &:hover {
+    background-image: url("/img/decor/Состав-hover.png");
+    }
   @include tablets {
     display: none;
 }
 }
 .bar__composition:hover .bar__composition-menu {
   left: 57px;
-  top: 0px;
-  opacity: 0.98;
-}
-.bar__composition:hover {
-  left: 0;
-  opacity: 1;
 }
 .bar__composition-menu {
   position: absolute;
@@ -165,10 +164,11 @@ margin-bottom: 0.277rem;
   border-radius: 4px;
   padding: 26px 6px;
   font-size: 16px;
-  opacity: 0;
+  opacity: 0.98;
   margin-left: 35px;
   left: -9999px;
   transition: opacity 1s;
+  top: 0;
   width: 269px;
   height: 328px;
 }

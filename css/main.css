@@ -1295,17 +1295,21 @@ template {
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s; }
+  @media screen and (max-width: 768px) {
+    .hamburger__menu {
+      position: fixed;
+      font-size: 20px; } }
 
 .hamburger__item {
   margin-bottom: 10px; }
 
 .close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
-  width: 1.111rem;
-  height: 1.111rem;
+  width: 1.3rem;
+  height: 1.3rem;
   border-radius: 50%;
   background: crimson;
   color: white;
@@ -1317,53 +1321,6 @@ template {
   z-index: 1000;
   opacity: 1;
   cursor: pointer; }
-
-.hamburger__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: -1;
-  background-color: #4E4E4E;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  opacity: 0;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s; }
-
-.hamburger__item {
-  margin-bottom: 0.555rem; }
-
-.close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  width: 1.111rem;
-  height: 1.111rem;
-  border-radius: 50%;
-  background: crimson;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  line-height: 20px; }
-
-.menu_window {
-  z-index: 1000;
-  opacity: 1; }
 
 .contacts {
   font-style: normal;
@@ -1703,10 +1660,6 @@ template {
   -webkit-transform: translateY(-42%);
   -ms-transform: translateY(-42%);
   transform: translateY(-42%); }
-  @media screen and (max-width: 768px) {
-    .section-bar__arrow {
-      padding: 0rem;
-      margin-top: 8.333rem; } }
 
 .bar__content {
   width: 19.666rem; }
@@ -1721,19 +1674,16 @@ template {
 
 .bar__composition {
   margin-bottom: 2.222rem;
-  position: relative; }
+  position: relative;
+  width: 90px; }
+  .bar__composition:hover {
+    background-image: url("/img/decor/Состав-hover.png"); }
   @media screen and (max-width: 768px) {
     .bar__composition {
       display: none; } }
 
 .bar__composition:hover .bar__composition-menu {
-  left: 57px;
-  top: 0px;
-  opacity: 0.98; }
-
-.bar__composition:hover {
-  left: 0;
-  opacity: 1; }
+  left: 57px; }
 
 .bar__composition-menu {
   position: absolute;
@@ -1741,12 +1691,13 @@ template {
   border-radius: 4px;
   padding: 26px 6px;
   font-size: 16px;
-  opacity: 0;
+  opacity: 0.98;
   margin-left: 35px;
   left: -9999px;
   -webkit-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s;
+  top: 0;
   width: 269px;
   height: 328px; }
 
