@@ -147,16 +147,27 @@ margin-bottom: 0.277rem;
   margin-bottom: 2.222rem;
   position: relative;
   width: 90px;
- 
-  &:hover {
-    background-image: url("/img/decor/Состав-hover.png");
-    }
-  @include tablets {
-    display: none;
-}
+  
+//   &:hover {
+//     background-image: url("/img/decor/Состав-hover.png");
+//     }
+//   @include tablets {
+//     display: none;
+// }
 }
 .bar__composition:hover .bar__composition-menu {
   left: 57px;
+}
+.bar__composition-bar_pic {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background: url("/img/decor/Состав.png") no-repeat;
+
+  &:hover {
+    position: relative;
+    background: url("/img/decor/Состав-hover.png") no-repeat;
+}
 }
 .bar__composition-menu {
   position: absolute;
