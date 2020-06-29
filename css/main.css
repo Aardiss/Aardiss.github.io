@@ -1301,12 +1301,12 @@ template {
       font-size: 20px; } }
 
 .hamburger__item {
-  margin-bottom: 10px; }
+  margin-bottom: 0.555rem; }
 
 .close {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 0.833rem;
+  right: 0.833rem;
   cursor: pointer;
   width: 1.3rem;
   height: 1.3rem;
@@ -1675,31 +1675,35 @@ template {
 .bar__composition {
   margin-bottom: 2.222rem;
   position: relative;
-  width: 90px; }
-  .bar__composition:hover {
-    background-image: url("/img/decor/Состав-hover.png"); }
-  @media screen and (max-width: 768px) {
-    .bar__composition {
-      display: none; } }
+  width: 5rem; }
 
 .bar__composition:hover .bar__composition-menu {
-  left: 57px; }
+  left: 3.166rem; }
+
+.bar__composition-bar_pic {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  background: url("/img/decor/Состав.png") no-repeat; }
+  .bar__composition-bar_pic:hover {
+    position: relative;
+    background: url("/img/decor/Состав-hover.png") no-repeat; }
 
 .bar__composition-menu {
   position: absolute;
   background: #fff;
   border-radius: 4px;
-  padding: 26px 6px;
+  padding: 1.444rem 0.333rem;
   font-size: 16px;
   opacity: 0.98;
-  margin-left: 35px;
+  margin-left: 1.944rem;
   left: -9999px;
   -webkit-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s;
   top: 0;
-  width: 269px;
-  height: 328px; }
+  width: 14.944rem;
+  height: 18.222rem; }
 
 .bar__composition-elem {
   color: #1e1f20;
@@ -1713,15 +1717,15 @@ template {
 .bar__composition-menu::before {
   content: "";
   display: block;
-  height: 30px;
+  height: 1.666rem;
   left: 0;
   right: 0;
-  top: -29px;
+  top: -1.611rem;
   position: absolute; }
 
 .bar__composition-image {
-  width: 37px;
-  height: 48px; }
+  width: 2.055rem;
+  height: 2.666rem; }
 
 .bar__composition-list {
   display: -webkit-box;
