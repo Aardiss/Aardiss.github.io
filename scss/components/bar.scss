@@ -97,39 +97,40 @@
 margin-bottom: 0.277rem;
 }
 .section-bar__arrow-back {
-  margin-top: 11.944rem;
-  @include tablets {
-   margin-left: 6.666rem;
-  }
-  @include phones {
-   margin-left: 2.777rem;
-  }
-  @include smallPhones {
-   margin-left: 0.555rem;
-  }
+  left: 0;
+  // @include tablets {
+  //  margin-left: 6.666rem;
+  // }
+  // @include phones {
+  //  margin-left: 2.777rem;
+  // }
+  // @include smallPhones {
+  //  margin-left: 0.555rem;
+  // }
 }
 .section-bar__arrow-forward {
-  right: 13%;
-  margin-top: 11.944rem;
-  margin-right: 3.611rem;
-  @include tablets {
-    margin-right: 1.055rem;
-  }
-  @include phones {
-    margin-right: 0;
-  }
+  right: 0;
+  margin-left: 93%;
+  // @include tablets {
+  //   margin-right: 1.055rem;
+  // }
+  // @include phones {
+  //   margin-right: 0;
+  // }
 }
 .section-bar__arrow {
-  position: absolute;
+  position: sticky;
   text-decoration: none;
   outline: none;
-  @include tablets {
-    padding: 0rem;
-    margin-top: 8.333rem;
+  top: 42%;
+  transform: translateY(-42%);
+  // @include tablets {
+  //   padding: 0rem;
+  //   margin-top: 8.333rem;
   }
-  @include phones {
-    margin-top: 6.888rem;
-  }
+  // @include phones {
+  //   margin-top: 6.888rem;
+  // }
 }
 .bar__content {
   width: 19.666rem;
@@ -144,7 +145,53 @@ margin-bottom: 0.277rem;
 }
 .bar__composition {
   margin-bottom: 2.222rem;
+  position: relative;
   @include tablets {
     display: none;
 }
+}
+.bar__composition:hover .bar__composition-menu {
+  left: 57px;
+  top: 0px;
+  opacity: 0.98;
+}
+.bar__composition:hover {
+  left: 0;
+  opacity: 1;
+}
+.bar__composition-menu {
+  position: absolute;
+  background: #fff;
+  border-radius: 4px;
+  padding: 26px 6px;
+  font-size: 16px;
+  opacity: 0;
+  margin-left: 35px;
+  left: -9999px;
+  transition: opacity 1s;
+  width: 269px;
+  height: 328px;
+}
+.bar__composition-elem {
+  color: #1e1f20;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+}
+.bar__composition-menu::before {
+  content: "";
+  display: block;
+  height: 30px;
+  left: 0;
+  right: 0;
+  top: -29px;
+  position: absolute;
+}
+.bar__composition-image {
+  width: 37px;
+  height: 48px;
+}
+.bar__composition-list {
+  display: flex;
+  flex-direction: column;
 }
