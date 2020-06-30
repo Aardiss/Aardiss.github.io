@@ -9,6 +9,9 @@
     width: auto;
    }
 }
+.bar__container {
+  position: relative;
+}
 .bar__image {
   background: url("/img/decor/батон.png") left 30% center no-repeat ;
   background-size: contain;
@@ -20,28 +23,28 @@
 &::before {
   position: absolute;
   content: url("/img/decor/Узор_на_фоне.png");
- right: 0;
+ right: -52%;
  top: 36%;
  @include tablets {
   top: 45%;
   right: -6%;
 }
  @include phones {
-  top: 47%;
+  top: -14%;
   right: -14%;
 }
 }
 &::after {
   position: absolute;
   content: url("/img/decor/Ягода-черн.png");
-  right: 0;
+  right: -52%;
   top: 41%;
   @include tablets {
     top: 48%;
     right: -10%;
   }
   @include phones {
-    top: 51%;
+    top: 16%;
     right: -16%;
   }
 }
@@ -122,16 +125,17 @@ margin-bottom: 0.277rem;
   position: sticky;
   text-decoration: none;
   outline: none;
-  top: 42%;
-  transform: translateY(-42%);
-  // @include tablets {
-  //   padding: 0rem;
-  //   margin-top: 8.333rem;
+  // top: 35%;
+  // transform: translateY(-42%);
+  @include tablets {
+    // padding: 0rem;
+    // margin-top: 8.333rem;
+    top: 35%;
   }
-  // @include phones {
-  //   margin-top: 6.888rem;
-  // }
-
+  @include phones {
+    margin-top: 6.888rem;
+  }
+}
 .bar__content {
   width: 19.666rem;
   @include tablets {
@@ -151,9 +155,9 @@ margin-bottom: 0.277rem;
 //   &:hover {
 //     background-image: url("/img/decor/Состав-hover.png");
 //     }
-//   @include tablets {
-//     display: none;
-// }
+  @include tablets {
+    display: none;
+}
 }
 .bar__composition:hover .bar__composition-menu {
   left: 3.166rem;
