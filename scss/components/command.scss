@@ -12,6 +12,7 @@
 .command__container {
   display: flex;
   flex-direction: column;
+  min-height: 525px;
 }
 .command__list {
   display: flex;
@@ -31,11 +32,23 @@
   font-size: 21px;
   color: black;
   padding: 0;
-  padding: 0 31px;
+  outline: none;
+  padding-left: 30px;
+  &::after {
+    content: '▼';
+    color: black;
+    font-size: 12px;
+    float: right;
+    margin-left: 5px;
+    margin-top: 6px;
+  }
 }
-.command__profile-name-indent {
-  padding: 0 43px;
+.command__profile-name:active {
+  &::after {
+    content: '▲';
+  }
 }
+
 .command__profile-title {
   font-weight: bold;
   text-align: center;
@@ -44,4 +57,8 @@
 .command__profile-text {
   text-align: center;
   font-size: 17px;
+}
+.command__profile-panel {
+  max-height: 0;
+  overflow: hidden;
 }
