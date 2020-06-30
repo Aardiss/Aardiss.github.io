@@ -34,21 +34,23 @@
   padding: 0;
   outline: none;
   padding-left: 30px;
-  &::after {
+  &::before {
     content: '▼';
     color: black;
     font-size: 12px;
     float: right;
     margin-left: 5px;
     margin-top: 6px;
+    }
   }
-}
-.command__profile-name:active {
-  &::after {
-    content: '▲';
+.command__profile-name.active {
+    &::before {
+      content: '▲';
+    }
   }
+.active {
+  color: #FFCB52;
 }
-
 .command__profile-title {
   font-weight: bold;
   text-align: center;
@@ -61,4 +63,5 @@
 .command__profile-panel {
   max-height: 0;
   overflow: hidden;
+  transition: 0.5s;
 }

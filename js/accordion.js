@@ -1,8 +1,8 @@
 const acc = document.getElementsByClassName("command__profile-name");
-let i;
 
-for (i = 0; i < acc.length; i++) {
+for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
     const panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
