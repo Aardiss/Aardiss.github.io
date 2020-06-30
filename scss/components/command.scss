@@ -1,0 +1,47 @@
+.command__title {
+  font-size: 2.666rem;
+  font-weight: bold;
+  margin-bottom: 1.944rem;
+  color: black;
+  text-align: center;
+
+  @include tablets {
+    font-size: 30px;
+  }
+}
+.command__container {
+  display: flex;
+  flex-direction: column;
+}
+.command__list {
+  display: flex;
+  flex-direction: row;
+}
+.command__profile {
+  padding-right: 20px;
+}
+.command__profile:last-child {
+  padding-right: 0;
+}
+.command__profile-content {
+ margin-top: 18px;
+}
+.command__profile-name {
+  font-weight: bold;
+  font-size: 21px;
+  color: black;
+  padding: 0;
+  padding: 0 31px;
+}
+.command__profile-name-indent {
+  padding: 0 43px;
+}
+.command__profile-title {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+.command__profile-text {
+  text-align: center;
+  font-size: 17px;
+}
