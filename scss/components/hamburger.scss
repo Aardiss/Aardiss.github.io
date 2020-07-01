@@ -20,7 +20,7 @@
   border-radius: 7px;
 }
 .hamburger__menu {
-  display: flex;
+  display: none;
   position: absolute;
   left: 0;
   right: 0;
@@ -32,8 +32,11 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
+  height: 0;
+  width: 0;
   transition: .5s;
   @include tablets {
+    display: flex;
     position: fixed;
     font-size: 20px;
   }
@@ -60,4 +63,6 @@
   z-index: 1000;
   opacity: 1;
   cursor: pointer;
+  height: auto;
+  width: auto;
 }

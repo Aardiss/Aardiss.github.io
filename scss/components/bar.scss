@@ -20,34 +20,6 @@
     height: 19rem;
     margin-left: 6.277rem;
   }
-&::before {
-  position: absolute;
-  content: url("/img/decor/Узор_на_фоне.png");
- right: -52%;
- top: 36%;
- @include tablets {
-  top: 45%;
-  right: -6%;
-}
- @include phones {
-  top: -14%;
-  right: -14%;
-}
-}
-&::after {
-  position: absolute;
-  content: url("/img/decor/Ягода-черн.png");
-  right: -52%;
-  top: 41%;
-  @include tablets {
-    top: 48%;
-    right: -10%;
-  }
-  @include phones {
-    top: 16%;
-    right: -16%;
-  }
-}
   width: 39.111rem;
   height: 27.444rem;
 }
@@ -59,6 +31,7 @@
 
   @include tablets {
   margin-right: 0;
+  padding-left: 0;
   margin-top: 1rem;
   text-align: center;
   }
@@ -100,40 +73,34 @@
 margin-bottom: 0.277rem;
 }
 .section-bar__arrow-back {
-  left: 0;
-  // @include tablets {
-  //  margin-left: 6.666rem;
-  // }
-  // @include phones {
-  //  margin-left: 2.777rem;
-  // }
-  // @include smallPhones {
-  //  margin-left: 0.555rem;
-  // }
-}
-.section-bar__arrow-forward {
-  right: 0;
-  margin-left: 93%;
-  // @include tablets {
-  //   margin-right: 1.055rem;
-  // }
-  // @include phones {
-  //   margin-right: 0;
-  // }
-}
-.section-bar__arrow {
-  position: sticky;
-  text-decoration: none;
-  outline: none;
-  // top: 35%;
-  // transform: translateY(-42%);
+  left: -30px;
   @include tablets {
-    // padding: 0rem;
-    // margin-top: 8.333rem;
-    top: 35%;
+    left: 10%;
   }
   @include phones {
-    margin-top: 6.888rem;
+    left: 0;
+  }
+}
+.section-bar__arrow-forward {
+  right: -30px;
+  @include tablets {
+   right: 10%;
+  }
+  @include phones {
+    right: 0;
+  }
+}
+.section-bar__arrow {
+  position: absolute;
+  text-decoration: none;
+  outline: none;
+  top: 50%;
+  transform: translateY(-50%);
+  @include tablets {
+    top: 30%;
+  }
+  @include phones {
+    top: 40vmin;
   }
 }
 .bar__content {

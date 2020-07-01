@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 
     @include tablets {
         min-height: 59.111rem;
@@ -75,9 +76,14 @@
         top: 68%;
       }
     }
-}   .section__bar {
+}   
+.section__bar {
     min-height:  36.111rem;
     background-color:#f8faf9;
+    background-image: url("/img/decor/Ягода-черн.png"), url("/img/decor/Узор_на_фоне.png");
+    background-repeat: no-repeat;
+    background-position: right bottom -50px;
+
 
     @include tablets {
         min-height:  48.111rem;
