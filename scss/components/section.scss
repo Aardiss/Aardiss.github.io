@@ -82,7 +82,8 @@
     background-color:#f8faf9;
     background-image: url("/img/decor/Ягода-черн.png"), url("/img/decor/Узор_на_фоне.png");
     background-repeat: no-repeat;
-    background-position: right bottom -50px;
+    background-position: right bottom;
+    
 
 
     @include tablets {
