@@ -1568,6 +1568,11 @@ template {
 
 .bar__container {
   position: relative; }
+  .bar__container .bx-wrapper {
+    border: 0;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
 
 .bar__image {
   background: url("/img/decor/батон.png") left 30% center no-repeat;

@@ -1,6 +1,6 @@
 .bar {
   display: flex;
- 
+
   @include tablets {
     flex-direction: column;
     text-align: center;
@@ -11,6 +11,11 @@
 }
 .bar__container {
   position: relative;
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
 }
 .bar__image {
   background: url("/img/decor/батон.png") left 30% center no-repeat ;
