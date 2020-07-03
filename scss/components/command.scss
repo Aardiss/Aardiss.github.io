@@ -60,9 +60,19 @@
   font-size: 17px;
 }
 .command__profile-panel {
-  max-height: 0;
+  height: 0;
   overflow: hidden;
   transition: 0.3s;
+}
+.command__profile-block {
+  height: 65px;
+
+  @include tablets {
+    height: 385px;
+  }
+  @include phones {
+    height: 340px;
+  }
 }
 .command__list-mobile {
   display: none;
