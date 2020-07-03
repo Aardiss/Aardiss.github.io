@@ -2,7 +2,7 @@
 
 .form {
   display: flex;
-  padding-bottom: 1.555rem;
+  padding-bottom: 10.555rem;
 
   @include tablets {
     margin-bottom: 10.222rem;
@@ -67,7 +67,6 @@
   width: 100%;
   border: none;
   padding: 1rem 0.610rem;
-  // border: solid #dee2bd;
   border: solid 0.166rem transparent;
 
   @include tablets {
@@ -89,6 +88,9 @@
     border-color: #dee2bd;
     outline: none;
   }
+}
+.input__error {
+  border-color: hotpink;
 }
 .form__controls {
   display: flex;

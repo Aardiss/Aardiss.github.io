@@ -574,41 +574,41 @@
       <div class="container">
         <h2 class="section__title-form">ЗАКАЖИТЕ ДОСТАВКУ</h2>
     <form class="form">
-
+      <input type="hidden" name="to" value="somewhere@mail.com">
       <div class="form__col">
       <div class="form__row">
       <div class="form__line">
         <label class="form__block">
           <div class="form__title">Имя</div>
-          <input type="text"  class="form__input">
+          <input type="text" name="name" class="form__input">
         </label>
         <label class="form__block">
           <div class="form__title">Телефон</div>
-          <input type="text" placeholder="" class="form__input">
+          <input type="text" name="phone" placeholder="" class="form__input">
         </label>
         </div>
         <div class="form__line">
         <label class="form__block">
           <div class="form__title">Улица</div>
-          <input type="text"  class="form__input">
+          <input type="text" name="street" class="form__input">
         </label>
         </div>
         <div class="form__line">
         <label class="form__block">
           <div class="form__title">Дом</div>
-          <input type="text"  class="form__input">
+          <input type="text" name="home" class="form__input">
         </label>
         <label class="form__block">
           <div class="form__title">Корпус</div>
-          <input type="text"  class="form__input">
+          <input type="text" name ="part" class="form__input">
         </label>
         <label class="form__block">
           <div class="form__title">Квартира</div>
-          <input type="text"  class="form__input">
+          <input type="text" name="flat" class="form__input">
         </label>
         <label class="form__block">
           <div class="form__title">Этаж</div>
-          <input type="text"  class="form__input">
+          <input type="text" name="floor" class="form__input">
         </label>
       </div>
       </div>
@@ -617,7 +617,7 @@
         <div class="form__row">
           <label class="form__block">
             <div class="form__title">Комментарий</div>
-            <textarea class="form__input form__input--textarea"></textarea>
+            <textarea name="comment" class="form__input form__input--textarea"></textarea>
           </label>
       </div>
     
@@ -653,7 +653,7 @@
            Сообщение отправлено
          </div>
          <div class="modal__button-container">
-           <a href="#" class="btn app-close-modal btn--theme--green">Закрыть</a>
+           <a href="#" class="btn app-submit-btn btn--theme--green">Закрыть</a>
          </div>
        </div>
      </div>
@@ -714,7 +714,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="/js/slider.js"></script>
   <script src="/js/modal.js"></script>
