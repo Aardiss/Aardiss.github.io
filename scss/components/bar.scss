@@ -100,6 +100,7 @@ margin-bottom: 0.277rem;
   text-decoration: none;
   outline: none;
   top: 50%;
+  z-index: 5;
   transform: translateY(-50%);
   @include tablets {
     top: 30%;
@@ -163,6 +164,7 @@ margin-bottom: 0.277rem;
   color: #1e1f20;
   font-weight: bold;
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 .bar__composition-menu::before {

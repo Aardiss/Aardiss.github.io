@@ -83,11 +83,14 @@
     background-image: url("/img/decor/Ягода-черн.png"), url("/img/decor/Узор_на_фоне.png");
     background-repeat: no-repeat;
     background-position: right bottom;
+    background-size: 11%;
     
-
-
     @include tablets {
         min-height:  48.111rem;
+        background-image: url("/img/decor/Ягода-черн.png"), url("/img/decor/Узор_на_фоне.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 17%;
     }
     
 }
@@ -107,8 +110,7 @@
         position: absolute;
         content: url("/img/decor/Ежевика_фото.png");
         right: 0;
-       top: 70%;
-       display: none;
+       top: 66%;
        
        @include tablets {
            content: none;
@@ -124,7 +126,7 @@
         position: absolute;
         content: url("/img/decor/лист90.png");
         right: 0;
-        top: 67%;
+        top: 78%;
     
         @include phones {
             display: none;

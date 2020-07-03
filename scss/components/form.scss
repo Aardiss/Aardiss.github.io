@@ -2,7 +2,7 @@
 
 .form {
   display: flex;
-  padding-bottom: 10.555rem;
+  padding-bottom: 1.555rem;
 
   @include tablets {
     margin-bottom: 10.222rem;
@@ -18,7 +18,7 @@
     position: absolute;
     content: url("/img/decor/ягода90.png");
     left: 1.111rem;
-   top: 70%;
+   top: 80%;
     }
    @include phones {
      display: none;

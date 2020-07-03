@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CHOCCO</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -646,6 +647,16 @@
     </div>
       </form>
       </div>
+     <div id="modal" class="modal">
+       <div class="modal__container">
+         <div class="modal__content">
+           Сообщение отправлено
+         </div>
+         <div class="modal__button-container">
+           <a href="#" class="btn app-close-modal btn--theme--green">Закрыть</a>
+         </div>
+       </div>
+     </div>
      </section>
      <section class="section map__section">
       <div class="map__img">
@@ -700,10 +711,14 @@
       <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
-  <script src="/js/menu.js"></script>
-  <script src="/js/accordion.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="/js/slider.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/menu.js"></script>
+  <script src="/js/accordion.js"></script>
 </body>
 </html> 
