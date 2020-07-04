@@ -3,10 +3,6 @@
 .reviews {
   margin-bottom: 1.444rem;
 }
-.reviews__display {
-
-  
-}
 .reviews__avatar {
   width: 14.111rem;
   height: 14.444rem;
@@ -28,7 +24,7 @@
 
   @include tablets {
     margin-top: 1.555rem;
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 .reviews__title {
@@ -81,7 +77,7 @@
   position: absolute;
   display: flex;
   background: url("/img/decor/Слой_2.png") right top no-repeat #f8faf9;
-  padding: 50px 135px 30px 50px;
+  padding: 2.777rem 7.5rem 1.666rem 2.777rem;
   opacity: 0;
 
   @include tablets {
@@ -90,7 +86,7 @@
     align-items: center;
     height: auto;
     width: auto;
-    padding: 50px 50px 30px 50px;
+    padding: 2.777rem 2.777rem 1.666rem 2.777rem;
    }
 
    &::before {
@@ -114,7 +110,7 @@
 }
 .reviews__list {
   position: relative;
-  min-height: 280px;
+  min-height: 15.555rem;
 }
 .reviews__switcher-item.item__active {
   border-color: $darkGreen;

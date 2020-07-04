@@ -947,7 +947,7 @@ template {
   @media screen and (max-width: 768px) {
     .reviews__content {
       margin-top: 1.555rem;
-      margin-left: 0px; } }
+      margin-left: 0; } }
 
 .reviews__title {
   font-size: 1.666rem;
@@ -1010,7 +1010,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   background: url("/img/decor/Слой_2.png") right top no-repeat #f8faf9;
-  padding: 50px 135px 30px 50px;
+  padding: 2.777rem 7.5rem 1.666rem 2.777rem;
   opacity: 0; }
   @media screen and (max-width: 768px) {
     .reviews__item {
@@ -1024,7 +1024,7 @@ template {
       align-items: center;
       height: auto;
       width: auto;
-      padding: 50px 50px 30px 50px; } }
+      padding: 2.777rem 2.777rem 1.666rem 2.777rem; } }
   .reviews__item::before {
     content: "";
     display: block;
@@ -1047,7 +1047,7 @@ template {
 
 .reviews__list {
   position: relative;
-  min-height: 280px; }
+  min-height: 15.555rem; }
 
 .reviews__switcher-item.item__active {
   border-color: #0b4d3c; }
@@ -1672,7 +1672,7 @@ template {
       left: 0; } }
 
 .section-bar__arrow-forward {
-  right: -30px; }
+  right: -1.666rem; }
   @media screen and (max-width: 768px) {
     .section-bar__arrow-forward {
       right: 10%; } }
@@ -1792,10 +1792,10 @@ template {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 525px; }
+  min-height: 29.166rem; }
 
 .command__section {
-  min-height: 860px; }
+  min-height: 47.777rem; }
 
 .command__list {
   display: -webkit-box;
@@ -1807,16 +1807,16 @@ template {
   flex-direction: row; }
 
 .command__profile {
-  padding-right: 20px; }
+  padding-right: 1.111rem; }
 
 .command__profile:last-child {
   padding-right: 0; }
 
 .command__profile-content {
-  margin-top: 18px; }
+  margin-top: 1rem; }
   @media screen and (max-width: 768px) {
     .command__profile-content {
-      margin-top: 14px; } }
+      margin-top: 0.777rem; } }
 
 .command__profile-name {
   font-weight: bold;
@@ -1824,14 +1824,14 @@ template {
   color: black;
   padding: 0;
   outline: none;
-  padding-left: 30px; }
+  padding-left: 1.666rem; }
   .command__profile-name::before {
     content: '▼';
     color: black;
     font-size: 12px;
     float: right;
-    margin-left: 5px;
-    margin-top: 6px; }
+    margin-left: 0.277rem;
+    margin-top: 0.333rem; }
 
 .command__profile-name.active::before {
   content: '▲'; }
@@ -1856,14 +1856,14 @@ template {
   transition: 0.3s; }
 
 .command__profile-block {
-  height: 65px; }
+  height: 3.611rem; }
   @media screen and (max-width: 768px) {
     .command__profile-block {
-      height: 400px;
-      margin-top: 15px; } }
+      height: 22.222rem;
+      margin-top: 0.833rem; } }
   @media screen and (max-width: 480px) {
     .command__profile-block {
-      height: 340px; } }
+      height: 18.888rem; } }
 
 .command__list-mobile {
   display: none; }
@@ -1872,15 +1872,15 @@ template {
   .command__list-desktop {
     display: none; }
   .command__container {
-    max-height: 100px; }
+    max-height: 5.555rem; }
   .command__title {
-    font-size: 48px;
-    margin-bottom: 18px; }
+    font-size: 2.666rem;
+    margin-bottom: 1rem; }
   .command__profile-panel {
-    margin-left: 23px; } }
+    margin-left: 1.277rem; } }
   @media screen and (max-width: 768px) and (max-width: 768px) {
     .command__profile-panel {
-      margin-left: 15px; } }
+      margin-left: 0.833rem; } }
 
 @media screen and (max-width: 768px) {
   .command__profile {
@@ -1904,11 +1904,11 @@ template {
     align-items: center;
     text-align: center; }
   .command__profile-title {
-    margin-top: 27px;
-    font-size: 18px; } }
+    margin-top: 1.5rem;
+    font-size: 1rem; } }
   @media screen and (max-width: 768px) and (max-width: 768px) {
     .command__profile-title {
-      margin-top: 13px; } }
+      margin-top: 0.722rem; } }
 
 @media screen and (max-width: 768px) {
   .command__profile-photo {
@@ -1925,7 +1925,7 @@ template {
 
 .modal__container {
   background: #fff;
-  padding: 35px 60px;
+  padding: 1.944rem 3.333rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1938,8 +1938,8 @@ template {
   align-items: center; }
 
 .modal__content {
-  margin-bottom: 15px;
+  margin-bottom: 0.833rem;
   color: #000;
-  font-size: 22px; }
+  font-size: 1.222rem; }
 
 /*# sourceMappingURL=main.css.map */

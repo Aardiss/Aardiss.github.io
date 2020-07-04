@@ -87,7 +87,7 @@ margin-bottom: 0.277rem;
   }
 }
 .section-bar__arrow-forward {
-  right: -30px;
+  right: -1.666rem;
   @include tablets {
    right: 10%;
   }
@@ -125,9 +125,6 @@ margin-bottom: 0.277rem;
   position: relative;
   width: 5rem;
   
-//   &:hover {
-//     background-image: url("/img/decor/Состав-hover.png");
-//     }
   @include tablets {
     display: none;
 }

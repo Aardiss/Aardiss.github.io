@@ -3,7 +3,6 @@
 
 .header {
   display: flex;
-  // align-items: center;
   justify-content: space-between;
   align-items: flex-start;
 
@@ -19,9 +18,6 @@
 }
 .phone-number.phone-number--theme--green {
   color: $linkGreen;
-  // @include phones {
-  //   padding-top: 15px;
-  // }
 }
 .menu {
   margin: 0 1.666rem;
