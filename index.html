@@ -551,7 +551,8 @@
       <div class="container reviews__container">
          <div class="reviews">
           <div class="reviews__display">
-            <!-- <div class="reviews__display-inner"> -->
+            <ul class="reviews__list">
+              <li class="reviews__item item-active" data-linked-with="one">
               <div class="reviews__avatar">
            <img src="./img/decor/photo-1458890715264-db84f7c6ef13.png" alt="Алёна Хмельницкая" class="reviews__avatar-img">
               </div>
@@ -562,22 +563,50 @@
             </div>
             <div class="reviews__author">Алёна Хмельницкая</div>  
            </article>
-         <!-- </div> -->
+
+              </li>
+
+              <li class="reviews__item" data-linked-with="two">
+              <div class="reviews__avatar">
+           <img src="./img/reviews/redhead.jpg" alt="Оксана" class="reviews__avatar-img">
+              </div>
+           <article class="reviews__content">
+           <h3 class="reviews__title">Лучший перекус</h3>
+           <div class="reviews__text">
+           <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню поросто не могу себе позволить. А батончик - он всегда под рукой. Это приятно и удобно.</p>    
+            </div>
+            <div class="reviews__author">Arina Reveem</div>  
+           </article>
+              </li>
+
+              <li class="reviews__item" data-linked-with="three">
+              <div class="reviews__avatar">
+           <img src="./img/reviews/guy.jpg" alt="Алёна Хмельницкая" class="reviews__avatar-img">
+              </div>
+           <article class="reviews__content">
+           <h3 class="reviews__title">Лучший перекус</h3>
+           <div class="reviews__text">
+           <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню поросто не могу себе позволить. А батончик - он всегда под рукой. Это приятно и удобно.</p>    
+            </div>
+            <div class="reviews__author">Spiritus Aquilonem</div>  
+           </article>
+              </li>
+            </ul>
           </div>
           </div>
             <ul class="reviews__switcher">
-              <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                <a href="" class="interactive-avatar__link">
+              <li class="reviews__switcher-item interactive-avatar">
+                <a href="" class="interactive-avatar__link" data-open="one">
                 <img src="./img/decor/pho.png" alt="Алёна Хмельницкая" class="interactive-avatar__img">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive-avatar">
-                <a href="" class="interactive-avatar__link">
+                <a href="" class="interactive-avatar__link" data-open="two">
                 <img src="./img/decor/photo-1445404590072-16ef9c18bd83.png" alt="Арина Зубкова" class="interactive-avatar__img">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive-avatar">
-                <a href="" class="interactive-avatar__link">
+                <a href="" class="interactive-avatar__link" data-open="three">
                 <img src="./img/decor/photo-1468546818829-25bb337b6646.png" alt="Валерий Старозубов" class="interactive-avatar__img">
                 </a>
               </li>
@@ -735,5 +764,6 @@
   <script src="/js/modal.js"></script>
   <script src="/js/menu.js"></script>
   <script src="/js/accordion.js"></script>
+  <script src="/js/tabs.js"></script>
 </body>
 </html> 

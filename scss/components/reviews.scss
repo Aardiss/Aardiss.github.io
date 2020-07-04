@@ -4,36 +4,8 @@
   margin-bottom: 1.444rem;
 }
 .reviews__display {
-  // background-color: #f8faf9;
-  // height: 18.888rem;
-  // padding-top: 3.444rem;
-    // width: 53rem;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  background: url("/img/decor/Слой_2.png") right top no-repeat #f8faf9;
-  padding: 53px 22px 31px 22px;
 
- @include tablets {
-   flex-direction: column;
-   text-align: center;
-   align-items: center;
-   height: auto;
-   width: auto;
-  }
-
-  &::before {
-    content: "";
-    display: block;
-    width: 5rem;
-    height: 5rem;
-    background: #ffffff;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -3.610rem;
-  }
+  
 }
 .reviews__avatar {
   width: 14.111rem;
@@ -49,10 +21,6 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-
-  @include tablets {
-    
-  }
 }
 .reviews__content {
   flex: 1;
@@ -80,10 +48,6 @@
   @include tablets {
   margin-bottom: 0rem;
   }
-
-  // @include phones {
-  //   padding: 0 3.222rem;
-  //  }
 }
 .reviews__author {
   font-size: 1rem;
@@ -109,8 +73,49 @@
   }
 }
 .reviews__container {
-  // height: 26.777rem;
-  // padding-top: 1.111rem;
   display: flex;
   flex-direction: column;
+}
+.reviews__item {
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  background: url("/img/decor/Слой_2.png") right top no-repeat #f8faf9;
+  padding: 50px 135px 30px 50px;
+  opacity: 0;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    padding: 50px 50px 30px 50px;
+   }
+
+   &::before {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -2.610rem;
+  }
+}
+.reviews__item.item-active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+  border-color: $darkGreen;
+}
+.reviews__list {
+  position: relative;
+  min-height: 280px;
+}
+.reviews__switcher-item.item__active {
+  border-color: $darkGreen;
 }
