@@ -1410,9 +1410,8 @@ template {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   padding: 11px 0;
   margin-bottom: 0.944rem; }
   @media screen and (max-width: 768px) {
@@ -1444,6 +1443,10 @@ template {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.footer__container {
+  width: 100%;
+  max-width: 84.611rem; }
 
 .socials {
   width: 7.777rem;

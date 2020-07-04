@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 11px 0;
   margin-bottom: 0.944rem;
 
@@ -27,4 +27,8 @@
 .footer__col {
   display: flex;
   align-items: center;
+}
+.footer__container {
+  width: 100%;
+  max-width: 84.611rem;
 }
