@@ -862,7 +862,7 @@ template {
     position: absolute;
     content: url("/img/decor/Ежевика_фото.png");
     right: 0;
-    top: 66%; }
+    top: 75%; }
     @media screen and (max-width: 768px) {
       .order-section::before {
         content: none;
@@ -2059,11 +2059,11 @@ template {
   height: 100%; }
 
 .player__splash {
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background: url("/img/decor/pl.png") center center/cover no-repeat;
   cursor: pointer; }
 
 .player__controls {
@@ -2089,6 +2089,54 @@ template {
   font-weight: 700;
   white-space: nowrap;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  color: black;
+  margin-bottom: 30px; }
+
+.player__start {
+  background: url(/img/decor/play-gray.png);
+  width: 16px;
+  height: 22px;
+  outline: none; }
+
+.player__playback {
+  width: 730px;
+  height: 4px;
+  position: relative; }
+  .player__playback ::before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: #626262;
+    display: block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.player__duration-estimate {
+  font-family: sans-serif;
+  font-size: 14px; }
+
+.player__duration-completed {
+  font-family: sans-serif;
+  font-size: 14px; }
+
+.player__playback-button {
+  background: #626262;
+  border-radius: 50px;
+  border: none;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 0;
+  outline: none; }
 
 /*# sourceMappingURL=main.css.map */
