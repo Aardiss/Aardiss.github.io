@@ -50,13 +50,14 @@
     }
   }
 .command__profile-name.active {
+  color: #FFCB52;
     &::before {
       content: '▲';
     }
   }
-.active {
-  color: #FFCB52;
-}
+// .active {
+//   color: #FFCB52;
+// }
 .command__profile-title {
   font-weight: bold;
   text-align: center;
