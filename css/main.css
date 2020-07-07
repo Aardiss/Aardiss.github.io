@@ -1960,7 +1960,7 @@ template {
   font-size: 1.222rem; }
 
 .assort {
-  background: url(/img/decor/ora.jpg), #000;
+  background: url(/img/decor/three.png), #000;
   background-size: cover;
   position: relative; }
 
@@ -2048,8 +2048,8 @@ template {
 
 .assort__container::before {
   position: relative;
-  content: url("/img/decor/zoo.jpg");
+  content: url("/img/decor/mill.png");
   right: 238px;
-  top: -518px; }
+  top: -550px; }
 
 /*# sourceMappingURL=main.css.map */
