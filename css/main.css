@@ -867,7 +867,7 @@ template {
       .order-section::before {
         content: none;
         content: url("/img/decor/Ежевика_фото2.png");
-        top: 73%; } }
+        top: 68%; } }
     @media screen and (max-width: 480px) {
       .order-section::before {
         display: none; } }
@@ -1969,7 +1969,7 @@ template {
   font-weight: bold;
   color: #fff;
   margin-left: 164px;
-  margin-bottom: 211px; }
+  margin-bottom: 229px; }
 
 .assort__list {
   position: absolute;
@@ -2051,5 +2051,44 @@ template {
   content: url("/img/decor/mill.png");
   right: 238px;
   top: -550px; }
+
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer; }
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  background: #3e3e3e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 25px; }
+
+.player__title {
+  font-size: 48px;
+  font-weight: 700;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
