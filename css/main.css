@@ -1809,14 +1809,12 @@ template {
   -ms-flex-direction: row;
   flex-direction: row; }
 
-.command__profile {
-  padding-right: 1.111rem; }
-
 .command__profile:last-child {
   padding-right: 0; }
 
 .command__profile-content {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  text-align: center; }
   @media screen and (max-width: 768px) {
     .command__profile-content {
       margin-top: 0.777rem; } }
@@ -1826,8 +1824,7 @@ template {
   font-size: 21px;
   color: black;
   padding: 0;
-  outline: none;
-  padding-left: 1.666rem; }
+  outline: none; }
   @media screen and (max-width: 400px) {
     .command__profile-name {
       font-size: 18px; } }
@@ -1961,5 +1958,98 @@ template {
   margin-bottom: 0.833rem;
   color: #000;
   font-size: 1.222rem; }
+
+.assort {
+  background: url(/img/decor/ora.jpg), #000;
+  background-size: cover;
+  position: relative; }
+
+.assort__menu {
+  font-size: 5.666rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 164px;
+  margin-bottom: 211px; }
+
+.assort__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.assort__item {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.assort__trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  background-position: left bottom;
+  background-size: cover;
+  text-decoration: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-bottom: 60px; }
+
+.assort__title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 100%; }
+
+.assort__content {
+  min-width: 630px;
+  padding: 50px 127px 50px 27px;
+  overflow-y: auto;
+  background-color: rgba(51, 53, 55, 0.93);
+  font-size: 17px;
+  position: relative;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 23.97px;
+  height: 100%; }
+
+.assort__text {
+  color: #fff; }
+
+.assort__close {
+  position: absolute;
+  right: 34px;
+  top: 26px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 26px;
+  outline: none; }
+
+.assort__wrap {
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: .7s;
+  -o-transition: .7s;
+  transition: .7s; }
+
+.assort-active .assort__wrap {
+  width: 630px; }
+
+.assort__container::before {
+  position: relative;
+  content: url("/img/decor/zoo.jpg");
+  right: 238px;
+  top: -518px; }
 
 /*# sourceMappingURL=main.css.map */

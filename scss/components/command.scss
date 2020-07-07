@@ -18,13 +18,14 @@
   flex-direction: row;
 }
 .command__profile {
-  padding-right: 1.111rem;
+  // padding-right: 1.111rem;
 }
 .command__profile:last-child {
   padding-right: 0;
 }
 .command__profile-content {
  margin-top: 1rem; 
+ text-align: center;
  @include tablets {
    margin-top: 0.777rem;
  }
@@ -35,7 +36,7 @@
   color: black;
   padding: 0;
   outline: none;
-  padding-left: 1.666rem;
+  // padding-left: 1.666rem;
   @include smallPhones {
     font-size: 18px;
   }

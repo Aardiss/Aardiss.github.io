@@ -1,4 +1,4 @@
-const closeOthers = list => {
+  const closeOthers = list => {
   const panel = list.find(".command__profile-panel");
   const name = list.find(".command__profile-name");
  
