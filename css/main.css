@@ -1395,11 +1395,8 @@ template {
     .map__section {
       margin-left: 0; } }
 
-.map__img-photo {
+.map {
   width: 100%;
-  height: 100%; }
-
-.map__img {
   height: 100%; }
 
 .footer {
@@ -1836,11 +1833,10 @@ template {
     margin-left: 0.277rem;
     margin-top: 0.333rem; }
 
-.command__profile-name.active::before {
-  content: '▲'; }
-
-.active {
+.command__profile-name.active {
   color: #FFCB52; }
+  .command__profile-name.active::before {
+    content: '▲'; }
 
 .command__profile-title {
   font-weight: bold;
@@ -1965,7 +1961,7 @@ template {
   position: relative; }
 
 .assort__menu {
-  font-size: 5.666rem;
+  font-size: 4.666rem;
   font-weight: bold;
   color: #fff;
   margin-left: 164px;
@@ -2000,7 +1996,8 @@ template {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  background-color: rgba(51, 53, 55, 0.93); }
 
 .assort__title {
   color: #fff;
@@ -2043,9 +2040,6 @@ template {
   -o-transition: .7s;
   transition: .7s; }
 
-.assort-active .assort__wrap {
-  width: 630px; }
-
 .assort__container::before {
   position: relative;
   content: url("/img/decor/mill.png");
@@ -2064,6 +2058,7 @@ template {
   right: 0;
   bottom: 0;
   background: url("/img/decor/pl.png") center center/cover no-repeat;
+  background-color: rgba(51, 53, 55, 0.93);
   cursor: pointer; }
 
 .player__controls {

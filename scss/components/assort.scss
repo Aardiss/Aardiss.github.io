@@ -4,7 +4,7 @@
   position: relative;
 }
 .assort__menu {
-  font-size: 5.666rem;
+  font-size: 4.666rem;
   font-weight: bold;
   color:#fff;
   margin-left: 164px;
@@ -71,9 +71,7 @@
   overflow: hidden;
   transition: .7s;
 }
-.assort-active .assort__wrap {
-width: 630px;
-}
+
 .assort__container {
   &::before {
     position: relative;

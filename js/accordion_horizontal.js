@@ -1,43 +1,65 @@
-function Accordion(selector) {
-  const acco = document.querySelector(selector);
-  const items = acco.querySelector('[data-list]').children;
-  const close = acco.querySelector(".assort__close");
 
-  acco.addEventListener('click', function(event) {
-    const targetTrigger = event.target.closest('[data-trigger]');
-    const target = event.target;
+const mesureWidth = item => {
+  let reqItemWidth = 0;
+  const screenWidth = $(window).width();
+  const container = item.closest("assort__list");
+  const titlesBlocks = container.find("assort__trigger");
+  const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
 
-    // if (!targetTrigger) return;
-    if (!targetTrigger) { 
-      if (target.classList.contains('assort__close')) {
-        const parentClose = target.parentNode;
-        const parentContent = parentClose.parentNode;
-        const parentWrap = parentContent.parentNode;
-        parentWrap.classList.remove('assort-active');
-        
-        return;
-      } else {
-        return;
-      }
-    };
-    
-    const item = targetTrigger.parentNode;
+  const textContainer = item .find("assort__content");
+  const paddingLeft = parseInt(textContainer.css("padding-left"));
+  const paddingRight = parseInt(textContainer.css("padding-right"));
 
-    if (item.classList.contains('assort-active')) {
-        item.classList.remove('assort-active');
-    }else {
-      for (let i=0; i < items.length;  i++) {
-       items[i].classList.remove('assort-active');
-      }
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-      item.classList.add('assort-active');
-    }
-  
-  if (target.classList.contains('assort_close')) {
-    item.classList.remove('assort-active');
+  if (isMobile) {
+    reqItemWidth = screenWidth - titlesWidth;
+  }else {
+  reqItemWidth = 500;
   }
-  
-  });
+
+  return {
+    container: reqItemWidth,
+    textContainer: reqItemWidth - paddingLeft - paddingRight
+  }
+};
+
+const closeEveryItemContainer = container => {
+  const item = container.find("assort__item");
+  const content = container.find("assort__wrap");
+
+  items.removeClass("assort-active");
+  content.width(0);
 }
 
-new Accordion('#acco-menu');
+const openItem = (item) => {
+  const hiddenContent = item.find("assort__wrap");
+  const reqWidth = mesureWidth(item);
+  const textBlock = item.find("assort__content");
+
+  item.addClass("assort-active");
+  hiddenContent.width(reqWidth.container);
+  textBlock.width(reqWidth.textContainer);
+}
+
+$("assort__trigger").on ("click", e => {
+  e.preventDefault();
+
+  const $this = $(e.currentTarget);
+  const item = $this.closest("assort__item");
+  const itemOpened = item.hasClass("assort-active");
+  const container = $this.closest("assort__list");
+
+  if (itemOpened) {
+    closeEveryItemContainer(container)
+  }else {
+    closeEveryItemContainer(container)
+    openItem(item);
+  }
+});
+
+$("assort__close").on("click", e => {
+  e.preventDefault();
+
+  closeEveryItemContainer($('assort__list'));
+})
