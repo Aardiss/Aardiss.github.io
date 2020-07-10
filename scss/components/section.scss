@@ -44,39 +44,38 @@
         background: url("/img/decor/Ягода.png") top 0rem right -1.777rem no-repeat;
     }
     @include phones {
-        background: url("/img/decor/Ягода.png") top 0rem right -1.777rem / 20% no-repeat;
-        // margin-bottom: 8.222rem;
-        // margin-top: 11.111rem;
+        background: url("/img/decor/Ягода.png") top 0rem right -1.777rem / 30% no-repeat;
+        
     }
     &::before {
         position: absolute;
         content: url("/img/decor/Узор.png");
-       top: 68%;
-       display: none;
+        top: 245rem;
+       
 
        @include tablets {
-        top:70%;
+        top: 350rem;
       }
 
       @include phones {
-        top:63%;
+       top: 557rem;
       }
-    } 
+    }
     &::after {
         position: absolute;
         content: url("/img/decor/Ягоды.png");
-        top: 70%;
-        display: none;
+        top: 249rem;
+        
 
        @include tablets {
-        top:74%;
+        top: 358rem;
       }
 
       @include phones {
-        top: 68%;
+       top: 560rem;
       }
     }
-}   
+}
 .section__bar {
     min-height:  36.111rem;
     background-color:#f8faf9;
@@ -92,13 +91,16 @@
         background-position: right bottom;
         background-size: 17%;
     }
+    @include tablets {
+        background-size: 30%;
+    }
     
 }
 
 .order-section {
     background-image:url("/img/decor/лист90.png"), url("/img/decor/ягода90.png"), url("/img/decor/паттерн.png");
     background-repeat:no-repeat, no-repeat, repeat;
-    background-position: top 600px right 50px, top 600px left 50px, top;
+    background-position: top 500px right 50px, top 600px left 50px, top;
     background-size: 100px, 50px, 1520px;
    
     
@@ -108,22 +110,7 @@
         background: url("/img/decor/паттерн.png") center navajowhite;
    }
 
-    &::before {
-        position: absolute;
-        content: url("/img/decor/Ежевика_фото.png");
-        right: 0;
-       top: 73%;
-       
-       @include tablets {
-           content: none;
-           content: url("/img/decor/Ежевика_фото2.png");
-           top: 68%;
-      }
-
-      @include phones {
-        display: none;
-      }
-    } 
+   
 }
 .section__title-form {
     font-size: 2.722rem;

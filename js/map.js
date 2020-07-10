@@ -3,8 +3,8 @@ let myMap;
 const init = () => {
 
   myMap = new ymaps.Map("map", {
-    center: [55.739675, 37.739502],
-    zoom: 11,
+    center: [55.749536, 37.620857],
+    zoom: 13.5,
     controls: []
   });
 
@@ -15,7 +15,7 @@ const init = () => {
   [55.749532, 37.607942],
   ];
   const myCollection = new ymaps.GeoObjectCollection( {
-    draggable: false,
+    draggable: false, 
     iconLayout: 'default#image',
     iconImageHref: "/img/icons/marker.svg",
     iconImageSize: [46,57],

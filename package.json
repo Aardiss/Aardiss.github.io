@@ -1,0 +1,23 @@
+{
+  "name": "Aardiss.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aardiss/Aardiss.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aardiss/Aardiss.github.io/issues"
+  },
+  "homepage": "https://github.com/Aardiss/Aardiss.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

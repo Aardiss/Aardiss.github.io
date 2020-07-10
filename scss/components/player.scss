@@ -4,6 +4,34 @@
   width: 100%;
   height: 100%;
 }
+.player-section {
+  background-color: #f8faf9;
+  background-image:url("/img/decor/pla.png"), url("/img/decor/list.png");
+  background-repeat:no-repeat, no-repeat;
+  background-position: top 570px left 186px, top 100px right 190px;
+  background-size: 80px, 75px;
+
+  &::after {
+    position: absolute;
+    content: url("/img/decor/Ежевика_фото.png");
+    top: 287rem;
+    right: 5px;
+    
+   
+   @include tablets {
+       
+       content: url("/img/decor/Ежевика_фото2.png");
+    top: 416rem;
+    
+       
+  }
+
+  @include phones {
+    display: none;
+  }
+} 
+
+}
 .player__splash {
   // position: absolute;
   top: 0;
@@ -34,6 +62,7 @@
   text-align: center;
   color: black;
   margin-bottom: 30px;
+  
 }
 .player__start {
   background: url(/img/decor/play-gray.png);
