@@ -6,7 +6,7 @@ const mesureWidth = item => {
   const titlesBlocks = container.find(".assort__trigger");
   const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
 
-  const textContainer = item .find(".assort__content");
+  const textContainer = item.find(".assort__content");
   const paddingLeft = parseInt(textContainer.css("padding-left"));
   const paddingRight = parseInt(textContainer.css("padding-right"));
 
@@ -14,7 +14,7 @@ const mesureWidth = item => {
 
   if (isMobile) {
     reqItemWidth = screenWidth - titlesWidth;
-  }else {
+  } else {
   reqItemWidth = 500;
   }
 
@@ -52,7 +52,7 @@ $(".assort__trigger").on ("click", e => {
 
   if (itemOpened) {
     closeEveryItemContainer(container)
-  }else {
+  } else {
     closeEveryItemContainer(container)
     openItem(item);
   }

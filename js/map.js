@@ -14,7 +14,7 @@ const init = () => {
   [55.744799, 37.581622],
   [55.749532, 37.607942],
   ];
-  const myCollection = new ymaps.GeoObjectCollection({}, {
+  const myCollection = new ymaps.GeoObjectCollection( {
     draggable: false,
     iconLayout: 'default#image',
     iconImageHref: "/img/icons/marker.svg",
@@ -26,9 +26,9 @@ const init = () => {
     myCollection.add(new ymaps.Placemark (coord));
   });
 
-  myMap.GeoObject.add(myCollection);
+  myMap.geoObjects.add(myCollection);
 
   myMap.behaviors.disable('scrollZoom');
 }
 
- ymaps.ready(init);
+   ymaps.ready(init);
