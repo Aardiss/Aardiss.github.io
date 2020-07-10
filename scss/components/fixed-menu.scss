@@ -12,6 +12,7 @@
 }
 .fixed-menu__item {
   margin-bottom: 0.277rem;
+
 }
 .fixed-menu__link {
   width: 0.888rem;
@@ -20,7 +21,9 @@
   border: 0.055rem solid transparent;
   display: block;
   position: relative;
-
+  .menu-black {
+    background: #000;
+  }
   &--active {
       border-color: #ffffff;
       border-style: solid;
@@ -38,5 +41,35 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  
 }
+}
+.fixed-black {
+  width: 0.888rem;
+  height: 0.888rem;
+  border-radius: 50%;
+  border: 0.055rem solid transparent;
+  display: block;
+  position: relative;
+  &--active {
+      border-color: #000;
+      border-style: solid;
+  }
+  @include tablets {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 0.333rem;
+    height: 0.333rem;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
 }

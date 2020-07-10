@@ -6,11 +6,12 @@
   background-color: $blue;
   color: #ffffff;
   position: relative;
+  height: 100%;
 
   @include tablets { 
     @media screen and (min-width: 480px) {
     background-position: right bottom 88%;
-    height: 1000px;
+    // height: 1000px;
     }
   }
 

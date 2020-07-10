@@ -13,7 +13,7 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-    <section class="hero section">
+    <section data-id="hero" data-theme="white" class="hero section">
       <div class="container hero__container">
     <header class="header">
       <div class="header__logo">
@@ -21,13 +21,13 @@
       </div>  
       <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Батончики</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+            <li class="menu__item"><a href="#" data-to="benefits" class="menu__link">О нас</a></li>
+            <li class="menu__item"><a href="#" data-to="bar" class="menu__link">Батончики</a></li>
+            <li class="menu__item"><a href="#" data-to="command" class="menu__link">Команда</a></li>
+            <li class="menu__item"><a href="#" data-to="assort" class="menu__link">Меню</a></li>
+            <li class="menu__item"><a href="#" data-to="reviews" class="menu__link">Отзывы</a></li>
+            <li class="menu__item"><a href="#" data-to="player" class="menu__link">Как мы работаем</a></li>
+            <li class="menu__item"><a href="#" data-to="map" class="menu__link">Контакты</a></li>
           </ul>
         </nav>
         <a href="tel:+78009039090" class="phone-number header__phone-number">
@@ -59,7 +59,7 @@
     <div class="hero__title-section">
         <h1 class="hero__main-title">НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h1>
         <div class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
-        <a href="#" class="btn btn--theme--white">заказать</a>
+        <a href="#" data-to="order" class="btn btn--theme--white">заказать</a>
       </div>
     <div class="hero__icons-section">
       <ul class="features">
@@ -96,7 +96,7 @@
     </div>
       </div>
     </section>
-     <section class="section benefits-section">
+     <section data-id="benefits" data-theme="black" class="section benefits-section">
       <div class="container">
         <div class="headline">
         <h2 class="section__title headline__title">ПОЧЕМУ CHOCCO?</h2>
@@ -162,7 +162,7 @@
     </div>
     </section>
 
-    <section class="section section__bar">
+    <section data-id="bar" data-theme="black" class="section section__bar">
       <div class="container bar__container">
         <button class="section-bar__arrow section-bar__arrow-back">
           <img src="./img/decor/arrow-scroll_kопировать_2 — копия.png" class="section-bar__arrow-img">
@@ -418,7 +418,7 @@
     </div>
     </section>
 
-    <section class="section command__section">
+    <section data-id="command" data-theme="black" class="section command__section">
       <div class="container command__container">
         <h2 class="command__title">КОМАНДА</h2>
        <ul class="command__list command__list-desktop">
@@ -546,7 +546,7 @@
       </div>
     </section>
 
-    <section class="section assort">
+    <section data-id="assort" data-theme="black" class="section assort">
       <h3 class="assort__menu">МЕНЮ</h3>
       <div class="container assort__container">
         <ul class="assort__list">
@@ -595,7 +595,7 @@
       </div>  
     </section>
 
-     <section class="section section__reviews">
+     <section data-id="reviews" data-theme="black" class="section section__reviews">
       <h2 class="section__title">ОТЗЫВЫ</h2>
       <div class="container reviews__container">
          <div class="reviews">
@@ -663,7 +663,7 @@
       </div>
     </section>
 
-    <section class="section player-section">
+    <section data-id="player" data-theme="black" class="section player-section">
       <div class="container">
         <h2 class="player__title">КАК МЫ РАБОТАЕМ</h2>
         <div class="player__container">
@@ -688,7 +688,7 @@
       </div>
     </section>
 
-     <section class="section order-section section--font-color--green">
+     <section data-id="order" data-theme="white" class="section order-section section--font-color--green">
       <div class="container">
         <h2 class="section__title-form">ЗАКАЖИТЕ ДОСТАВКУ</h2>
     <form class="form">
@@ -776,7 +776,7 @@
        </div>
      </div>
      </section>
-     <section class="section map__section">
+     <section data-id="map" data-theme="white" class="section map__section">
       <div class="map"></div>
      </section>
     <footer class="footer">
@@ -816,15 +816,15 @@
   </div>
   <nav  class="fixed-menu">
     <ul class="fixed-menu__list">
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link fixed-menu__link--active"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-to="hero" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-to="benefits" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-to="bar" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-to="command" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-to="assort" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-to="reviews" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-to="player" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-to="order" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-to="map" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -833,6 +833,8 @@
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="mobile-detect.js"></script>
+  <script src="js/jquery.touchSwipe.min.js"></script>
   <script src="/js/slider.js"></script>
   <script src="/js/modal.js"></script>
   <script src="/js/menu.js"></script>
@@ -841,5 +843,6 @@
   <script src="/js/tabs.js"></script>
   <script src="/js/player.js"></script>
   <script src="/js/map.js"></script>
+  <script src="/js/ops.js"></script>
 </body>
 </html> 

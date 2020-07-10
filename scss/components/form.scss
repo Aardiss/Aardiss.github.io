@@ -1,8 +1,10 @@
 @import "./media.scss";
 
+
 .form {
   display: flex;
   padding-bottom: 10.555rem;
+ 
 
   @include tablets {
     margin-bottom: 10.222rem;
@@ -16,9 +18,7 @@
   &::after {
     @media screen and (min-width: 768px) {
     position: absolute;
-    content: url("/img/decor/ягода90.png");
-    left: 1.111rem;
-   top: 80%;
+    background-image: url("/img/decor/ягода90.png");
     }
    @include phones {
      display: none;

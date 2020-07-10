@@ -11,14 +11,11 @@
   min-height: 29.166rem;
 }
 .command__section {
-  min-height: 47.777rem;
+  // min-height: 47.777rem;
 }
 .command__list {
   display: flex;
   flex-direction: row;
-}
-.command__profile {
-  // padding-right: 1.111rem;
 }
 .command__profile:last-child {
   padding-right: 0;
