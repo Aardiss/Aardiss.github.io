@@ -1,3 +1,4 @@
+(function() {
 let  player;
 const playerContainer = $(".player");
 
@@ -97,3 +98,4 @@ function onYouTubeIframeAPIReady() {
 }
 
 eventsInit();
+})()

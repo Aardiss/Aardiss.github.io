@@ -1,3 +1,4 @@
+(function() {
 const validateFields = (form, fieldsArray) => {
 
   fieldsArray.forEach((field) => {
@@ -63,3 +64,4 @@ $(".app-submit-btn").click(e => {
 
   $.fancybox.close();
 });
+})()

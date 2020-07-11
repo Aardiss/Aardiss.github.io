@@ -1,3 +1,4 @@
+(function() {
 const sections = $("section");
 const display = $(".maincontent");
 const sideMenu =$(".fixed-menu__link");
@@ -120,3 +121,4 @@ $("[data-to]").click(e => {
     },
   });
  }
+})()

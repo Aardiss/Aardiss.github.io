@@ -1,4 +1,4 @@
-
+(function() {
 const mesureWidth = item => {
   let reqItemWidth = 0;
   const screenWidth = $(window).width();
@@ -63,3 +63,4 @@ $(".assort__close").on("click", e => {
 
   closeEveryItemContainer($('.assort__list'));
 })
+})()

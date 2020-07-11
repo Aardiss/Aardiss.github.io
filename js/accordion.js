@@ -1,3 +1,6 @@
+"use strict";
+
+  (function() {
   const closeOthers = list => {
   const panel = list.find(".command__profile-panel");
   const name = list.find(".command__profile-name");
@@ -27,3 +30,4 @@ $(".command__profile-name").click((e) => {
     openNew($this);
    }
   });
+})()

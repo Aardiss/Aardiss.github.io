@@ -1,3 +1,4 @@
+(function() {
 const burger = document.querySelector(".hamburger");
 const menu = document.querySelector(".hamburger__menu");
 const close = document.querySelector(".close");
@@ -16,3 +17,4 @@ menu.addEventListener('click', function (e) {
   }
   
 });
+})()
