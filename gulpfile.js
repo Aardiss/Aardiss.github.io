@@ -44,14 +44,14 @@ const env= process.env.NODE_ENV;
     .pipe(concat('main.min.scss'))
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
-    .pipe(dest(`${SRC_PATH}/scss/main.min.css`))
+    .pipe(dest(`${SRC_PATH}/scss/`))
     .pipe(reload({ stream: true }));
  });
 
  task('styles', () => {
   return src([...STYLES_LIBS, `${SRC_PATH}/scss/main.min.css`])
     .pipe(gulpif(env == "dev", sourcemaps.init()))
-    .pipe(concat('main.min.scss'))
+    .pipe(concat('main.min.css'))
     // .pipe(px2rem())
     .pipe(gulpif(env == "dev", 
       autoprefixer({
@@ -135,8 +135,8 @@ task("watch", () => {
 
  task(
    'default', 
-   series('clean', 
-   parallel('copy:html', 'styles', 'scripts', 'icons', 'decor', 'reviews'),
+   series('clean','sass', 'styles',
+   parallel('copy:html', 'scripts', 'icons', 'decor', 'reviews'),
    parallel('watch', 'server')
    )
  );
