@@ -50,12 +50,12 @@ const env= process.env.NODE_ENV;
         overrideBrowserslist: ['last 2 versions'],
         cascade: false
       })
-    )
+    ))
     .pipe(gulpif(env == 'prod', gcmq()))
     .pipe(gulpif(env == 'prod', cleanCSS()))
     .pipe(gulpif(env == 'dev', sourcemaps.write()))
     .pipe(dest(DIST_PATH))
-    .pipe(reload({ stream: true })))
+    .pipe(reload({ stream: true }));
  });
 
 //  const libs = [
@@ -93,7 +93,7 @@ const env= process.env.NODE_ENV;
   //      }
   //    }
   //  }))
-   .pipe(dest('dist/img/icons'));
+   .pipe(dest('dist/img/'));
  });
 
  task('decor', () => {
@@ -113,7 +113,7 @@ const env= process.env.NODE_ENV;
       server: {
           baseDir: "./dist"
       },
-      // open: false
+      open: false
   });
  });
   

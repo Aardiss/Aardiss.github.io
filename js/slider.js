@@ -13,4 +13,4 @@ $(".section-bar__arrow-forward").click(e => {
   e.preventDefault();
   slider.goToNextSlide();
 })
-})()
+}) ()
