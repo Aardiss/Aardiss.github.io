@@ -13,10 +13,10 @@ sections.first().addClass("section-active");
 
 const countSectionPosition = (sectionEq) => {
   const position = sectionEq * -100;
-  if (position > 0) {
+  if (isNaN(position)) {
     return 0;
   }
-  return sectionEq * -100;
+  return position;
 };
 
 const changeMenuThemeForSection = (sectionEq) => {
@@ -35,15 +35,17 @@ const resetActiveClassForItem = (items, itemEq, activeClass) => {
   items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
 }
 
-const performTransition = sectionEq => {
+const performTransition = (sectionEq) => {
  
   if (sectionEq < 0) {
     sectionEq = 0
   }
 
-  
+  if (inScroll) return;
 
-  if (inScroll == false) {
+  const transitionOver = 1000;
+  const mouseInertiaOver = 300;
+
     inScroll = true;
 
     const position = countSectionPosition(sectionEq);
@@ -62,52 +64,56 @@ const performTransition = sectionEq => {
     inScroll = false;
 
     resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__link--active");
-    }, 1300);
-  }
+    }, transitionOver + mouseInertiaOver);
 };
 
-const scrollViewport = direction => {
+const viewportScroller = () => {
   const activeSection = sections.filter(".section-active");
   const nextSection = activeSection.next();
   const prevSection = activeSection.prev();
 
-
-
-  if (direction == "next" && nextSection.length) {
-    performTransition(nextSection.index())
-  }
-  if (direction == "prev" && prevSection.length) {
-    performTransition(prevSection.index())
-  }
-}
+  return {
+    next() {
+      if (nextSection.length) {
+        performTransition(nextSection.index())
+      }
+    },
+    prev() {
+      if (prevSection.length) {
+        performTransition(prevSection.index())
+      }
+    },
+  };
+};
 
 $(window).on("wheel", e => {
   const deltaY = e.originalEvent.deltaY;
-  // const scroller = viewportScroller();
+  const scroller = viewportScroller();
 
   if (deltaY > 0) {
-   scrollViewport("next");
+    scroller.next();
   }
   if (deltaY < 0) {
-   scrollViewport("prev");
+   scroller.prev();
   }
 });
 
 $(window).on("keydown", e => {
-
   const tagName = e.target.tagName.toLowerCase();
+  const userTypingInInputs = tagName == "input" ||  tagName == "textarea";
+  const scroller = viewportScroller();
 
-  if (tagName != "input" && tagName != "textarea") {
+  if (userTypingInInputs) return;
+
     switch (e.keyCode) {
       case 38:
-      scrollViewport("prev");
+    scroller.prev();
       break;
   
       case 40: 
-      scrollViewport("next");
+      scroller.next();
       break;
     }
-  }
 });
 
 $(".wrapper").on("touchmove", e => e.preventDefault());

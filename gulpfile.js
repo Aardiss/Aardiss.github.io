@@ -126,8 +126,7 @@ const env= process.env.NODE_ENV;
  });
   
 task("watch", () => {
-  watch(`${SRC_PATH}/scss/components/**/*.scss`, series('sass','styles'));
-  watch(`${SRC_PATH}/scss/layout/**/*.scss`, series('styles'));
+  watch(`${SRC_PATH}/scss/**/*.scss`, series('sass','styles'));
   watch(`${SRC_PATH}/*.html`, series('copy:html'));
   watch(`${SRC_PATH}/js/*.js`, series('scripts'));
   watch(`${SRC_PATH}/img/icons/*.svg`, series('icons'));
