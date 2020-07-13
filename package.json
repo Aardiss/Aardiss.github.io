@@ -42,6 +42,7 @@
     "youtube-api": "^2.0.10"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "bxslider": "^4.2.14",
     "jquery": "^3.5.1",
     "jquery-touchswipe": "^1.6.19",

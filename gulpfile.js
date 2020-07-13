@@ -38,12 +38,20 @@ const env= process.env.NODE_ENV;
 //   'node_modules/normalize.css/normalize.css',
 //  ];
   
- task('styles', () => {
-  return src([...STYLES_LIBS, `${SRC_PATH}/scss/main.scss`])
+ task('sass', () => {
+  return src([`${SRC_PATH}/scss/main.scss`])
     .pipe(gulpif(env == "dev", sourcemaps.init()))
     .pipe(concat('main.min.scss'))
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
+    .pipe(dest(`${SRC_PATH}/scss/main.min.css`))
+    .pipe(reload({ stream: true }));
+ });
+
+ task('styles', () => {
+  return src([...STYLES_LIBS, `${SRC_PATH}/scss/main.min.css`])
+    .pipe(gulpif(env == "dev", sourcemaps.init()))
+    .pipe(concat('main.min.scss'))
     // .pipe(px2rem())
     .pipe(gulpif(env == "dev", 
       autoprefixer({
@@ -118,7 +126,7 @@ const env= process.env.NODE_ENV;
  });
   
 task("watch", () => {
-  watch(`${SRC_PATH}/scss/components/**/*.scss`, series('styles'));
+  watch(`${SRC_PATH}/scss/components/**/*.scss`, series('sass','styles'));
   watch(`${SRC_PATH}/scss/layout/**/*.scss`, series('styles'));
   watch(`${SRC_PATH}/*.html`, series('copy:html'));
   watch(`${SRC_PATH}/js/*.js`, series('scripts'));
