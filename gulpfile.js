@@ -19,17 +19,17 @@
   
 const env= process.env.NODE_ENV;
 
- const {DIST_PATH, STYLES_LIBS, JS_LIBS} = require('./gulp.config');
+ const {DIST_PATH, STYLES_LIBS, JS_LIBS, SRC_PATH} = require('./gulp.config');
  
  sass.compiler = require('node-sass');
   
  task('clean', () => {
-  return src('${DIST_PATH}/**/*', { read: false })
+  return src(`${DIST_PATH}/**/*`, { read: false })
     .pipe(rm())
  })
   
  task('copy:html', () => {
-  return src('*.html')
+  return src(`${SRC_PATH}/*.html`)
     .pipe(dest(DIST_PATH))
     .pipe(reload({ stream: true }));
  })
@@ -39,7 +39,7 @@ const env= process.env.NODE_ENV;
 //  ];
   
  task('styles', () => {
-  return src([...STYLES_LIBS, 'scss/main.scss'])
+  return src([...STYLES_LIBS, `${SRC_PATH}/scss/main.scss`])
     .pipe(gulpif(env == "dev", sourcemaps.init()))
     .pipe(concat('main.min.scss'))
     .pipe(sassGlob())
@@ -64,7 +64,7 @@ const env= process.env.NODE_ENV;
 //  ];
 
  task('scripts', () => {
-  return src([...JS_LIBS, 'js/*.js'])
+  return src([...JS_LIBS, `${SRC_PATH}/js/*.js`])
     .pipe(sourcemaps.init())
     .pipe(concat('main.min.js', {newLine: ';'}))
     .pipe(babel({
@@ -77,7 +77,7 @@ const env= process.env.NODE_ENV;
  });
 
  task('icons', () => {
-   return src('img/**/*.svg')
+   return src(`${SRC_PATH}/img/icons/*.svg`)
   //  .pipe(svgo({
   //    plugins: [
   //        {
@@ -93,18 +93,18 @@ const env= process.env.NODE_ENV;
   //      }
   //    }
   //  }))
-   .pipe(dest('dist/img/'));
+   .pipe(dest(`${DIST_PATH}/img/icons`));
  });
 
  task('decor', () => {
-  return src('img/decor/*')
-    .pipe(dest('dist/img/decor'));
+  return src(`${SRC_PATH}/img/decor/*`)
+    .pipe(dest(`${DIST_PATH}/img/decor`));
   }
  )
   
  task('reviews', () => {
-  return src('img/reviews/*')
-    .pipe(dest('dist/img/reviews'));
+  return src(`${SRC_PATH}/img/reviews/*`)
+    .pipe(dest(`${DIST_PATH}/img/reviews`));
   }
  )
 
@@ -118,11 +118,11 @@ const env= process.env.NODE_ENV;
  });
   
 task("watch", () => {
-  watch('/scss/components/**/*.scss', series('styles'));
-  watch('/scss/layout/**/*.scss', series('styles'));
-  watch('*.html', series('copy:html'));
-  watch('js/*.js', series('scripts'));
-  watch('img/icons/*.svg', series('icons'));
+  watch(`${SRC_PATH}/scss/components/**/*.scss`, series('styles'));
+  watch(`${SRC_PATH}/scss/layout/**/*.scss`, series('styles'));
+  watch(`${SRC_PATH}/*.html`, series('copy:html'));
+  watch(`${SRC_PATH}/js/*.js`, series('scripts'));
+  watch(`${SRC_PATH}/img/icons/*.svg`, series('icons'));
 });
 
  task(
