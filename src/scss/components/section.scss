@@ -81,7 +81,6 @@
     background-size: 11%;
     
     @include tablets {
-        min-height:  48.111rem;
         background-image: url("/img/decor/Ягода-черн.png"), url("/img/decor/Узор_на_фоне.png");
         background-repeat: no-repeat;
         background-position: right bottom;
@@ -102,7 +101,6 @@
     
     
     @include tablets {
-        min-height: 64.55rem;
         background: url("/img/decor/паттерн.png") center navajowhite;
    }
 
