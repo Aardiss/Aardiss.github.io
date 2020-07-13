@@ -12,6 +12,10 @@ let inScroll = false;
 sections.first().addClass("section-active");
 
 const countSectionPosition = (sectionEq) => {
+  const position = sectionEq * -100;
+  if (position > 0) {
+    return 0;
+  }
   return sectionEq * -100;
 };
 
@@ -32,6 +36,12 @@ const resetActiveClassForItem = (items, itemEq, activeClass) => {
 }
 
 const performTransition = sectionEq => {
+ 
+  if (sectionEq < 0) {
+    sectionEq = 0
+  }
+
+  
 
   if (inScroll == false) {
     inScroll = true;
@@ -43,6 +53,7 @@ const performTransition = sectionEq => {
     display.css({
       transform: `translateY(${position}%)`
     });
+    
 
     resetActiveClassForItem(sections, sectionEq, "section-active");
 
@@ -60,22 +71,25 @@ const scrollViewport = direction => {
   const nextSection = activeSection.next();
   const prevSection = activeSection.prev();
 
+
+
   if (direction == "next" && nextSection.length) {
     performTransition(nextSection.index())
   }
-  if (direction == "prev" && nextSection.length) {
+  if (direction == "prev" && prevSection.length) {
     performTransition(prevSection.index())
   }
 }
 
 $(window).on("wheel", e => {
   const deltaY = e.originalEvent.deltaY;
+  const scroller = viewportScroller();
 
   if (deltaY > 0) {
    scrollViewport("next");
   }
   if (deltaY < 0) {
-scrollViewport("prev");
+   scrollViewport("prev");
   }
 });
 

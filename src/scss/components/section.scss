@@ -10,10 +10,7 @@
     
 
     @include tablets {
-        min-height: 59.111rem;
-    }
-    @include phones {
-        min-height: 49.111rem;
+        min-height: unset;
     }
 
     &--font-color--green {
@@ -77,7 +74,6 @@
     }
 }
 .section__bar {
-    min-height:  36.111rem;
     background-color:#f8faf9;
     background-image: url("/img/decor/Ягода-черн.png"), url("/img/decor/Узор_на_фоне.png");
     background-repeat: no-repeat;
