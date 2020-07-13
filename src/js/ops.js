@@ -83,7 +83,7 @@ const scrollViewport = direction => {
 
 $(window).on("wheel", e => {
   const deltaY = e.originalEvent.deltaY;
-  const scroller = viewportScroller();
+  // const scroller = viewportScroller();
 
   if (deltaY > 0) {
    scrollViewport("next");
