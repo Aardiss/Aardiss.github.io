@@ -977,7 +977,7 @@ template {
     position: relative; }
     .fixed-menu__link:hover {
       border-color: #ffffff; }
-    .fixed-menu__link--active {
+    .fixed-menu__link.active {
       border-color: #ffffff;
       border-style: solid; }
     .fixed-menu__link::before {
@@ -1001,7 +1001,7 @@ template {
   position: relative; }
   .fixed-black:hover {
     border-color: #000; }
-  .fixed-black--active {
+  .fixed-black.active {
     border-color: #000;
     border-style: solid; }
   @media screen and (max-width: 768px) {

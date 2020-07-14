@@ -1,7 +1,7 @@
 (function() {
 const sections = $("section");
 const display = $(".maincontent");
-const sideMenu =$(".fixed-menu__link");
+const sideMenu = $(".fixed-menu__link");
 const menuItems = sideMenu.find(".fixed-menu__link");
 
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
@@ -63,14 +63,13 @@ const performTransition = (sectionEq) => {
     setTimeout(() => {
     inScroll = false;
 
-    sideMenu
-    .find(".fixed-menu__link")
-    .eq(sectionEq)
-    .addClass("fixed-menu__link--active")
-    .siblings()
-    .removeClass("fixed-menu__link--active");
 
-    resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__link--active");
+    sideMenu.find(".fixed-menu__link")
+    sideMenu.removeClass("active")
+    let currentMenu = sideMenu.eq(sectionEq)
+    currentMenu.addClass("active")
+
+    resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__link.active");
     }, transitionOver + mouseInertiaOver);
 };
 
