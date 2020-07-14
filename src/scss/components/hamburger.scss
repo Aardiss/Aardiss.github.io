@@ -66,3 +66,11 @@
   height: auto;
   width: auto;
 }
+.hamburger__link {
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 34px;
+  @include phones {
+    font-size: 30px;
+  }
+}

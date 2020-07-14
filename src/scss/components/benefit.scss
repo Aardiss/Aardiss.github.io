@@ -12,6 +12,7 @@
 .benefit__title {
     font-size: 1.444rem;
     font-weight: bold;
+    color: black;
 }
 .benefit__image-wrapper {
     display: flex;
@@ -32,7 +33,7 @@
 }
 
 .benefit__text {
-    padding-top: 1.111rem;
+    padding-top: 1.8rem;
 
     @include phones {
         margin-left: 0.777rem;

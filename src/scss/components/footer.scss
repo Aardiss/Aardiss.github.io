@@ -10,6 +10,8 @@
 
   @include tablets {
     margin-bottom: 0;
+    justify-content: space-between;
+    padding: 11px;
   }
 
   @include phones {

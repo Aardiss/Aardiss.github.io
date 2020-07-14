@@ -35,6 +35,7 @@
 
   @include tablets {
     font-size: 30px;
+    margin-bottom: 3rem;
   }
 }
 .reviews__text {
@@ -72,6 +73,13 @@
   display: flex;
   flex-direction: column;
 }
+.title__reviews {
+  z-index: 2;
+
+  @include tablets {
+   padding-bottom: 25px;
+  }
+}
 .reviews__item {
   overflow: hidden;
   position: absolute;
@@ -99,7 +107,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -2.610rem;
+    top: -3.2rem;
   }
 }
 .reviews__item.item-active {

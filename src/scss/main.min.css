@@ -387,11 +387,18 @@ template {
   position: relative; }
 
 .assort__menu {
-  font-size: 4.666rem;
+  font-size: 3.9rem;
   font-weight: bold;
   color: #fff;
-  margin-left: 164px;
+  margin-left: 10%;
   margin-bottom: 229px; }
+  @media screen and (max-width: 768px) {
+    .assort__menu {
+      margin-bottom: 370px;
+      font-size: 3rem; } }
+  @media screen and (max-width: 400px) {
+    .assort__menu {
+      font-size: 2rem; } }
 
 .assort__list {
   position: absolute;
@@ -413,14 +420,26 @@ template {
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 60px; }
+  @media screen and (max-width: 768px) {
+    .assort__trigger {
+      width: 80px; } }
+  @media screen and (max-width: 480px) {
+    .assort__trigger {
+      width: 65px; } }
+  @media screen and (max-width: 400px) {
+    .assort__trigger {
+      width: 60px; } }
 
 .assort__title {
   color: #fff;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
   transform: rotate(-90deg);
   white-space: nowrap;
   width: 100%; }
+  @media screen and (max-width: 480px) {
+    .assort__title {
+      font-size: 40px; } }
 
 .assort__content {
   min-width: 630px;
@@ -641,7 +660,8 @@ template {
 
 .benefit__title {
   font-size: 1.444rem;
-  font-weight: bold; }
+  font-weight: bold;
+  color: black; }
 
 .benefit__image-wrapper {
   display: flex;
@@ -660,7 +680,7 @@ template {
       margin-bottom: 0; } }
 
 .benefit__text {
-  padding-top: 1.111rem; }
+  padding-top: 1.8rem; }
   @media screen and (max-width: 480px) {
     .benefit__text {
       margin-left: 0.777rem; } }
@@ -765,6 +785,9 @@ template {
   display: flex;
   flex-direction: column;
   min-height: 29.166rem; }
+  @media screen and (max-width: 768px) {
+    .command__container {
+      margin-bottom: 100px; } }
 
 .command__list {
   display: flex;
@@ -792,10 +815,9 @@ template {
   .command__profile-name::before {
     content: '▼';
     color: black;
-    font-size: 12px;
+    font-size: 22px;
     float: right;
-    margin-left: 0.277rem;
-    margin-top: 0.333rem; }
+    margin-left: 0.277rem; }
 
 .command__profile-name.active {
   color: #FFCB52; }
@@ -810,6 +832,9 @@ template {
 .command__profile-text {
   text-align: center;
   font-size: 17px; }
+  @media screen and (max-width: 480px) {
+    .command__profile-text {
+      font-size: 16px; } }
   @media screen and (max-width: 400px) {
     .command__profile-text {
       font-size: 13px; } }
@@ -879,6 +904,9 @@ template {
 @media screen and (max-width: 768px) {
   .command__profile-photo {
     display: initial; } }
+  @media screen and (max-width: 768px) and (max-width: 400px) {
+    .command__profile-photo {
+      width: 90%; } }
 
 .contacts {
   font-style: normal;
@@ -904,7 +932,6 @@ template {
   display: flex; }
 
 .feature__icon {
-  width: 3.610rem;
   margin-right: 0.777rem; }
 
 .feature__text {
@@ -919,9 +946,13 @@ template {
 .features__item {
   display: flex;
   flex-grow: 1;
-  margin-right: 0.222rem; }
+  margin-right: 1.222rem; }
   .features__item:last-child {
     margin-right: 0; }
+
+.svg__icon {
+  width: 50px;
+  height: 57px; }
 
 @media screen and (min-width: 768px) {
   .fixed-menu {
@@ -994,7 +1025,9 @@ template {
   margin-bottom: 0.944rem; }
   @media screen and (max-width: 768px) {
     .footer {
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      justify-content: space-between;
+      padding: 11px; } }
   @media screen and (max-width: 480px) {
     .footer {
       display: flex;
@@ -1164,6 +1197,14 @@ template {
   height: auto;
   width: auto; }
 
+.hamburger__link {
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 34px; }
+  @media screen and (max-width: 480px) {
+    .hamburger__link {
+      font-size: 30px; } }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -1223,12 +1264,16 @@ template {
 .headline {
   text-align: center;
   margin-bottom: 2.777rem; }
+  @media screen and (max-width: 480px) {
+    .headline {
+      padding-top: 120px; } }
 
 .headline__title {
   margin-bottom: 1.388rem; }
 
 .headline__subtitle {
-  padding: 0 26%; }
+  padding: 0 26%;
+  margin-bottom: 90px; }
   @media screen and (max-width: 768px) {
     .headline__subtitle {
       padding: 0 8.333rem; } }
@@ -1237,15 +1282,11 @@ template {
       padding: 0 5%; } }
 
 .hero {
-  background: url("/img/decor/узорs.png") right 0 no-repeat;
+  background: url("/img/decor/узорs.png") bottom right 0 no-repeat;
   background-color: #61c4d9;
   color: #ffffff;
   position: relative;
   height: 100%; }
-
-@media screen and (max-width: 768px) and (min-width: 480px) {
-  .hero {
-    background-position: right bottom 88%; } }
   @media screen and (max-width: 768px) {
     .hero::before, .hero::after {
       display: none; } }
@@ -1267,12 +1308,12 @@ template {
       text-align: center; }
       .hero__title-section::before {
         content: "";
-        width: 35.166rem;
+        width: 37.166rem;
         height: 22.666rem;
         position: absolute;
         right: 27%;
         background: url("/img/decor/Картинки.png") center center/contain no-repeat;
-        top: 19%; } }
+        top: 7%; } }
   @media screen and (max-width: 480px) {
     .hero__title-section {
       display: flex;
@@ -1282,15 +1323,17 @@ template {
       text-align: center; }
       .hero__title-section::before {
         content: "";
-        width: 98%;
-        height: 44%;
+        width: 102%;
+        height: 47%;
         position: absolute;
         right: 23%;
         top: 8%; } }
 
-@media screen and (max-width: 768px) {
-  .hero__icons-section {
-    display: none; } }
+.hero__icons-section {
+  margin-bottom: 60px; }
+  @media screen and (max-width: 768px) {
+    .hero__icons-section {
+      display: none; } }
 
 .hero__container {
   display: flex;
@@ -1309,8 +1352,8 @@ template {
   @media screen and (min-width: 769px) {
     .hero__container::before {
       position: absolute;
-      bottom: 4.944rem;
-      left: 27.166rem;
+      bottom: 18.944%;
+      left: 51.166%;
       content: url("/img/decor/Батончики.png"); } }
   @media screen and (min-width: 769px) {
     .hero__container::after {
@@ -1669,7 +1712,8 @@ template {
   color: black; }
   @media screen and (max-width: 768px) {
     .reviews__title {
-      font-size: 30px; } }
+      font-size: 30px;
+      margin-bottom: 3rem; } }
 
 .reviews__text {
   margin-bottom: 1.499rem;
@@ -1703,6 +1747,12 @@ template {
   display: flex;
   flex-direction: column; }
 
+.title__reviews {
+  z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .title__reviews {
+      padding-bottom: 25px; } }
+
 .reviews__item {
   overflow: hidden;
   position: absolute;
@@ -1728,7 +1778,7 @@ template {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -2.610rem; }
+    top: -3.2rem; }
 
 .reviews__item.item-active {
   position: static;
@@ -1763,7 +1813,7 @@ template {
   margin-bottom: 0rem;
   text-align: center;
   color: #000000;
-  margin-bottom: 2.111rem; }
+  margin-bottom: 0.111rem; }
   @media screen and (max-width: 480px) {
     .section__title {
       font-size: 2.222rem; } }
@@ -1809,10 +1859,10 @@ template {
       background-image: url("/img/decor/Ягода-черн.png"), url("/img/decor/Узор_на_фоне.png");
       background-repeat: no-repeat;
       background-position: right bottom;
-      background-size: 17%; } }
+      background-size: 10%; } }
   @media screen and (max-width: 768px) {
     .section__bar {
-      background-size: 30%; } }
+      background-size: 16%; } }
 
 .order-section {
   background-image: url("/img/decor/лист90.png"), url("/img/decor/ягода90.png"), url("/img/decor/паттерн.png");

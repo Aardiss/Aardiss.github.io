@@ -7,8 +7,12 @@
 .features__item {
   display: flex;
   flex-grow: 1;
-  margin-right: 0.222rem;
+  margin-right: 1.222rem;
   &:last-child {
     margin-right: 0;
   }
+}
+.svg__icon {
+  width: 50px;
+  height: 57px;
 }

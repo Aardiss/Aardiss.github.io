@@ -4,11 +4,18 @@
   position: relative;
 }
 .assort__menu {
-  font-size: 4.666rem;
+  font-size: 3.9rem;
   font-weight: bold;
   color:#fff;
-  margin-left: 164px;
+  margin-left: 10%;
   margin-bottom: 229px;
+  @include tablets {
+    margin-bottom: 370px;
+    font-size: 3rem;
+  }
+  @include smallPhones {
+    font-size: 2rem;
+  }
 }
 .assort__list {
   position: absolute;
@@ -31,15 +38,27 @@
  justify-content: center;
  align-items: flex-end;
  padding-bottom: 60px;
+ @include tablets {
+   width: 80px;
+ }
+ @include phones {
+   width: 65px;
+ }
+ @include smallPhones {
+   width: 60px;
+ }
 
 }
 .assort__title {
   color: #fff;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
   transform: rotate(-90deg);
   white-space: nowrap;
   width: 100%;
+  @include phones {
+    font-size: 40px;
+  }
 
 }
 .assort__content {

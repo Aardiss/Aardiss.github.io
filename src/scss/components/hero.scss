@@ -2,7 +2,7 @@
 @import "./media.scss";
 
 .hero {
-  background: url("/img/decor/узорs.png") right 0 no-repeat;
+  background: url("/img/decor/узорs.png")bottom right 0 no-repeat;
   background-color: $blue;
   color: #ffffff;
   position: relative;
@@ -10,7 +10,7 @@
 
   @include tablets { 
     @media screen and (min-width: 480px) {
-    background-position: right bottom 88%;
+    // background-position: right bottom 88%;
     // height: 1000px;
     }
   }
@@ -39,12 +39,12 @@
    
    &::before {
      content: "";
-     width: 35.166rem;
+     width: 37.166rem;
      height: 22.666rem;
      position: absolute;
      right: 27%;
      background: url("/img/decor/Картинки.png") center center /contain no-repeat;
-     top: 19%;
+     top: 7%;
    }
 }
 @include phones {
@@ -56,8 +56,8 @@
 
   &::before {
   content: "";
-  width: 98%;
-  height: 44%;
+  width: 102%;
+  height: 47%;
   position: absolute;
   right: 23%;
   // background: url("/img/decor/Картинки.png") center center/contain no-repeat;
@@ -67,6 +67,7 @@
 }
 
 .hero__icons-section {
+  margin-bottom: 60px;
  @include tablets {
    display: none;
  }
@@ -92,8 +93,8 @@
   &::before {
     @media screen and (min-width: 769px) {
     position: absolute;
-      bottom: 4.944rem;
-      left: 27.166rem;
+    bottom: 18.944%;
+    left: 51.166%;
       // bottom: 12.944rem;
       // left: -16px;
       content: url("/img/decor/Батончики.png");

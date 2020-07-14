@@ -44,13 +44,13 @@
     </header>
 
     <ul class="hamburger__menu">
-      <li class="hamburger__item"><a href="" data-to="benefits" class="menu__link">О нас</a></li>
-      <li class="hamburger__item"><a href="" data-to="bar" class="menu__link">Батончики</a></li>
-      <li class="hamburger__item"><a href="" data-to="command" class="menu__link">Команда</a></li>
-      <li class="hamburger__item"><a href="" data-to="assort" class="menu__link">Меню</a></li>
-      <li class="hamburger__item"><a href="" data-to="reviews" class="menu__link">Отзывы</a></li>
-      <li class="hamburger__item"><a href="" data-to="player" class="menu__link">Как мы работаем</a></li>
-      <li class="hamburger__item"><a href="" data-to="map" class="menu__link">Контакты</a></li>
+      <li class="hamburger__item"><a href="" data-to="benefits" class="hamburger__link">О нас</a></li>
+      <li class="hamburger__item"><a href="" data-to="bar" class="hamburger__link">Батончики</a></li>
+      <li class="hamburger__item"><a href="" data-to="command" class="hamburger__link">Команда</a></li>
+      <li class="hamburger__item"><a href="" data-to="assort" class="hamburger__link">Меню</a></li>
+      <li class="hamburger__item"><a href="" data-to="reviews" class="hamburger__link">Отзывы</a></li>
+      <li class="hamburger__item"><a href="" data-to="player" class="hamburger__link">Как мы работаем</a></li>
+      <li class="hamburger__item"><a href="" data-to="map" class="hamburger__link">Контакты</a></li>
       <li class="hamburger__item close">x</li>
     </ul>
 
@@ -63,30 +63,27 @@
       <ul class="features">
         <li class="features__item feature">
           <div class="feature__icon">
-            <picture>
-              <source media="(min-width: 768px)" srcset="./img/icons/5.svg">
-              <img src="" alt="leaf">
-              </picture>
+            <svg class="svg__icon" fill="white">
+              <use xlink:href="/img/icons/sprite.svg#big"></use>
+            </svg>
           </div>
           <div class="feature__text">100% натуральный продукт</div>
         </li>
 
         <li class="features__item feature">
           <div class="feature__icon">
-            <picture>
-              <source media="(min-width: 768px)" srcset="./img/icons/6.svg">
-             <img src="" alt="leaf">
-        </picture>
+            <svg class="svg__icon" fill="white">
+              <use xlink:href="/img/icons/sprite.svg#smo"></use>
+            </svg>
         </div>
           <div class="feature__text">3-5 дней доставка по РФ</div>
         </li>
 
         <li class="features__item feature">
           <div class="feature__icon">
-            <picture>
-              <source media="(min-width: 768px)" srcset="./img/icons/4.svg">
-               <img src="" alt="leaf">
-              </picture>
+            <svg class="svg__icon" fill="white">
+              <use xlink:href="/img/icons/sprite.svg#les"></use>
+            </svg>
           </div>
           <div class="feature__text">Не портит фигуру</div>
         </li>
@@ -594,7 +591,7 @@
     </section>
 
      <section data-id="reviews" data-theme="black" class="section section__reviews">
-      <h2 class="section__title">ОТЗЫВЫ</h2>
+      <h2 class="section__title title__reviews">ОТЗЫВЫ</h2>
       <div class="container reviews__container">
          <div class="reviews">
           <div class="reviews__display">
