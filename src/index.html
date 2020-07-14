@@ -686,30 +686,25 @@
     <section data-id="player" data-theme="black" class="section video">
       <div class="container video-container">
         <h2 class="player__title">КАК МЫ РАБОТАЕМ</h2>
-        <div class="player">
-           <div class="player__wrapper">
-            <video src="http://youtu.be/LXb3EKWsInQ" controls="player__controls" class="player__elem" id="yt-player"></video>
-             <!-- <div id="yt-player" class="player__elem"></div>
-              <div class="player__splash">
-                 <img src="https://2.downloader.disk.yandex.ru/preview/6317430f6f9c818a8a09ede65fd1d1bd5d0b232961143467a954f1398842960d/inf/YqWSd-00HcLp8XEXHs-5th6DcDR5mbi9_EZPJrtm7feyRiLKIuUQJzYOeMeYmG0uAwHkEOS88F0SeARkkEzCyA%3D%3D?uid=208008506&filename=videocover.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=208008506&tknv=v2&size=1903x937" alt="">
-              </div> -->
-           </div>
-   
-           <div class="player__controls">
-             <button class="player__start"></button>
-             <div class="player__playback">
-               <button class="player__playback-button"></button>
-             </div>
-             <div class="player__volume">
-               <button class="volume__pic"></button>
-               <div class="volume__playback">
-                 <button class="volume__playback-button"></button>
-               </div>
-             </div>
-           </div>
+        <div class="player__wrapper">
+         <video id="yt-player" class="player__elem" controls="player__controls">
+            <source src="https://wistia.com?wvideo=kjvkb1eroi" type="video/mp4"></source>
+              <img src="./img/decor/play-gray.png" class="play play-pic" alt="">
+          </video>
+         </div>
+         <div class="player__controls">
+          <div class="player__playback">
+            <button class="play playback-mark"></button>
+            <input type="range" class="player__duration" id="durationLevel">
+          </div>
+          <div class="player__volume">
+            <img src="./img/decor/volum-gray.png" class="volume__pic" id="volume" alt="">
+              <input type="range" class="player__duration volume" id="volumeLevel">
+            </div>
+          </div>
+         </div>
         </div>
-       </div>   
-   </section>
+      </section>
 
      <section data-id="order" data-theme="white" class="section order-section section--font-color--green">
       <div class="container">
@@ -853,7 +848,7 @@
   </nav>
  
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script src="https://www.youtube.com/iframe_api"></script>
+  <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
   <script src="main.min.js"></script>
 </body>
 </html> 

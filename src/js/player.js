@@ -1,239 +1,90 @@
-// (function() {
-// let  player;
-// const playerContainer = $(".player");
+let video;
+let durationControl;
+let soundControl;
+let intervalId;
+let soundLevel;
 
-// let eventsInit = () => {
-//   $(".player__start").click(e => {
-//     e.preventDefault();
-  
-//     if (playerContainer.hasClass("paused")) {
-//       player.pauseVideo();
-//     } else {
-//       player.playVideo();
-//     }
-//   });
- 
+$().ready(function(){
+    video = document.getElementById("yt-player");
 
-//   $(".player__playback").click(e => {
-//     const bar = $(e.currentTarget);
-//     const clickedPosition = e.originalEvent.layerX;
-//     const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
-//     const newPlaybackPositionSec =
-//     (player.getDuration() / 100) * newButtonPositionPercent;
- 
-//     $(".player__playback-button").css({
-//       left: `${newButtonPositionPercent}%`
-//     });
-//       player.seekTo(newPlaybackPositionSec);
-//    });
-// };
+    video.addEventListener('click', playStop);
 
-// const formatTime = timeSec => {
-//   const roundTime = Math.round(timeSec);
-  
-//   const minutes = addZero(Math.floor(roundTime / 60));
-//   const seconds = addZero(roundTime - minutes * 60);
-  
-//   function addZero(num) {
-//     return num < 10 ? `0${num}` : num;
-//   }
-  
-//   return `${minutes} : ${seconds}`;
-//  };
-
-//  const onPlayerReady = () => {
-//   let interval;
-//   const durationSec = player.getDuration();
-  
-//   $(".player__duration-estimate").text(formatTime(durationSec));
-  
-//   if (typeof interval !== "undefined") {
-//     clearInterval(interval);
-//   }
-  
-//   interval = setInterval(() => {
-//     const completedSec = player.getCurrentTime();
-//     const completedPercent = (completedSec / durationSec) * 100;
-
-//     $(".player__playback-button").css({
-//       left: `${completedPercent}%`
-//     });
-  
-//     $(".player__duration-completed").text(formatTime(completedSec));
-//   }, 1000);
-//  };
-
-//  const onPlayerStateChange = event => {
- 
-//   switch (event.data) {
-//     case 1:
-//       playerContainer.addClass("active");
-//       playerContainer.addClass("paused");
-//       break;
-  
-//     case 2:
-//       playerContainer.removeClass("active");
-//       playerContainer.removeClass("paused");
-//       break;
-//   }
-//  };
-// function onYouTubeIframeAPIReady() {
-//   player = new YT.Player('YT', {
-//     height: '405',
-//     width: '940',
-//     videoId: 'LXb3EKWsInQ',
-//     events: {
-//       'onReady': onPlayerReady,
-//       'onStateChange': onPlayerStateChange
-//     },
-//       playerVars: {
-//       controls:0,
-//       disablekb: 0,
-//       showinfo: 0,
-//       rel: 0,
-//       autoplay: 0,
-//       modestbranding: 0,
-//     }
-//   });
-// }
-
-// eventsInit();
-// })()
-
-(function() {
-let player;
-const playerContainer = $('.player');
-const playerStart = $('.player__start');
-const volumeBtn = $(".volume__pic");
-
-
-let eventsInit = () => {
-  $(".player__start").click(e => {
-    e.preventDefault();
-
-    const btn = $(e.currentTarget);
-
-    if (playerStart.hasClass("player--paused")) {
-
-
-      player.pauseVideo();
-
-    } else {
-
-      player.playVideo();
+    let playButtons = document.querySelectorAll(".play");
+    for (let i = 0; i < playButtons.length; i++) {
+      playButtons[i].addEventListener('click', playStop);
     }
 
-    onPlayerReady();
-  });
+    let volumeControl = document.getElementById("volume");
+    volumeControl.addEventListener('click', soundOff);
 
-  $(".player__playback").click(e => {
-    const bar = $(e.currentTarget);
-    const clickedPosition = e.originalEvent.layerX;
-    const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
-    const newPlaybackPositionSec =
-      (player.getDuration() / 100) * newButtonPositionPercent;
+    durationControl = document.getElementById("durationLevel");
+    durationControl.addEventListener('click', setVideoDuration);
+    durationControl.addEventListener('onmousemove', setVideoDuration);
+    durationControl.addEventListener('mousedown', stopInterval);
+    durationControl.min = 0;
+    durationControl.value = 0;
 
+    soundControl = document.getElementById("volumeLevel");
+    soundControl.addEventListener('click', changeSoundVolume);
+    soundControl.addEventListener('onmousemove', changeSoundVolume);
+    soundControl.min = 0;
+    soundControl.max = 10;
+    soundControl.value = soundControl.max;
 
-    $(".player__playback-button").css({
-      left: `${newButtonPositionPercent}%`
+    video.addEventListener('ended', function () {
+      $(".play-pic").toggleClass("play-pic--active");
+      video.currentTime = 0;
+      }, false);
     });
 
-    player.seekTo(newPlaybackPositionSec);
-  });
+  
+    function playStop() {
+      $(".play-pic").toggleClass("play-pic--active");
 
-  $(".player__splash").click(e => {
-    player.playVideo();
-  });
+      durationControl.max = video.duration;
 
-
-  $(".volume__pic").click(e => {
-    e.preventDefault();
-
-    if (volumeBtn.hasClass("volume__pic--nosound")) {
-
-      player.unMute();
-      volumeBtn.removeClass("volume__pic--nosound");
-
-    } else {
-
-      player.mute();
-      volumeBtn.addClass("volume__pic--nosound");
+      if (video.paused) {
+        video.play();
+        intervalId = setInterval(updateDuration,1000/66)
+        $('.playback-mark').addClass('active')
+              
+      } else { 
+        video.pause();
+        clearInterval(intervalId);
+        $('.playback-mark').removeClass('active')
+      }
     }
-  });
 
-  $(".volume__playback").click(e => {
-
-    const barVolume = $(e.currentTarget);
-    const clickedPositionVolume = e.originalEvent.layerX;
-    const newVolumeButtonPositionPercent = (clickedPositionVolume / barVolume.width()) * 100;
-    let volumePoint = player.getVolume();
-
-
-    $(".volume__playback-button").css({
-      left: `${newVolumeButtonPositionPercent}%`
-    });
-
-    player.setVolume(newVolumeButtonPositionPercent);
-
-  });
-
-
-};
-
-
-const onPlayerReady = () => {
-  let interval;
-  const durationSec = player.getDuration();
-
-  if (typeof interval !== "undefined") {
-    clearInterval(interval);
-  }
-
-  interval = setInterval(() => {
-    const completedSec = player.getCurrentTime();
-    const completedPercent = (completedSec / durationSec) * 100;
-
-    $(".player__playback-button").css({
-      left: `${completedPercent}%`
-    });
-
-  }, 1000);
-};
-
-
-const onPlayerStateChange = event => {
-  switch (event.data) {
-    case 1:
-      playerContainer.addClass("active");
-      playerStart.addClass("player--paused");
-      break;
-    case 2:
-      playerContainer.removeClass("active");
-      playerStart.removeClass("player--paused");
-      break;
-  }
-}
-
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('yt-player', {
-    height: '405',
-    width: '660',
-    videoId: 'LXb3EKWsInQ',
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    },
-    playerVars: {
-      controls: 0,
-      disablekb: 0,
-      showinfo: 0,
-      rel: 0,
-      autoplay: 0,
-      modesbranding: 0
+    function stopInterval() {
+      video.pause();
+      clearInterval(intervalId);
     }
-  })
-};
 
+    function setVideoDuration() {
+      if (video.paused) {
+          video.play();
+      } else {
+          video.pause();
+      }
+      video.currentTime = durationControl.value;
+      intervalId = setInterval(updateDuration,1000/66);
+    }
 
-eventsInit();
-}) ()
+    function updateDuration() {
+      durationControl.value = video.currentTime;
+    }
+
+    function soundOff() {
+      if (video.volume === 0) {
+          video.volume = soundLevel;
+          soundControl.value = soundLevel*10;
+      } else {
+        soundLevel = video.volume;
+        video.volume = 0;
+        soundControl.value = 0;
+      }
+    }
+
+    function changeSoundVolume() {
+      video.volume = soundControl.value/10;
+    }
