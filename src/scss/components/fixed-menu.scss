@@ -12,7 +12,6 @@
 }
 .fixed-menu__item {
   margin-bottom: 0.277rem;
-
 }
 .fixed-menu__link {
   width: 0.888rem;
@@ -21,14 +20,14 @@
   border: 0.055rem solid transparent;
   display: block;
   position: relative;
-  .menu-black {
-    background: #000;
+
+  &:hover {
+    border-color: #ffffff;
   }
   &--active {
-      border-color: #ffffff;
-      border-style: solid;
-  }
-
+    border-color: #ffffff;
+    border-style: solid;
+}
   &::before {
     content: "";
     display: block;
@@ -41,7 +40,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
 }
 }
 .fixed-black {
@@ -51,6 +49,9 @@
   border: 0.055rem solid transparent;
   display: block;
   position: relative;
+  &:hover {
+    border-color: #000;
+  }
   &--active {
       border-color: #000;
       border-style: solid;

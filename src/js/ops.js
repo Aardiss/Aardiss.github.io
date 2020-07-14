@@ -63,6 +63,13 @@ const performTransition = (sectionEq) => {
     setTimeout(() => {
     inScroll = false;
 
+    sideMenu
+    .find(".fixed-menu__link")
+    .eq(sectionEq)
+    .addClass("fixed-menu__link--active")
+    .siblings()
+    .removeClass("fixed-menu__link--active");
+
     resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__link--active");
     }, transitionOver + mouseInertiaOver);
 };
@@ -142,3 +149,5 @@ $("[data-to]").click(e => {
   });
  }
 })()
+
+
