@@ -47,7 +47,6 @@
  @include smallPhones {
    width: 60px;
  }
-
 }
 .assort__title {
   color: #fff;
@@ -59,10 +58,9 @@
   @include phones {
     font-size: 40px;
   }
-
 }
 .assort__content {
-  min-width: 630px;
+  min-width: 112%;
   padding: 50px 127px 50px 27px;
   overflow-y: auto;
   background-color: rgba(51, 53, 55, .93);
@@ -78,7 +76,7 @@
 }
 .assort__close {
   position: absolute;
-  right: 135px;
+  right: 13%;
   top: 0px;
   color: #fff;
   text-decoration: none;
@@ -90,7 +88,6 @@
   overflow: hidden;
   transition: .7s;
 }
-
 .assort__container {
   &::before {
     position: relative;

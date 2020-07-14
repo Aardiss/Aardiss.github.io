@@ -442,7 +442,7 @@ template {
       font-size: 40px; } }
 
 .assort__content {
-  min-width: 630px;
+  min-width: 112%;
   padding: 50px 127px 50px 27px;
   overflow-y: auto;
   background-color: rgba(51, 53, 55, 0.93);
@@ -458,7 +458,7 @@ template {
 
 .assort__close {
   position: absolute;
-  right: 135px;
+  right: 13%;
   top: 0px;
   color: #fff;
   text-decoration: none;
@@ -770,7 +770,8 @@ template {
     background: transparent;
     color: #000000;
     text-transform: none;
-    border: none; }
+    border: none;
+    outline: none; }
     .btn--theme--transparent:hover {
       color: #0b4d3c; }
 
@@ -974,8 +975,8 @@ template {
     border: 0.055rem solid transparent;
     display: block;
     position: relative; }
-    .fixed-menu__link .menu-black {
-      background: #000; }
+    .fixed-menu__link:hover {
+      border-color: #ffffff; }
     .fixed-menu__link--active {
       border-color: #ffffff;
       border-style: solid; }
@@ -998,6 +999,8 @@ template {
   border: 0.055rem solid transparent;
   display: block;
   position: relative; }
+  .fixed-black:hover {
+    border-color: #000; }
   .fixed-black--active {
     border-color: #000;
     border-style: solid; }
