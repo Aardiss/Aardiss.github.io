@@ -1,5 +1,5 @@
 .assort {
-  background: url(/img/decor/three.png), #000;
+  background: url(img/decor/three.png), #000;
   background-size: cover;
   position: relative;
 }
@@ -104,7 +104,7 @@
 .assort__container {
   &::before {
     position: relative;
-    content: url("/img/decor/mill.png");
+    content: url("img/decor/mill.png");
     right: 238px;
     top: -550px;
   }

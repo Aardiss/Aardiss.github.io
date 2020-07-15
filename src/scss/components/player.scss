@@ -1,20 +1,20 @@
 .video {
   background-color: #f8faf9;
-  background-image:url("/img/decor/pla.png"), url("/img/decor/list.png");
+  background-image:url("img/decor/pla.png"), url("img/decor/list.png");
   background-repeat:no-repeat, no-repeat;
   background-position: top 570px left 11%, top 100px right 11%;
   background-size: 80px, 75px;
 
   &::after {
     position: absolute;
-    content: url("/img/decor/Ежевика_фото.png");
+    content: url("img/decor/Ежевика_фото.png");
     top: 287rem;
     right: 5px;
     
    
    @include tablets {
        
-       content: url("/img/decor/Ежевика_фото2.png");
+       content: url("img/decor/Ежевика_фото2.png");
     top: 416rem;
     
        

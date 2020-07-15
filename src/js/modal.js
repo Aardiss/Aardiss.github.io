@@ -51,6 +51,7 @@ $(".form").submit((e) => {
     });
 
     request.always(() => {
+      window.inScroll = true;
       $.fancybox.open({
         src: "#modal",
         type: "inline",

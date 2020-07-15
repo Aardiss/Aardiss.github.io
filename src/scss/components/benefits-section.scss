@@ -2,11 +2,11 @@
 
 .benefits-section {
   position: relative;
-  background: url("/img/decor/узор_лист.png") left 0 top 55% no-repeat;
+  background: url("img/decor/узор_лист.png") left 0 top 55% no-repeat;
 
   @include tablets {
     @media screen and (min-width: 480px) {
-    background: url("/img/decor/узор_лист.png") left 0 top 17% no-repeat;
+    background: url("img/decor/узор_лист.png") left 0 top 17% no-repeat;
   }
 }
 
@@ -16,7 +16,7 @@
    }
 
   &::before {
-    content: url("/img/decor/малина.png");
+    content: url("img/decor/малина.png");
     position: absolute;
     bottom: -6.277rem;
 

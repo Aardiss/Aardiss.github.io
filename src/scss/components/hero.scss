@@ -2,7 +2,7 @@
 @import "./media.scss";
 
 .hero {
-  background: url("/img/decor/узорs.png")bottom right 0 no-repeat;
+  background: url("img/decor/узорs.png")bottom right 0 no-repeat;
   background-color: $blue;
   color: #ffffff;
   position: relative;
@@ -21,7 +21,7 @@
     }
   }
   @include phones {
-     background: url("/img//decor/узорs3.png") right 7%  no-repeat;
+     background: url("img//decor/узорs3.png") right 7%  no-repeat;
      background-color: $blue; 
   }
 }
@@ -43,7 +43,7 @@
      height: 22.666rem;
      position: absolute;
      right: 27%;
-     background: url("/img/decor/Картинки.png") center center /contain no-repeat;
+     background: url("img/decor/Картинки.png") center center /contain no-repeat;
      top: 7%;
    }
 }
@@ -60,7 +60,7 @@
   height: 47%;
   position: absolute;
   right: 23%;
-  // background: url("/img/decor/Картинки.png") center center/contain no-repeat;
+  // background: url("img/decor/Картинки.png") center center/contain no-repeat;
   top: 8%;
   }
 }
@@ -97,7 +97,7 @@
     left: 51.166%;
       // bottom: 12.944rem;
       // left: -16px;
-      content: url("/img/decor/Батончики.png");
+      content: url("img/decor/Батончики.png");
     }
     }
   &::after {
@@ -105,7 +105,7 @@
     position: absolute;
     bottom: -2.721rem;
     left: -2.777rem;
-    content: url("/img/decor/Ягоды_и_листья.png");
+    content: url("img/decor/Ягоды_и_листья.png");
     width: 100%;
     z-index: -1;
     }

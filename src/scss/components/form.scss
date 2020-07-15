@@ -17,7 +17,7 @@
   &::after {
     @media screen and (min-width: 768px) {
     position: absolute;
-    background-image: url("/img/decor/ягода90.png");
+    background-image: url("img/decor/ягода90.png");
     }
    @include phones {
      display: none;

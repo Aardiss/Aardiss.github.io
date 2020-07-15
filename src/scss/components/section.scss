@@ -33,19 +33,19 @@
     }
 }
 .section__reviews {
-    background: url("/img/decor/Ягода.png") top 1.777rem right 12.166rem  no-repeat;
+    background: url("img/decor/Ягода.png") top 1.777rem right 12.166rem  no-repeat;
 
     @include tablets {
         background: none;
-        background: url("/img/decor/Ягода.png") top 0rem right -1.777rem no-repeat;
+        background: url("img/decor/Ягода.png") top 0rem right -1.777rem no-repeat;
     }
     @include phones {
-        background: url("/img/decor/Ягода.png") top 0rem right -1.777rem / 30% no-repeat;
+        background: url("img/decor/Ягода.png") top 0rem right -1.777rem / 30% no-repeat;
         
     }
     &::before {
         position: absolute;
-        content: url("/img/decor/Узор.png");
+        content: url("img/decor/Узор.png");
         top: 245rem;
        
 
@@ -59,7 +59,7 @@
     }
     &::after {
         position: absolute;
-        content: url("/img/decor/Ягоды.png");
+        content: url("img/decor/Ягоды.png");
         top: 249rem;
         
 
@@ -74,13 +74,13 @@
 }
 .section__bar {
     background-color:#f8faf9;
-    background-image: url("/img/decor/Ягода-черн.png"), url("/img/decor/Узор_на_фоне.png");
+    background-image: url("img/decor/Ягода-черн.png"), url("img/decor/Узор_на_фоне.png");
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 11%;
     
     @include tablets {
-        background-image: url("/img/decor/Ягода-черн.png"), url("/img/decor/Узор_на_фоне.png");
+        background-image: url("img/decor/Ягода-черн.png"), url("img/decor/Узор_на_фоне.png");
         background-repeat: no-repeat;
         background-position: right bottom;
         background-size: 10%;
@@ -91,7 +91,7 @@
 }
 
 .order-section {
-    background-image:url("/img/decor/лист90.png"), url("/img/decor/ягода90.png"), url("/img/decor/паттерн.png");
+    background-image:url("img/decor/лист90.png"), url("img/decor/ягода90.png"), url("img/decor/паттерн.png");
     background-repeat:no-repeat, no-repeat, repeat;
     background-position: top 500px right 50px, top 600px left 50px, top;
     background-size: 100px, 50px, 1520px;
@@ -99,7 +99,7 @@
     
     
     @include tablets {
-        background: url("/img/decor/паттерн.png") center navajowhite;
+        background: url("img/decor/паттерн.png") center navajowhite;
    }
 
    

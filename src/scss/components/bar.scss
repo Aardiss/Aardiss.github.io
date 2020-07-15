@@ -18,7 +18,7 @@
   }
 }
 .bar__image {
-  background: url("/img/decor/батон.png") left 30% center no-repeat ;
+  background: url("img/decor/батон.png") left 30% center no-repeat ;
   background-size: contain;
 
   @include tablets {
@@ -136,11 +136,11 @@ margin-bottom: 0.277rem;
   position: relative;
   width: 5rem;
   height: 5rem;
-  background: url("/img/decor/Состав.png") no-repeat;
+  background: url("img/decor/Состав.png") no-repeat;
 
   &:hover {
     position: relative;
-    background: url("/img/decor/Состав-hover.png") no-repeat;
+    background: url("img/decor/Состав-hover.png") no-repeat;
 }
 }
 .bar__composition-menu {
