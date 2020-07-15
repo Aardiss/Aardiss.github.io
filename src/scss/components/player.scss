@@ -25,6 +25,9 @@
   }
  } 
 }
+.video-container {
+  position: relative;
+}
 
 .player {
   display: flex;
@@ -75,8 +78,8 @@
   align-items: center;
   height: 3rem;
   width: 100%;
-  position: relative;
-  bottom: 62px;
+  position: absolute;
+  bottom: 0px;
  
 
   @include phones {

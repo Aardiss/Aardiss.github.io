@@ -7,7 +7,7 @@ const menuItems = sideMenu.find(".fixed-menu__link");
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
 
-let inScroll = false;
+window.inScroll = false;
 
 sections.first().addClass("section-active");
 
@@ -41,12 +41,12 @@ const performTransition = (sectionEq) => {
     sectionEq = 0
   }
 
-  if (inScroll) return;
+  if (window.inScroll) return;
 
   const transitionOver = 1000;
   const mouseInertiaOver = 300;
 
-    inScroll = true;
+  window.inScroll = true;
 
     const position = countSectionPosition(sectionEq);
 
@@ -61,7 +61,7 @@ const performTransition = (sectionEq) => {
 
     
     setTimeout(() => {
-    inScroll = false;
+      window.inScroll = false;
 
 
     sideMenu.find(".fixed-menu__link")
@@ -139,8 +139,8 @@ $("[data-to]").click(e => {
     swipe: function(event, direction) {
       const scroller = viewportScroller();
   
-      if (direction == "up") scroller = ["next"]();
-      if (direction == "down") scroller = ["prev"]();
+      if (direction == "up") scroller["next"]();
+      if (direction == "down") scroller["prev"]();
   
     },
   });

@@ -1487,6 +1487,9 @@ template {
       .video::after {
         display: none; } }
 
+.video-container {
+  position: relative; }
+
 .player {
   display: flex;
   flex-direction: column;
@@ -1527,8 +1530,8 @@ template {
   align-items: center;
   height: 3rem;
   width: 100%;
-  position: relative;
-  bottom: 62px; }
+  position: absolute;
+  bottom: 0px; }
   @media screen and (max-width: 480px) {
     .player__controls {
       justify-content: space-between; } }

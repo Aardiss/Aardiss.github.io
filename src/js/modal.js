@@ -54,6 +54,9 @@ $(".form").submit((e) => {
       $.fancybox.open({
         src: "#modal",
         type: "inline",
+        afterClose: function () {
+          window.inScroll = false;
+        }
       });
     });
   }
@@ -61,7 +64,7 @@ $(".form").submit((e) => {
 
 $(".app-submit-btn").click(e => {
   e.preventDefault();
-
+  window.inScroll = false;
   $.fancybox.close();
 });
 })()
