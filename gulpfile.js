@@ -116,6 +116,12 @@ const env= process.env.NODE_ENV;
   }
  )
 
+task('video', () => {
+  return src(`${SRC_PATH}/vid/*`)
+    .pipe(dest(`${DIST_PATH}/vid`))
+ }
+)
+
  task('server', () => {
   browserSync.init({
       server: {
@@ -135,12 +141,12 @@ task("watch", () => {
  task(
    'default', 
    series('clean','sass', 'styles',
-   parallel('copy:html', 'scripts', 'icons', 'decor', 'reviews'),
+   parallel('copy:html', 'scripts', 'icons', 'decor', 'reviews', 'video'),
    parallel('watch', 'server')
    )
  );
  
 task('build',
 series('clean', 
-parallel('copy:html', 'styles', 'scripts', 'icons', 'decor', 'reviews'))
+parallel('copy:html', 'styles', 'scripts', 'icons', 'decor', 'reviews', 'video'))
 );
