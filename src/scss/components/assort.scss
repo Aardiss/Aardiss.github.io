@@ -23,11 +23,23 @@
   right: 0;
   height: 100%;
   display: flex;
+  @include phones {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
 
 .assort__item{
   height: 100%;
   display: flex;
+}
+.assort__item.assort-active {
+  @include phones {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 .assort__trigger {
  display: flex;
@@ -87,6 +99,7 @@
   width: 0;
   overflow: hidden;
   transition: .7s;
+  z-index: 2;
 }
 .assort__container {
   &::before {
