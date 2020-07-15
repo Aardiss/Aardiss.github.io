@@ -1522,10 +1522,10 @@ template {
   flex-direction: row;
   background-color: #404040;
   align-items: center;
-  height: 3rem;
+  height: 4rem;
   width: 100%;
   position: relative;
-  bottom: 0;
+  bottom: 77px;
   z-index: 5; }
   @media screen and (max-width: 480px) {
     .player__controls {
@@ -1603,10 +1603,6 @@ template {
   height: 13px;
   border-radius: 50%; }
 
-.player--paused {
-  background: url(https://3.downloader.disk.yandex.ru/preview/94e2edcc992f11d0dc19a03fc160de849fcb5a4dd03f9047f57ee29b6b945220/inf/plwDV5v8CXESIxoBrdKgZqLRT4klZFjb2YRDc_TULm7uM17VujzewcFuw6r6zVKtWYtPPeDeBP65AEHcWim8FA%3D%3D?uid=208008506&filename=pause.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=208008506&tknv=v2&size=1903x937) no-repeat;
-  background-position: center; }
-
 .player__start:hover {
   cursor: pointer; }
 
@@ -1624,35 +1620,6 @@ template {
   border: none;
   margin-right: 10px;
   cursor: pointer; }
-
-.volume__pic--nosound {
-  background: url(https://3.downloader.disk.yandex.ru/preview/1ff454e4c736305985da183fd24879025f9278733ea0823742a1310ba5c33187/inf/J2wFxh0439UVOFRqa4BruzKhyyoFv8zjYXJ914XWi_3DZRLUUWAlfEmMBASHYA_Tji0GJJnPoGiV8N4Z3HA2PQ%3D%3D?uid=208008506&filename=nosoud.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=208008506&tknv=v2&size=1903x937) no-repeat;
-  background-position: center; }
-
-.volume__playback {
-  width: 50%;
-  position: relative;
-  display: flex;
-  align-items: center; }
-  .volume__playback::before {
-    content: "";
-    width: 90%;
-    height: 4px;
-    position: absolute;
-    display: block;
-    background: url(https://4.downloader.disk.yandex.ru/preview/c09e44711603cd3cd1eb90cb25ff290e597641566ae7e07029401d6fdc5ceeff/inf/5a363NrPVq6DSHlgEijAUKLRT4klZFjb2YRDc_TULm52KC73enbkg20lUUmO4YPfw8hV3TeKFvdS2CVlLy96qw%3D%3D?uid=208008506&filename=volume-stick.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=208008506&tknv=v2&size=1903x937) no-repeat; }
-
-.volume__playback-button {
-  background: #626262;
-  border: none;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  right: 0; }
 
 .radio {
   display: flex;
