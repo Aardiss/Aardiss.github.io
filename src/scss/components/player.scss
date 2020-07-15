@@ -2,7 +2,7 @@
   background-color: #f8faf9;
   background-image:url("/img/decor/pla.png"), url("/img/decor/list.png");
   background-repeat:no-repeat, no-repeat;
-  background-position: top 570px left 186px, top 100px right 190px;
+  background-position: top 570px left 11%, top 100px right 11%;
   background-size: 80px, 75px;
 
   &::after {
@@ -67,19 +67,21 @@
   flex-direction: row;
   background-color: #404040;
   align-items: center;
-  height: 4rem;
+  height: 3rem;
   width: 100%;
   position: relative;
-  bottom: 77px;
+  bottom: 62px;
   z-index: 5;
+ 
 
   @include phones {
     justify-content: space-between;
+   
   }
 }
 
 .player__playback {
-  width: 68%;
+  width: 142%;
   position: relative;
   margin-right: 15px;
   display: flex;
@@ -107,7 +109,7 @@
   width: 16px;
   height: 22px;
   outline: none;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .play-pic {
@@ -123,11 +125,9 @@
 }
 
 .playback-mark {
-  margin-right: rem(4px);
   cursor: pointer;
   height: 0;
-  width: 0;
-  border: 11px solid transparent;
+  border: 15px solid transparent;
   border-left-color: #626262;
   border-right-width: 0;
   background: transparent;
@@ -150,6 +150,7 @@
   background-color: #626262;
   outline: none;
   -webkit-appearance: none;
+  margin-left: 30px;
 }
 
 .player__duration::-webkit-slider-thumb {
@@ -170,7 +171,7 @@
   // flex-direction: row;
   align-items: center;
   // width: 20%;
-  margin: 0 45px;
+  margin: 0 20px;
 
   @include phones {
     width: 33%;
@@ -178,9 +179,9 @@
 }
 
 .volume__pic {
-  width: 15%;
+  width: 17%;
   height: 20px;
   border: none;
-  margin-right: 10px;
+  margin-right: -20px;
   cursor: pointer;
 }
