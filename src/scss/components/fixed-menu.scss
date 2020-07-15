@@ -24,7 +24,7 @@
   &:hover {
     border-color: #ffffff;
   }
-  &--active {
+  &.active {
     border-color: #ffffff;
     border-style: solid;
 }
@@ -52,7 +52,7 @@
   &:hover {
     border-color: #000;
   }
-  &--active {
+  &.active {
       border-color: #000;
       border-style: solid;
   }
