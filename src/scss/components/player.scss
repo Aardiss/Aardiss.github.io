@@ -55,6 +55,12 @@
   text-align: center;
   color: black;
   margin-bottom: 30px;
+  @include tablets {
+    font-size: 30px;
+  }
+  @include phones {
+
+  }
 }
 
 .player__elem {
@@ -71,7 +77,6 @@
   width: 100%;
   position: relative;
   bottom: 62px;
-  z-index: 5;
  
 
   @include phones {
@@ -115,10 +120,20 @@
 .play-pic {
   position: absolute;
   left: 50%;
-  top: 350rem;
+  margin-top: 238px;
+  height: 70px;
+  width: 50px;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  @include tablets {
+    margin-top: 180px;
+  }
+  @include phones {
+    margin-top: 92px;
+  }
 }
+
 
 .play-pic--active {
   opacity: 0;

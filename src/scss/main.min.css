@@ -1512,6 +1512,9 @@ template {
   text-align: center;
   color: black;
   margin-bottom: 30px; }
+  @media screen and (max-width: 768px) {
+    .player__title {
+      font-size: 30px; } }
 
 .player__elem {
   height: 100%;
@@ -1525,8 +1528,7 @@ template {
   height: 3rem;
   width: 100%;
   position: relative;
-  bottom: 62px;
-  z-index: 5; }
+  bottom: 62px; }
   @media screen and (max-width: 480px) {
     .player__controls {
       justify-content: space-between; } }
@@ -1562,9 +1564,17 @@ template {
 .play-pic {
   position: absolute;
   left: 50%;
-  top: 350rem;
+  margin-top: 238px;
+  height: 70px;
+  width: 50px;
   transform: translate(-50%, -50%);
   cursor: pointer; }
+  @media screen and (max-width: 768px) {
+    .play-pic {
+      margin-top: 180px; } }
+  @media screen and (max-width: 480px) {
+    .play-pic {
+      margin-top: 92px; } }
 
 .play-pic--active {
   opacity: 0; }
