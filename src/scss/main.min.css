@@ -382,7 +382,7 @@ template {
   display: none; }
 
 .assort {
-  background: url(/img/decor/three.png), #000;
+  background: url(img/decor/three.png), #000;
   background-size: cover;
   position: relative; }
 
@@ -484,7 +484,7 @@ template {
 
 .assort__container::before {
   position: relative;
-  content: url("/img/decor/mill.png");
+  content: url("img/decor/mill.png");
   right: 238px;
   top: -550px; }
 
@@ -506,7 +506,7 @@ template {
     box-shadow: none; }
 
 .bar__image {
-  background: url("/img/decor/батон.png") left 30% center no-repeat;
+  background: url("img/decor/батон.png") left 30% center no-repeat;
   background-size: contain;
   width: 39.111rem;
   height: 27.444rem; }
@@ -620,10 +620,10 @@ template {
   position: relative;
   width: 5rem;
   height: 5rem;
-  background: url("/img/decor/Состав.png") no-repeat; }
+  background: url("img/decor/Состав.png") no-repeat; }
   .bar__composition-bar_pic:hover {
     position: relative;
-    background: url("/img/decor/Состав-hover.png") no-repeat; }
+    background: url("img/decor/Состав-hover.png") no-repeat; }
 
 .bar__composition-menu {
   position: absolute;
@@ -699,17 +699,17 @@ template {
 
 .benefits-section {
   position: relative;
-  background: url("/img/decor/узор_лист.png") left 0 top 55% no-repeat; }
+  background: url("img/decor/узор_лист.png") left 0 top 55% no-repeat; }
 
 @media screen and (max-width: 768px) and (min-width: 480px) {
   .benefits-section {
-    background: url("/img/decor/узор_лист.png") left 0 top 17% no-repeat; } }
+    background: url("img/decor/узор_лист.png") left 0 top 17% no-repeat; } }
   @media screen and (max-width: 480px) {
     .benefits-section {
       background: none;
       padding-top: 0; } }
   .benefits-section::before {
-    content: url("/img/decor/малина.png");
+    content: url("img/decor/малина.png");
     position: absolute;
     bottom: -6.277rem; }
     @media screen and (max-width: 768px) {
@@ -742,7 +742,7 @@ template {
       display: none; } }
   @media screen and (min-width: 768px) {
     .benefits__item::before {
-      content: url("/img/decor/2.png");
+      content: url("img/decor/2.png");
       position: absolute;
       top: 2.777rem;
       right: 0;
@@ -1077,7 +1077,7 @@ template {
   @media screen and (min-width: 768px) {
     .form::after {
       position: absolute;
-      background-image: url("/img/decor/ягода90.png"); } }
+      background-image: url("img/decor/ягода90.png"); } }
   @media screen and (max-width: 480px) {
     .form::after {
       display: none; } }
@@ -1297,7 +1297,7 @@ template {
       padding: 0 5%; } }
 
 .hero {
-  background: url("/img/decor/узорs.png") bottom right 0 no-repeat;
+  background: url("img/decor/узорs.png") bottom right 0 no-repeat;
   background-color: #61c4d9;
   color: #ffffff;
   position: relative;
@@ -1307,7 +1307,7 @@ template {
       display: none; } }
   @media screen and (max-width: 480px) {
     .hero {
-      background: url("/img//decor/узорs3.png") right 7% no-repeat;
+      background: url("img//decor/узорs3.png") right 7% no-repeat;
       background-color: #61c4d9; } }
 
 .hero__title-section {
@@ -1327,7 +1327,7 @@ template {
         height: 22.666rem;
         position: absolute;
         right: 27%;
-        background: url("/img/decor/Картинки.png") center center/contain no-repeat;
+        background: url("img/decor/Картинки.png") center center/contain no-repeat;
         top: 7%; } }
   @media screen and (max-width: 480px) {
     .hero__title-section {
@@ -1369,13 +1369,13 @@ template {
       position: absolute;
       bottom: 18.944%;
       left: 51.166%;
-      content: url("/img/decor/Батончики.png"); } }
+      content: url("img/decor/Батончики.png"); } }
   @media screen and (min-width: 769px) {
     .hero__container::after {
       position: absolute;
       bottom: -2.721rem;
       left: -2.777rem;
-      content: url("/img/decor/Ягоды_и_листья.png");
+      content: url("img/decor/Ягоды_и_листья.png");
       width: 100%;
       z-index: -1; } }
 
@@ -1470,18 +1470,18 @@ template {
 
 .video {
   background-color: #f8faf9;
-  background-image: url("/img/decor/pla.png"), url("/img/decor/list.png");
+  background-image: url("img/decor/pla.png"), url("img/decor/list.png");
   background-repeat: no-repeat, no-repeat;
   background-position: top 570px left 11%, top 100px right 11%;
   background-size: 80px, 75px; }
   .video::after {
     position: absolute;
-    content: url("/img/decor/Ежевика_фото.png");
+    content: url("img/decor/Ежевика_фото.png");
     top: 287rem;
     right: 5px; }
     @media screen and (max-width: 768px) {
       .video::after {
-        content: url("/img/decor/Ежевика_фото2.png");
+        content: url("img/decor/Ежевика_фото2.png");
         top: 416rem; } }
     @media screen and (max-width: 480px) {
       .video::after {
@@ -1750,7 +1750,7 @@ template {
   overflow: hidden;
   position: absolute;
   display: flex;
-  background: url("/img/decor/Слой_2.png") right top no-repeat #f8faf9;
+  background: url("img/decor/Слой_2.png") right top no-repeat #f8faf9;
   padding: 2.777rem 7.5rem 1.666rem 2.777rem;
   opacity: 0; }
   @media screen and (max-width: 768px) {
@@ -1812,17 +1812,17 @@ template {
       font-size: 2.222rem; } }
 
 .section__reviews {
-  background: url("/img/decor/Ягода.png") top 1.777rem right 12.166rem no-repeat; }
+  background: url("img/decor/Ягода.png") top 1.777rem right 12.166rem no-repeat; }
   @media screen and (max-width: 768px) {
     .section__reviews {
       background: none;
-      background: url("/img/decor/Ягода.png") top 0rem right -1.777rem no-repeat; } }
+      background: url("img/decor/Ягода.png") top 0rem right -1.777rem no-repeat; } }
   @media screen and (max-width: 480px) {
     .section__reviews {
-      background: url("/img/decor/Ягода.png") top 0rem right -1.777rem/30% no-repeat; } }
+      background: url("img/decor/Ягода.png") top 0rem right -1.777rem/30% no-repeat; } }
   .section__reviews::before {
     position: absolute;
-    content: url("/img/decor/Узор.png");
+    content: url("img/decor/Узор.png");
     top: 245rem; }
     @media screen and (max-width: 768px) {
       .section__reviews::before {
@@ -1832,7 +1832,7 @@ template {
         top: 557rem; } }
   .section__reviews::after {
     position: absolute;
-    content: url("/img/decor/Ягоды.png");
+    content: url("img/decor/Ягоды.png");
     top: 249rem; }
     @media screen and (max-width: 768px) {
       .section__reviews::after {
@@ -1843,13 +1843,13 @@ template {
 
 .section__bar {
   background-color: #f8faf9;
-  background-image: url("/img/decor/Ягода-черн.png"), url("/img/decor/Узор_на_фоне.png");
+  background-image: url("img/decor/Ягода-черн.png"), url("img/decor/Узор_на_фоне.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 11%; }
   @media screen and (max-width: 768px) {
     .section__bar {
-      background-image: url("/img/decor/Ягода-черн.png"), url("/img/decor/Узор_на_фоне.png");
+      background-image: url("img/decor/Ягода-черн.png"), url("img/decor/Узор_на_фоне.png");
       background-repeat: no-repeat;
       background-position: right bottom;
       background-size: 10%; } }
@@ -1858,13 +1858,13 @@ template {
       background-size: 16%; } }
 
 .order-section {
-  background-image: url("/img/decor/лист90.png"), url("/img/decor/ягода90.png"), url("/img/decor/паттерн.png");
+  background-image: url("img/decor/лист90.png"), url("img/decor/ягода90.png"), url("img/decor/паттерн.png");
   background-repeat: no-repeat, no-repeat, repeat;
   background-position: top 500px right 50px, top 600px left 50px, top;
   background-size: 100px, 50px, 1520px; }
   @media screen and (max-width: 768px) {
     .order-section {
-      background: url("/img/decor/паттерн.png") center navajowhite; } }
+      background: url("img/decor/паттерн.png") center navajowhite; } }
 
 .section__title-form {
   font-size: 2.722rem;
